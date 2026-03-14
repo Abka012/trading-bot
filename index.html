@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forex Prediction Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div class="dashboard-container">
+        <header>
+            <h1>Prediction Results</h1>
+        </header>
+
+        <main class="top-row">
+            <section class="card main-chart">
+                <div class="card-header">
+                    <h2>Trend Forecast</h2>
+                    <div class="pair-selector">
+                        <span>EUR/USD/JMD</span>
+                        <span class="badge">0H</span>    
+                    </div>
+                </div>
+                <canvas id="forecastChart"></canvas>
+            </section>
+            <div class="card stat-card">
+                <div class="card-header-small">
+                    <i data-lucide="shield-check" class="icon-shield"></i>
+                    <h3>Confidence Level</h3>
+                </div>
+                <canvas id="confidenceSparkline"></canvas>
+            </div>
+            
+        </main>
+
+        <footer class="bottom-row">
+            <section class="card prediction-sidebar">
+                <h3>Next Trend Prediction:</h3>
+                <div class="trend-result">
+                    <i data-lucide="arrow-up-circle" class="icon-up"></i>
+                    <span class="uptrend-text">Expected</span>
+                </div>
+                <div class="prob-stats">
+                    <div class="prob-row">
+                        <span>Rise Probability:</span>
+                        <strong>50%</strong>
+                    </div>
+                    <div class="prob-bar-container">
+                        <div class="prob-bar rise" style="width: 50%;"></div>
+                    </div>
+                    <div class="prob-row">
+                        <span>Fall Probability:</span>
+                        <strong>50%</strong>
+                    </div>
+                    <div class="prob-bar-container">
+                        <div class="prob-bar fall" style="width: 50%;"></div>
+                    </div>
+                </div>
+            </section>
+            <div class="card stat-card">
+                <h3>Prediction Accuracy</h3>
+                <div class="stat-content">
+                    <span class="big-stat">%</span>
+                    <i data-lucide="check-circle" class="icon-check"></i>
+                </div>
+            </div>
+
+            <div class="card stat-card">
+                <h3>Backtest Results</h3>
+                <div class="stat-content">
+                    <i data-lucide="trending-up" class="icon-blue"></i>
+                    <div class="backtest-details">
+                        <p>Net Profit: <span class="green">+%</span></p>
+                        <p>Win Rate: <span>%</span></p>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+    <script>lucide.createIcons();</script>
+</body>
+</html>
