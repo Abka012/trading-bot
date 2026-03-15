@@ -1,0 +1,153 @@
+/**
+ * Sidebar Styles
+ * Left navigation sidebar matching the Ai Trading design
+ */
+
+.sidebar {
+    position: relative;
+    width: 72px;
+    background: #0f1216;
+    border-right: 1px solid #232832;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.sidebar-header {
+    margin-bottom: 32px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-icon {
+    width: 38px;
+    height: 38px;
+    color: #f3c631;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+.sidebar-nav {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.nav-item {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-link {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: transparent;
+    border: none;
+    color: #707887;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 20px;
+}
+
+.nav-link:hover {
+    background: #1a1f28;
+    color: #ffffff;
+}
+
+.nav-link.active {
+    background: #191e26;
+    color: #f3c631;
+    border: 1px solid #2a303b;
+}
+
+.nav-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    padding-top: 16px;
+    border-top: 1px solid #232832;
+    width: 100%;
+}
+
+.user-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.user-avatar:hover {
+    opacity: 0.8;
+}
+
+.user-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 900px) {
+    .sidebar {
+        width: 100%;
+        flex-direction: row;
+        padding: 12px 16px;
+        justify-content: space-between;
+    }
+
+    .sidebar-header {
+        margin-bottom: 0;
+    }
+
+    .sidebar-nav {
+        flex: 1;
+        justify-content: center;
+    }
+
+    .nav-list {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .sidebar-footer {
+        flex-direction: row;
+        width: auto;
+        border-top: none;
+        padding-top: 0;
+        border-left: 1px solid #232832;
+        padding-left: 12px;
+    }
+}

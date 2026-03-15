@@ -1,4 +1,4 @@
-# US Stock Market Trading Bot Demo
+# US Stock Market Trading Bot
 
 A deep learning-based trading system for US stock market trading using TensorFlow, pandas, and yfinance. This project implements a sophisticated neural network architecture for predicting stock price movements and includes a complete paper trading system for live simulation.
 

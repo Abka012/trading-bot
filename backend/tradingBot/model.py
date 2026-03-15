@@ -16,7 +16,7 @@ Example:
     model = build_model(config, use_custom_loss=True)
     ```
 
-Author: Trading Bot Demo
+Author: Abka Ferguson
 Date: 2026
 """
 

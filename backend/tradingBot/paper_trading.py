@@ -8,7 +8,7 @@ This module implements a paper trading system that:
 3. Executes simulated trades based on model predictions
 4. Tracks portfolio performance and metrics in real-time
 
-Author: Trading Bot Demo
+Author: Abka Ferguson
 Date: 2026
 """
 

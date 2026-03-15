@@ -1,5 +1,30 @@
+# FastAPI Backend
 fastapi==0.109.0
 uvicorn[standard]==0.27.0
 python-multipart==0.0.6
-pydantic==2.5.3
-pydantic-settings==2.1.0
+pydantic==2.12.5
+pydantic-settings==2.13.1
+
+# TensorFlow and Machine Learning
+tensorflow>=2.20.0
+
+# Data Processing
+pandas>=2.0.0
+numpy>=1.24.0
+scikit-learn>=1.2.0
+
+# Data Fetching
+yfinance>=0.2.50
+
+# Visualization
+matplotlib>=3.7.0
+
+# Utilities
+python-dateutil>=2.8.2
+
+# Alpaca Trading API
+alpaca-py>=0.30.0
+python-dotenv>=1.0.0
+
+# WebSocket for real-time data
+websockets>=12.0
