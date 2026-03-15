@@ -39,7 +39,8 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
     PATH=/root/.local/bin:$PATH \
     PYTHONPATH=/app \
     PORT=8000 \
-    TF_CPP_MIN_LOG_LEVEL=2
+    WEB_CONCURRENCY=1 \
+    TF_CPP_MIN_LOG_LEVEL=3
 
 WORKDIR /app
 
@@ -80,4 +81,4 @@ HEALTHCHECK --interval=30s --timeout=10s --start-period=40s --retries=3 \
 
 # Run with production settings
 # Render sets PORT env variable automatically
-CMD ["sh","-c","uvicorn main:app --host 0.0.0.0 --port ${PORT} --workers 2"]
+CMD ["sh","-c","uvicorn main:app --host 0.0.0.0 --port ${PORT} --workers ${WEB_CONCURRENCY}"]

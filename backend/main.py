@@ -27,6 +27,7 @@ Date: 2026
 
 from __future__ import annotations
 
+import os
 from contextlib import asynccontextmanager
 from datetime import datetime, timezone
 from pathlib import Path
@@ -79,6 +80,9 @@ async def lifespan(app: FastAPI):
 
     # Configure trading engine
     discovered_symbols = discover_model_symbols()
+    max_symbols_env = os.getenv("ENGINE_MAX_SYMBOLS")
+    if max_symbols_env and max_symbols_env.isdigit():
+        discovered_symbols = discovered_symbols[: int(max_symbols_env)]
     config = TradingConfig(
         symbols=discovered_symbols
         if discovered_symbols
@@ -103,12 +107,20 @@ async def lifespan(app: FastAPI):
         paper_trading=True,  # Start with paper trading
     )
 
-    # Start engine in background
-    engine_started = start_engine(config)
-    if engine_started:
-        print("✅ Trading engine started successfully")
+    # Start engine in background (optional)
+    start_engine_on_boot = os.getenv("START_ENGINE_ON_BOOT", "true").lower() in (
+        "1",
+        "true",
+        "yes",
+    )
+    if start_engine_on_boot:
+        engine_started = start_engine(config)
+        if engine_started:
+            print("✅ Trading engine started successfully")
+        else:
+            print("⚠️  Trading engine failed to start (check logs)")
     else:
-        print("⚠️  Trading engine failed to start (check logs)")
+        print("⏸ Trading engine start skipped (START_ENGINE_ON_BOOT=false)")
 
     yield
 
