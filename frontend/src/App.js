@@ -387,10 +387,6 @@ function App() {
 
                     <div className="card-stats">
                       <div className="card-stat">
-                        <span className="stat-label">Runtime</span>
-                        <span className="stat-value">{card.runtime}</span>
-                      </div>
-                      <div className="card-stat">
                         <span className="stat-label">Max drawdown</span>
                         <span className="stat-value">{card.maxDrawdown}</span>
                       </div>
