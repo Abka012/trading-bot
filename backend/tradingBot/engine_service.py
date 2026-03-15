@@ -31,9 +31,12 @@ import time
 from collections import deque
 from dataclasses import dataclass, field
 from datetime import datetime
-from typing import Callable, Optional
+from typing import TYPE_CHECKING, Callable, Optional
 
-from tradingBot.live_trading import LiveTradingEngine, TradingConfig
+from tradingBot.trading_config import TradingConfig
+
+if TYPE_CHECKING:
+    from tradingBot.live_trading import LiveTradingEngine
 
 # Configure logging
 logger = logging.getLogger(__name__)
@@ -123,7 +126,7 @@ class TradingEngineService:
             paper_trading=True,
         )
 
-        self.engine: Optional[LiveTradingEngine] = None
+        self.engine: Optional["LiveTradingEngine"] = None
         self._thread: Optional[threading.Thread] = None
         self._stop_event = threading.Event()
         self._logs: deque = deque(maxlen=100)  # Keep last 100 logs
@@ -190,7 +193,9 @@ class TradingEngineService:
         try:
             self._add_log("INFO", "Starting trading engine...")
 
-            # Create engine instance
+            # Create engine instance (import lazily to avoid TensorFlow on startup)
+            from tradingBot.live_trading import LiveTradingEngine
+
             self.engine = LiveTradingEngine(self.config)
 
             # Setup logging

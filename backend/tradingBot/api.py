@@ -26,11 +26,10 @@ import os
 from dataclasses import dataclass, field
 from datetime import datetime
 from pathlib import Path
-from typing import Any
+from typing import TYPE_CHECKING, Any
 
 import numpy as np
 import pandas as pd
-import tensorflow as tf
 from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
@@ -39,8 +38,12 @@ from pydantic import BaseModel, Field
 os.environ["TF_CPP_MIN_LOG_LEVEL"] = "2"
 
 # Import model architecture and data fetcher
-from tradingBot.model import ModelConfig, build_model
-from tradingBot.paper_trading import DataFetcher
+from dataclasses import dataclass
+
+from tradingBot.data_fetcher import DataFetcher
+
+if TYPE_CHECKING:
+    import tensorflow as tf
 
 # =============================================================================
 # Pydantic Models for Request/Response
@@ -194,11 +197,17 @@ class LoadedModel:
         last_used: When the model was last used
     """
 
-    model: tf.keras.Model
-    config: ModelConfig
+    model: Any
+    config: "ModelConfigLite"
     symbol: str
     loaded_at: datetime = field(default_factory=datetime.now)
     last_used: datetime = field(default_factory=datetime.now)
+
+
+@dataclass(frozen=True)
+class ModelConfigLite:
+    window_size: int
+    n_features: int
 
 
 class ModelManager:
@@ -285,10 +294,21 @@ class ModelManager:
         # Load the model
         try:
             print(f"Loading model for {symbol} from {model_path}...")
+            import os
+
+            if os.getenv("DISABLE_TENSORFLOW", "false").lower() in (
+                "1",
+                "true",
+                "yes",
+            ):
+                raise RuntimeError("TensorFlow disabled by DISABLE_TENSORFLOW")
+
+            import tensorflow as tf
+
             keras_model = tf.keras.models.load_model(str(model_path))
 
             # Create default config
-            config = ModelConfig(window_size=60, n_features=15)
+            config = ModelConfigLite(window_size=60, n_features=15)
 
             loaded_model = LoadedModel(model=keras_model, config=config, symbol=symbol)
             self._cache[model_name] = loaded_model

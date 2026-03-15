@@ -62,48 +62,15 @@ from tradingBot.alpaca_client import (
     TradeResult,
     TradingMode,
 )
+from tradingBot.data_fetcher import DataFetcher
 from tradingBot.model import ModelConfig, build_model
-from tradingBot.paper_trading import DataFetcher
+from tradingBot.trading_config import TradingConfig
 
 # Suppress TensorFlow warnings
 os.environ["TF_CPP_MIN_LOG_LEVEL"] = "2"
 
 
-@dataclass
-class TradingConfig:
-    """Configuration for live trading engine.
-
-    Controls risk management, position sizing, and trading behavior.
-
-    Attributes:
-        symbols: List of stock symbols to trade
-        max_position_size: Maximum position size as fraction of portfolio (0.0-1.0)
-        max_positions: Maximum number of concurrent positions
-        stop_loss_pct: Stop loss percentage (e.g., 0.02 for 2%)
-        take_profit_pct: Take profit percentage (e.g., 0.04 for 4%)
-        signal_threshold: Minimum signal strength to open position (-1 to 1)
-        rebalance_interval: How often to rebalance positions (minutes)
-        max_trade_per_symbol: Maximum trades per symbol per day
-        use_trailing_stop: Whether to use trailing stops
-        trail_percent: Trailing stop percentage if enabled
-        models_dir: Directory containing model files
-        data_dir: Directory for trading data and logs
-        paper_trading: Whether to use paper trading mode
-    """
-
-    symbols: list[str] = field(default_factory=lambda: ["AAPL", "MSFT", "GOOGL"])
-    max_position_size: float = 0.1  # 10% of portfolio per position
-    max_positions: int = 5  # Maximum concurrent positions
-    stop_loss_pct: float = 0.02  # 2% stop loss
-    take_profit_pct: float = 0.04  # 4% take profit
-    signal_threshold: float = 0.15  # Minimum signal to trade
-    rebalance_interval: int = 5  # Rebalance every 5 minutes
-    max_trade_per_symbol: int = 10  # Max trades per symbol per day
-    use_trailing_stop: bool = False
-    trail_percent: float = 0.02  # 2% trailing stop
-    models_dir: str = str(Path(__file__).parent / "artifacts" / "models")
-    data_dir: str = str(Path(__file__).parent / "outputs" / "live_trading")
-    paper_trading: bool = True  # Default to paper trading for safety
+# TradingConfig moved to trading_config.py to avoid heavy imports on startup.
 
 
 @dataclass

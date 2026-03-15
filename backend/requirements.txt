@@ -5,8 +5,8 @@ python-multipart==0.0.6
 pydantic==2.12.5
 pydantic-settings==2.13.1
 
-# TensorFlow and Machine Learning
-tensorflow>=2.20.0
+# TensorFlow and Machine Learning (CPU)
+tensorflow-cpu>=2.20.0
 
 # Data Processing
 pandas>=2.0.0

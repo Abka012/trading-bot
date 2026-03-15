@@ -54,7 +54,7 @@ from tradingBot.engine_service import (
     start_engine,
     stop_engine,
 )
-from tradingBot.live_trading import TradingConfig
+from tradingBot.trading_config import TradingConfig
 
 
 def discover_model_symbols() -> list[str]:
