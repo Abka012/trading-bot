@@ -147,6 +147,7 @@ app.add_middleware(
     allow_origins=[
         "http://localhost:3000",
         "http://localhost:5173",
+        "https://trading-bot-wine-alpha.vercel.app",
         "https://*.render.com",
         "https://*.onrender.com",
     ],
