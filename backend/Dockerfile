@@ -35,7 +35,9 @@ FROM python:3.11-slim
 # Set environment variables
 ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1 \
-    PATH=/root/.local/bin:$PATH
+    PATH=/root/.local/bin:$PATH \
+    PYTHONPATH=/app \
+    PORT=8000
 
 WORKDIR /app
 
@@ -71,8 +73,8 @@ EXPOSE 8000
 
 # Health check for Render monitoring
 HEALTHCHECK --interval=30s --timeout=10s --start-period=40s --retries=3 \
-    CMD python -c "import urllib.request; urllib.request.urlopen('http://localhost:8000/api/health')" || exit 1
+    CMD python -c "import os,urllib.request; urllib.request.urlopen(f\"http://localhost:{os.getenv('PORT','8000')}/api/health\")" || exit 1
 
 # Run with production settings
 # Render sets PORT env variable automatically
-CMD uvicorn main:app --host 0.0.0.0 --port ${PORT:-8000} --workers 2
+CMD ["sh","-c","uvicorn main:app --host 0.0.0.0 --port ${PORT} --workers 2"]
