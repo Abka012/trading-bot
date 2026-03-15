@@ -20,7 +20,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     g++ \
     make \
     libhdf5-dev \
-    libatlas-base-dev \
+    libopenblas-dev \
+    liblapack-dev \
     && rm -rf /var/lib/apt/lists/*
 
 # Install Python dependencies
@@ -43,7 +44,8 @@ WORKDIR /app
 
 # Install runtime system dependencies
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    libatlas-base-dev \
+    libopenblas-dev \
+    liblapack-dev \
     libhdf5-serial-dev \
     curl \
     && rm -rf /var/lib/apt/lists/*
