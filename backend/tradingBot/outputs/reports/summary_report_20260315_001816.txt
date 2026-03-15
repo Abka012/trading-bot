@@ -1,0 +1,108 @@
+============================================================
+PAPER TRADING SUMMARY REPORT
+============================================================
+Generated: 2026-03-15 00:18:16
+Total Stocks Traded: 17
+
+------------------------------------------------------------
+Symbol: AAPL
+Status: ✅ Success
+Trades File: outputs/trades/aapl_trades_20260315_000844.csv
+Equity File: outputs/equity/aapl_equity_20260315_000844.csv
+
+------------------------------------------------------------
+Symbol: MSFT
+Status: ✅ Success
+Trades File: outputs/trades/msft_trades_20260315_000919.csv
+Equity File: outputs/equity/msft_equity_20260315_000919.csv
+
+------------------------------------------------------------
+Symbol: GOOGL
+Status: ✅ Success
+Trades File: outputs/trades/googl_trades_20260315_000954.csv
+Equity File: outputs/equity/googl_equity_20260315_000954.csv
+
+------------------------------------------------------------
+Symbol: AMZN
+Status: ✅ Success
+Trades File: outputs/trades/amzn_trades_20260315_001030.csv
+Equity File: outputs/equity/amzn_equity_20260315_001030.csv
+
+------------------------------------------------------------
+Symbol: NVDA
+Status: ✅ Success
+Trades File: outputs/trades/nvda_trades_20260315_001105.csv
+Equity File: outputs/equity/nvda_equity_20260315_001105.csv
+
+------------------------------------------------------------
+Symbol: JPM
+Status: ✅ Success
+Trades File: outputs/trades/jpm_trades_20260315_001141.csv
+Equity File: outputs/equity/jpm_equity_20260315_001141.csv
+
+------------------------------------------------------------
+Symbol: V
+Status: ✅ Success
+Trades File: outputs/trades/v_trades_20260315_001216.csv
+Equity File: outputs/equity/v_equity_20260315_001216.csv
+
+------------------------------------------------------------
+Symbol: JNJ
+Status: ✅ Success
+Trades File: outputs/trades/jnj_trades_20260315_001250.csv
+Equity File: outputs/equity/jnj_equity_20260315_001250.csv
+
+------------------------------------------------------------
+Symbol: WMT
+Status: ✅ Success
+Trades File: outputs/trades/wmt_trades_20260315_001325.csv
+Equity File: outputs/equity/wmt_equity_20260315_001325.csv
+
+------------------------------------------------------------
+Symbol: PG
+Status: ✅ Success
+Trades File: outputs/trades/pg_trades_20260315_001400.csv
+Equity File: outputs/equity/pg_equity_20260315_001400.csv
+
+------------------------------------------------------------
+Symbol: MA
+Status: ✅ Success
+Trades File: outputs/trades/ma_trades_20260315_001434.csv
+Equity File: outputs/equity/ma_equity_20260315_001434.csv
+
+------------------------------------------------------------
+Symbol: UNH
+Status: ✅ Success
+Trades File: outputs/trades/unh_trades_20260315_001509.csv
+Equity File: outputs/equity/unh_equity_20260315_001509.csv
+
+------------------------------------------------------------
+Symbol: HD
+Status: ✅ Success
+Trades File: outputs/trades/hd_trades_20260315_001544.csv
+Equity File: outputs/equity/hd_equity_20260315_001544.csv
+
+------------------------------------------------------------
+Symbol: DIS
+Status: ✅ Success
+Trades File: outputs/trades/dis_trades_20260315_001618.csv
+Equity File: outputs/equity/dis_equity_20260315_001618.csv
+
+------------------------------------------------------------
+Symbol: BAC
+Status: ✅ Success
+Trades File: outputs/trades/bac_trades_20260315_001653.csv
+Equity File: outputs/equity/bac_equity_20260315_001653.csv
+
+------------------------------------------------------------
+Symbol: NFLX
+Status: ✅ Success
+Trades File: outputs/trades/nflx_trades_20260315_001728.csv
+Equity File: outputs/equity/nflx_equity_20260315_001728.csv
+
+------------------------------------------------------------
+Symbol: ADBE
+Status: ✅ Success
+Trades File: outputs/trades/adbe_trades_20260315_001803.csv
+Equity File: outputs/equity/adbe_equity_20260315_001803.csv
+

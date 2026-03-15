@@ -1,0 +1,3 @@
+entry_time,exit_time,symbol,entry_price,exit_price,size,pnl,exit_reason,entry_pred,exit_pred
+2010-03-31,2010-04-01,MSFT,29.290001,29.16,34.141344003368246,-4.537965020895698,time_exit,,
+2010-04-01,2010-04-05,MSFT,29.16,29.27,34.29355281207133,3.6719135802468945,time_exit,,

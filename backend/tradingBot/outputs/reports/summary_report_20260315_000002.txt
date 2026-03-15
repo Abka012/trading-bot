@@ -1,0 +1,18 @@
+============================================================
+PAPER TRADING SUMMARY REPORT
+============================================================
+Generated: 2026-03-15 00:00:02
+Total Stocks Traded: 2
+
+------------------------------------------------------------
+Symbol: AAPL
+Status: ✅ Success
+Trades File: outputs/trades/aapl_trades_20260314_235928.csv
+Equity File: outputs/equity/aapl_equity_20260314_235928.csv
+
+------------------------------------------------------------
+Symbol: MSFT
+Status: ✅ Success
+Trades File: outputs/trades/msft_trades_20260314_235955.csv
+Equity File: outputs/equity/msft_equity_20260314_235955.csv
+

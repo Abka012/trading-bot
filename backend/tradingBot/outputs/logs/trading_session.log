@@ -1,0 +1,4498 @@
+
+============================================================
+🚀 US STOCK MARKET PAPER TRADING
+============================================================
+Stocks to trade: BAC, AAPL, F, GE, MSFT, INTC, CSCO, FB, PFE, HPQ, C, MU, NFLX, T, JPM, WFC, EBAY, FCX, ORCL, YHOO
+Duration: 30 minutes
+Interval: 1 seconds
+============================================================
+
+📁 Directory structure created:
+   data: data/extracted_stocks/
+   models: artifacts/models/
+   trades: outputs/trades/
+   equity: outputs/equity/
+   reports: outputs/reports/
+   logs: outputs/logs/
+
+============================================================
+🔍 Checking stock availability...
+============================================================
+  ✅ BAC - Available
+  ✅ AAPL - Available
+  ✅ F - Available
+  ✅ GE - Available
+  ✅ MSFT - Available
+  ✅ INTC - Available
+  ✅ CSCO - Available
+  ✅ FB - Available
+  ✅ PFE - Available
+  ✅ HPQ - Available
+  ✅ C - Available
+  ✅ MU - Available
+  ✅ NFLX - Available
+  ✅ T - Available
+  ✅ JPM - Available
+  ✅ WFC - Available
+  ✅ EBAY - Available
+  ✅ FCX - Available
+  ✅ ORCL - Available
+  ✅ YHOO - Available
+
+✅ 20 stocks available for trading
+
+============================================================
+📥 Extracting BAC data...
+============================================================
+  ✅ Extracted data saved to: data/extracted_stocks/bac_data.csv
+
+============================================================
+🎓 Training model for BAC...
+============================================================
+  ✅ Model saved to: artifacts/models/bac_model.keras
+
+============================================================
+📈 Running paper trading for BAC...
+============================================================
+
+============================================================
+🚀 STARTING PAPER TRADING SESSION
+============================================================
+Symbol:           BAC
+Initial Capital:  $10,000.00
+Position Size:    10.0%
+Max Positions:    5
+Stop Loss:        2.0%
+Take Profit:      4.0%
+Duration:         30 minutes
+Interval:         1 seconds
+============================================================
+
+Loading model from artifacts/models/bac_model.keras...
+Model loaded successfully.
+
+📡 Fetching market data...
+Received 1762 data points
+
+⏩ Running historical replay...
+
+
+⏰ [2010-03-31 00:00] Cycle 1
+  Price: 17.85000
+  📈 OPEN LONG | Price: 17.85000 | Size: 56.02 | SL: 17.49300 | TP: 18.56400
+
+⏰ [2010-04-01 00:00] Cycle 2
+  Price: 18.04000
+  💰 CLOSE | Price: 18.04000 | PnL: $10.54 (59.07%) | Reason: time_exit
+  📈 OPEN LONG | Price: 18.04000 | Size: 55.43 | SL: 17.67920 | TP: 18.76160
+
+⏰ [2010-04-05 00:00] Cycle 3
+  Price: 18.13000
+  💰 CLOSE | Price: 18.13000 | PnL: $4.89 (27.10%) | Reason: time_exit
+  📈 OPEN LONG | Price: 18.13000 | Size: 55.16 | SL: 17.76740 | TP: 18.85520
+
+⏰ [2010-04-06 00:00] Cycle 4
+  Price: 18.49000
+  💰 CLOSE | Price: 18.49000 | PnL: $19.75 (108.96%) | Reason: time_exit
+  📈 OPEN LONG | Price: 18.49000 | Size: 54.08 | SL: 18.12020 | TP: 19.22960
+
+⏰ [2010-04-07 00:00] Cycle 5
+  Price: 18.62000
+  💰 CLOSE | Price: 18.62000 | PnL: $6.93 (37.48%) | Reason: time_exit
+  📈 OPEN LONG | Price: 18.62000 | Size: 53.71 | SL: 18.24760 | TP: 19.36480
+
+⏰ [2010-04-08 00:00] Cycle 6
+  Price: 18.65000
+  💰 CLOSE | Price: 18.65000 | PnL: $1.51 (8.11%) | Reason: time_exit
+  📈 OPEN LONG | Price: 18.65000 | Size: 53.62 | SL: 18.27700 | TP: 19.39600
+
+⏰ [2010-04-09 00:00] Cycle 7
+  Price: 18.59000
+  💸 CLOSE | Price: 18.59000 | PnL: $-3.32 (-17.78%) | Reason: time_exit
+  📈 OPEN LONG | Price: 18.59000 | Size: 53.79 | SL: 18.21820 | TP: 19.33360
+
+⏰ [2010-04-12 00:00] Cycle 8
+  Price: 18.66000
+  💰 CLOSE | Price: 18.66000 | PnL: $3.67 (19.72%) | Reason: time_exit
+  📈 OPEN LONG | Price: 18.66000 | Size: 53.59 | SL: 18.28680 | TP: 19.40640
+
+⏰ [2010-04-13 00:00] Cycle 9
+  Price: 18.67000
+  💰 CLOSE | Price: 18.67000 | PnL: $0.44 (2.34%) | Reason: time_exit
+  📈 OPEN LONG | Price: 18.67000 | Size: 53.56 | SL: 18.29660 | TP: 19.41680
+
+⏰ [2010-04-14 00:00] Cycle 10
+  Price: 19.40000
+  💰 CLOSE | Price: 19.40000 | PnL: $39.00 (208.87%) | Reason: time_exit
+  📈 OPEN LONG | Price: 19.40000 | Size: 51.55 | SL: 19.01200 | TP: 20.17600
+
+⏰ [2010-04-15 00:00] Cycle 11
+  Price: 19.48000
+  💰 CLOSE | Price: 19.48000 | PnL: $4.02 (20.74%) | Reason: time_exit
+  📈 OPEN LONG | Price: 19.48000 | Size: 51.33 | SL: 19.09040 | TP: 20.25920
+
+⏰ [2010-04-16 00:00] Cycle 12
+  Price: 18.41000
+  💸 CLOSE | Price: 18.41000 | PnL: $-55.02 (-282.46%) | Reason: stop_loss
+  📈 OPEN LONG | Price: 18.41000 | Size: 54.32 | SL: 18.04180 | TP: 19.14640
+
+⏰ [2010-04-19 00:00] Cycle 13
+  Price: 18.39000
+  💸 CLOSE | Price: 18.39000 | PnL: $-1.19 (-6.44%) | Reason: time_exit
+  📈 OPEN LONG | Price: 18.39000 | Size: 54.38 | SL: 18.02220 | TP: 19.12560
+
+⏰ [2010-04-20 00:00] Cycle 14
+  Price: 18.61000
+  💰 CLOSE | Price: 18.61000 | PnL: $11.86 (64.50%) | Reason: time_exit
+  📈 OPEN LONG | Price: 18.61000 | Size: 53.73 | SL: 18.23780 | TP: 19.35440
+
+⏰ [2010-04-21 00:00] Cycle 15
+  Price: 18.28000
+  💸 CLOSE | Price: 18.28000 | PnL: $-17.83 (-95.81%) | Reason: time_exit
+  📈 OPEN LONG | Price: 18.28000 | Size: 54.70 | SL: 17.91440 | TP: 19.01120
+
+⏰ [2010-04-22 00:00] Cycle 16
+  Price: 18.54000
+  💰 CLOSE | Price: 18.54000 | PnL: $14.12 (77.25%) | Reason: time_exit
+  📈 OPEN LONG | Price: 18.54000 | Size: 53.94 | SL: 18.16920 | TP: 19.28160
+
+⏰ [2010-04-23 00:00] Cycle 17
+  Price: 18.43000
+  💸 CLOSE | Price: 18.43000 | PnL: $-6.03 (-32.54%) | Reason: time_exit
+  📈 OPEN LONG | Price: 18.43000 | Size: 54.26 | SL: 18.06140 | TP: 19.16720
+
+⏰ [2010-04-26 00:00] Cycle 18
+  Price: 18.05000
+  💸 CLOSE | Price: 18.05000 | PnL: $-20.72 (-112.41%) | Reason: stop_loss
+  📈 OPEN LONG | Price: 18.05000 | Size: 55.40 | SL: 17.68900 | TP: 18.77200
+
+⏰ [2010-04-27 00:00] Cycle 19
+  Price: 17.47000
+  💸 CLOSE | Price: 17.47000 | PnL: $-32.23 (-178.56%) | Reason: stop_loss
+  📈 OPEN LONG | Price: 17.47000 | Size: 57.24 | SL: 17.12060 | TP: 18.16880
+
+⏰ [2010-04-28 00:00] Cycle 20
+  Price: 17.78000
+  💰 CLOSE | Price: 17.78000 | PnL: $17.64 (100.99%) | Reason: time_exit
+  📈 OPEN LONG | Price: 17.78000 | Size: 56.24 | SL: 17.42440 | TP: 18.49120
+
+⏰ [2010-04-29 00:00] Cycle 21
+  Price: 18.30000
+  💰 CLOSE | Price: 18.30000 | PnL: $29.14 (163.91%) | Reason: time_exit
+
+⏰ [2010-04-30 00:00] Cycle 22
+  Price: 17.83000
+
+⏰ [2010-05-03 00:00] Cycle 23
+  Price: 18.06000
+  📈 OPEN SHORT | Price: 18.06000 | Size: 55.37 | SL: 18.42120 | TP: 17.33760
+
+⏰ [2010-05-04 00:00] Cycle 24
+  Price: 17.56000
+  💸 CLOSE | Price: 17.56000 | PnL: $-27.78 (-153.84%) | Reason: stop_loss
+  📈 OPEN SHORT | Price: 17.56000 | Size: 56.95 | SL: 17.91120 | TP: 16.85760
+
+⏰ [2010-05-05 00:00] Cycle 25
+  Price: 17.53000
+  💸 CLOSE | Price: 17.53000 | PnL: $-1.81 (-10.30%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 17.53000 | Size: 57.05 | SL: 17.88060 | TP: 16.82880
+
+⏰ [2010-05-06 00:00] Cycle 26
+  Price: 16.28000
+  💸 CLOSE | Price: 16.28000 | PnL: $-71.40 (-407.30%) | Reason: stop_loss
+  📈 OPEN SHORT | Price: 16.28000 | Size: 61.43 | SL: 16.60560 | TP: 15.62880
+
+⏰ [2010-05-07 00:00] Cycle 27
+  Price: 16.18000
+  💸 CLOSE | Price: 16.18000 | PnL: $-6.24 (-38.34%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 16.18000 | Size: 61.80 | SL: 16.50360 | TP: 15.53280
+
+⏰ [2010-05-10 00:00] Cycle 28
+  Price: 17.30000
+  💰 CLOSE | Price: 17.30000 | PnL: $69.11 (427.16%) | Reason: take_profit
+  📈 OPEN LONG | Price: 17.30000 | Size: 57.80 | SL: 16.95400 | TP: 17.99200
+
+⏰ [2010-05-11 00:00] Cycle 29
+  Price: 17.16000
+  💸 CLOSE | Price: 17.16000 | PnL: $-8.19 (-47.35%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 17.16000 | Size: 58.28 | SL: 17.50320 | TP: 16.47360
+
+⏰ [2010-05-12 00:00] Cycle 30
+  Price: 17.07000
+  💸 CLOSE | Price: 17.07000 | PnL: $-5.34 (-31.14%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 17.07000 | Size: 58.58 | SL: 17.41140 | TP: 16.38720
+
+============================================================
+📊 PORTFOLIO SUMMARY
+============================================================
+Initial Capital:    $10,000.00
+Current Cash:       $9,972.73
+Total Equity:       $9,972.73
+Total PnL:          $-24.47
+Total Return:       -0.27%
+Active Positions:   1
+Total Trades:       27
+Win Rate:           51.9%
+Profit Factor:      0.90
+============================================================
+
+📈 ACTIVE POSITIONS:
+  POS_1: LONG | Entry: 17.07000 | Size: 58.58 | Time: 00:00
+
+📜 RECENT TRADES:
+  💸 BAC | LONG | PnL: $-71.40 | Reason: stop_loss
+  💸 BAC | LONG | PnL: $-6.24 | Reason: time_exit
+  💰 BAC | LONG | PnL: $69.11 | Reason: take_profit
+  💸 BAC | LONG | PnL: $-8.19 | Reason: time_exit
+  💸 BAC | LONG | PnL: $-5.34 | Reason: time_exit
+
+📁 Trade history saved to: paper_trading_trades_20260315_002006.csv
+📁 Equity curve saved to: paper_trading_equity_20260315_002006.csv
+
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1773551995.300161  173959 cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+I0000 00:00:1773551995.395209  173959 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1773551997.387206  173959 cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+E0000 00:00:1773551999.243292  173959 cuda_platform.cc:52] failed call to cuInit: INTERNAL: CUDA error: Failed call to cuInit: UNKNOWN ERROR (303)
+
+  📁 Trades moved to: outputs/trades/bac_trades_20260315_001954.csv
+  📁 Equity moved to: outputs/equity/bac_equity_20260315_001954.csv
+
+============================================================
+📥 Extracting AAPL data...
+============================================================
+  ✅ Extracted data saved to: data/extracted_stocks/aapl_data.csv
+
+============================================================
+🎓 Training model for AAPL...
+============================================================
+  ✅ Model saved to: artifacts/models/aapl_model.keras
+
+============================================================
+📈 Running paper trading for AAPL...
+============================================================
+
+============================================================
+🚀 STARTING PAPER TRADING SESSION
+============================================================
+Symbol:           AAPL
+Initial Capital:  $10,000.00
+Position Size:    10.0%
+Max Positions:    5
+Stop Loss:        2.0%
+Take Profit:      4.0%
+Duration:         30 minutes
+Interval:         1 seconds
+============================================================
+
+Loading model from artifacts/models/aapl_model.keras...
+Model loaded successfully.
+
+📡 Fetching market data...
+Received 1762 data points
+
+⏩ Running historical replay...
+
+
+⏰ [2010-03-31 00:00] Cycle 1
+  Price: 235.00001
+  📈 OPEN LONG | Price: 235.00001 | Size: 4.26 | SL: 230.30001 | TP: 244.40001
+
+⏰ [2010-04-01 00:00] Cycle 2
+  Price: 235.96999
+  💰 CLOSE | Price: 235.96999 | PnL: $4.03 (1.71%) | Reason: time_exit
+  📈 OPEN LONG | Price: 235.96999 | Size: 4.24 | SL: 231.25059 | TP: 245.40879
+
+⏰ [2010-04-05 00:00] Cycle 3
+  Price: 238.49000
+  💰 CLOSE | Price: 238.49000 | PnL: $10.58 (4.48%) | Reason: time_exit
+  📈 OPEN LONG | Price: 238.49000 | Size: 4.19 | SL: 233.72020 | TP: 248.02960
+
+⏰ [2010-04-06 00:00] Cycle 4
+  Price: 239.54001
+  💰 CLOSE | Price: 239.54001 | PnL: $4.30 (1.80%) | Reason: time_exit
+  📈 OPEN LONG | Price: 239.54001 | Size: 4.17 | SL: 234.74921 | TP: 249.12161
+
+⏰ [2010-04-07 00:00] Cycle 5
+  Price: 240.60001
+  💰 CLOSE | Price: 240.60001 | PnL: $4.32 (1.81%) | Reason: time_exit
+  📈 OPEN LONG | Price: 240.60001 | Size: 4.16 | SL: 235.78801 | TP: 250.22401
+
+⏰ [2010-04-08 00:00] Cycle 6
+  Price: 239.95001
+  💸 CLOSE | Price: 239.95001 | PnL: $-2.80 (-1.16%) | Reason: time_exit
+  📈 OPEN LONG | Price: 239.95001 | Size: 4.17 | SL: 235.15100 | TP: 249.54801
+
+⏰ [2010-04-09 00:00] Cycle 7
+  Price: 241.78999
+  💰 CLOSE | Price: 241.78999 | PnL: $7.57 (3.15%) | Reason: time_exit
+  📈 OPEN LONG | Price: 241.78999 | Size: 4.14 | SL: 236.95419 | TP: 251.46159
+
+⏰ [2010-04-12 00:00] Cycle 8
+  Price: 242.29001
+  💰 CLOSE | Price: 242.29001 | PnL: $1.97 (0.81%) | Reason: time_exit
+  📈 OPEN LONG | Price: 242.29001 | Size: 4.13 | SL: 237.44420 | TP: 251.98161
+
+⏰ [2010-04-13 00:00] Cycle 9
+  Price: 242.43001
+  💰 CLOSE | Price: 242.43001 | PnL: $0.48 (0.20%) | Reason: time_exit
+  📈 OPEN LONG | Price: 242.43001 | Size: 4.12 | SL: 237.58141 | TP: 252.12721
+
+⏰ [2010-04-14 00:00] Cycle 10
+  Price: 245.69000
+  💰 CLOSE | Price: 245.69000 | PnL: $13.35 (5.51%) | Reason: time_exit
+  📈 OPEN LONG | Price: 245.69000 | Size: 4.07 | SL: 240.77620 | TP: 255.51760
+
+⏰ [2010-04-15 00:00] Cycle 11
+  Price: 248.92001
+  💰 CLOSE | Price: 248.92001 | PnL: $13.05 (5.31%) | Reason: time_exit
+  📈 OPEN LONG | Price: 248.92001 | Size: 4.02 | SL: 243.94161 | TP: 258.87681
+
+⏰ [2010-04-16 00:00] Cycle 12
+  Price: 247.40000
+  💸 CLOSE | Price: 247.40000 | PnL: $-6.21 (-2.49%) | Reason: time_exit
+  📈 OPEN LONG | Price: 247.40000 | Size: 4.04 | SL: 242.45200 | TP: 257.29600
+
+⏰ [2010-04-19 00:00] Cycle 13
+  Price: 247.07001
+  💸 CLOSE | Price: 247.07001 | PnL: $-1.43 (-0.58%) | Reason: time_exit
+  📈 OPEN LONG | Price: 247.07001 | Size: 4.05 | SL: 242.12861 | TP: 256.95281
+
+⏰ [2010-04-20 00:00] Cycle 14
+  Price: 244.59000
+  💸 CLOSE | Price: 244.59000 | PnL: $-10.14 (-4.10%) | Reason: time_exit
+  📈 OPEN LONG | Price: 244.59000 | Size: 4.09 | SL: 239.69820 | TP: 254.37360
+
+⏰ [2010-04-21 00:00] Cycle 15
+  Price: 259.22001
+  💰 CLOSE | Price: 259.22001 | PnL: $59.71 (24.41%) | Reason: take_profit
+  📈 OPEN LONG | Price: 259.22001 | Size: 3.86 | SL: 254.03560 | TP: 269.58881
+
+⏰ [2010-04-22 00:00] Cycle 16
+  Price: 266.47000
+  💰 CLOSE | Price: 266.47000 | PnL: $27.87 (10.75%) | Reason: time_exit
+  📈 OPEN LONG | Price: 266.47000 | Size: 3.75 | SL: 261.14060 | TP: 277.12880
+
+⏰ [2010-04-23 00:00] Cycle 17
+  Price: 270.82999
+  💰 CLOSE | Price: 270.82999 | PnL: $16.26 (6.10%) | Reason: time_exit
+  📈 OPEN LONG | Price: 270.82999 | Size: 3.69 | SL: 265.41339 | TP: 281.66319
+
+⏰ [2010-04-26 00:00] Cycle 18
+  Price: 269.50000
+  💸 CLOSE | Price: 269.50000 | PnL: $-5.01 (-1.85%) | Reason: time_exit
+  📈 OPEN LONG | Price: 269.50000 | Size: 3.71 | SL: 264.11000 | TP: 280.28000
+
+⏰ [2010-04-27 00:00] Cycle 19
+  Price: 262.03999
+  💸 CLOSE | Price: 262.03999 | PnL: $-27.78 (-10.31%) | Reason: stop_loss
+  📈 OPEN LONG | Price: 262.03999 | Size: 3.82 | SL: 256.79919 | TP: 272.52159
+
+⏰ [2010-04-28 00:00] Cycle 20
+  Price: 261.60001
+  💸 CLOSE | Price: 261.60001 | PnL: $-1.78 (-0.68%) | Reason: time_exit
+  📈 OPEN LONG | Price: 261.60001 | Size: 3.82 | SL: 256.36801 | TP: 272.06401
+
+⏰ [2010-04-29 00:00] Cycle 21
+  Price: 268.64001
+  💰 CLOSE | Price: 268.64001 | PnL: $26.81 (10.25%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 268.64001 | Size: 3.72 | SL: 274.01281 | TP: 257.89441
+
+⏰ [2010-04-30 00:00] Cycle 22
+  Price: 261.09001
+  💸 CLOSE | Price: 261.09001 | PnL: $-28.20 (-10.50%) | Reason: stop_loss
+  📈 OPEN SHORT | Price: 261.09001 | Size: 3.83 | SL: 266.31181 | TP: 250.64641
+
+⏰ [2010-05-03 00:00] Cycle 23
+  Price: 266.34999
+  💰 CLOSE | Price: 266.34999 | PnL: $20.04 (7.68%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 266.34999 | Size: 3.75 | SL: 271.67699 | TP: 255.69600
+
+⏰ [2010-05-04 00:00] Cycle 24
+  Price: 258.67999
+  💸 CLOSE | Price: 258.67999 | PnL: $-28.89 (-10.85%) | Reason: stop_loss
+  📈 OPEN SHORT | Price: 258.67999 | Size: 3.87 | SL: 263.85359 | TP: 248.33279
+
+⏰ [2010-05-05 00:00] Cycle 25
+  Price: 255.99000
+  💸 CLOSE | Price: 255.99000 | PnL: $-10.50 (-4.06%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 255.99000 | Size: 3.91 | SL: 261.10980 | TP: 245.75040
+
+⏰ [2010-05-06 00:00] Cycle 26
+  Price: 246.24999
+  💸 CLOSE | Price: 246.24999 | PnL: $-38.14 (-14.90%) | Reason: stop_loss
+  📈 OPEN SHORT | Price: 246.24999 | Size: 4.06 | SL: 251.17499 | TP: 236.39999
+
+⏰ [2010-05-07 00:00] Cycle 27
+  Price: 235.86000
+  💸 CLOSE | Price: 235.86000 | PnL: $-42.29 (-17.17%) | Reason: stop_loss
+  📈 OPEN SHORT | Price: 235.86000 | Size: 4.24 | SL: 240.57720 | TP: 226.42560
+
+⏰ [2010-05-10 00:00] Cycle 28
+  Price: 253.99000
+  💰 CLOSE | Price: 253.99000 | PnL: $76.76 (32.54%) | Reason: take_profit
+  📈 OPEN SHORT | Price: 253.99000 | Size: 3.94 | SL: 259.06981 | TP: 243.83040
+
+⏰ [2010-05-11 00:00] Cycle 29
+  Price: 256.52000
+  💰 CLOSE | Price: 256.52000 | PnL: $9.86 (3.88%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 256.52000 | Size: 3.90 | SL: 261.65040 | TP: 246.25920
+
+⏰ [2010-05-12 00:00] Cycle 30
+  Price: 262.09000
+  💰 CLOSE | Price: 262.09000 | PnL: $21.61 (8.42%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 262.09000 | Size: 3.82 | SL: 267.33180 | TP: 251.60640
+
+============================================================
+📊 PORTFOLIO SUMMARY
+============================================================
+Initial Capital:    $10,000.00
+Current Cash:       $10,112.38
+Total Equity:       $10,112.38
+Total PnL:          $115.38
+Total Return:       1.12%
+Active Positions:   1
+Total Trades:       29
+Win Rate:           58.6%
+Profit Factor:      1.57
+============================================================
+
+📈 ACTIVE POSITIONS:
+  POS_1: LONG | Entry: 262.09000 | Size: 3.82 | Time: 00:00
+
+📜 RECENT TRADES:
+  💸 AAPL | LONG | PnL: $-38.14 | Reason: stop_loss
+  💸 AAPL | LONG | PnL: $-42.29 | Reason: stop_loss
+  💰 AAPL | LONG | PnL: $76.76 | Reason: take_profit
+  💰 AAPL | LONG | PnL: $9.86 | Reason: time_exit
+  💰 AAPL | LONG | PnL: $21.61 | Reason: time_exit
+
+📁 Trade history saved to: paper_trading_trades_20260315_002041.csv
+📁 Equity curve saved to: paper_trading_equity_20260315_002041.csv
+
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1773552030.725311  175543 cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+I0000 00:00:1773552030.821713  175543 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1773552032.834476  175543 cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+E0000 00:00:1773552034.698956  175543 cuda_platform.cc:52] failed call to cuInit: INTERNAL: CUDA error: Failed call to cuInit: UNKNOWN ERROR (303)
+
+  📁 Trades moved to: outputs/trades/aapl_trades_20260315_002029.csv
+  📁 Equity moved to: outputs/equity/aapl_equity_20260315_002029.csv
+
+============================================================
+📥 Extracting F data...
+============================================================
+  ✅ Extracted data saved to: data/extracted_stocks/f_data.csv
+
+============================================================
+🎓 Training model for F...
+============================================================
+  ✅ Model saved to: artifacts/models/f_model.keras
+
+============================================================
+📈 Running paper trading for F...
+============================================================
+
+============================================================
+🚀 STARTING PAPER TRADING SESSION
+============================================================
+Symbol:           F
+Initial Capital:  $10,000.00
+Position Size:    10.0%
+Max Positions:    5
+Stop Loss:        2.0%
+Take Profit:      4.0%
+Duration:         30 minutes
+Interval:         1 seconds
+============================================================
+
+Loading model from artifacts/models/f_model.keras...
+Model loaded successfully.
+
+📡 Fetching market data...
+Received 1762 data points
+
+⏩ Running historical replay...
+
+
+⏰ [2010-03-31 00:00] Cycle 1
+  Price: 12.57000
+  📈 OPEN LONG | Price: 12.57000 | Size: 79.55 | SL: 12.31860 | TP: 13.07280
+
+⏰ [2010-04-01 00:00] Cycle 2
+  Price: 12.63000
+  💰 CLOSE | Price: 12.63000 | PnL: $4.67 (37.17%) | Reason: time_exit
+  📈 OPEN LONG | Price: 12.63000 | Size: 79.18 | SL: 12.37740 | TP: 13.13520
+
+⏰ [2010-04-05 00:00] Cycle 3
+  Price: 12.77000
+  💰 CLOSE | Price: 12.77000 | PnL: $10.98 (86.96%) | Reason: time_exit
+  📈 OPEN LONG | Price: 12.77000 | Size: 78.31 | SL: 12.51460 | TP: 13.28080
+
+⏰ [2010-04-06 00:00] Cycle 4
+  Price: 12.70000
+  💸 CLOSE | Price: 12.70000 | PnL: $-5.58 (-43.70%) | Reason: time_exit
+  📈 OPEN LONG | Price: 12.70000 | Size: 78.74 | SL: 12.44600 | TP: 13.20800
+
+⏰ [2010-04-07 00:00] Cycle 5
+  Price: 12.58000
+  💸 CLOSE | Price: 12.58000 | PnL: $-9.55 (-75.18%) | Reason: time_exit
+  📈 OPEN LONG | Price: 12.58000 | Size: 79.49 | SL: 12.32840 | TP: 13.08320
+
+⏰ [2010-04-08 00:00] Cycle 6
+  Price: 12.63000
+  💰 CLOSE | Price: 12.63000 | PnL: $3.87 (30.80%) | Reason: time_exit
+  📈 OPEN LONG | Price: 12.63000 | Size: 79.18 | SL: 12.37740 | TP: 13.13520
+
+⏰ [2010-04-09 00:00] Cycle 7
+  Price: 12.72000
+  💰 CLOSE | Price: 12.72000 | PnL: $7.03 (55.62%) | Reason: time_exit
+  📈 OPEN LONG | Price: 12.72000 | Size: 78.62 | SL: 12.46560 | TP: 13.22880
+
+⏰ [2010-04-12 00:00] Cycle 8
+  Price: 12.77000
+  💰 CLOSE | Price: 12.77000 | PnL: $3.83 (30.11%) | Reason: time_exit
+  📈 OPEN LONG | Price: 12.77000 | Size: 78.31 | SL: 12.51460 | TP: 13.28080
+
+⏰ [2010-04-13 00:00] Cycle 9
+  Price: 12.79000
+  💰 CLOSE | Price: 12.79000 | PnL: $1.47 (11.48%) | Reason: time_exit
+  📈 OPEN LONG | Price: 12.79000 | Size: 78.19 | SL: 12.53420 | TP: 13.30160
+
+⏰ [2010-04-14 00:00] Cycle 10
+  Price: 13.35000
+  💰 CLOSE | Price: 13.35000 | PnL: $43.68 (341.52%) | Reason: take_profit
+  📈 OPEN LONG | Price: 13.35000 | Size: 74.91 | SL: 13.08300 | TP: 13.88400
+
+⏰ [2010-04-15 00:00] Cycle 11
+  Price: 13.76000
+  💰 CLOSE | Price: 13.76000 | PnL: $30.61 (229.28%) | Reason: time_exit
+  📈 OPEN LONG | Price: 13.76000 | Size: 72.67 | SL: 13.48480 | TP: 14.31040
+
+⏰ [2010-04-16 00:00] Cycle 12
+  Price: 13.42000
+  💸 CLOSE | Price: 13.42000 | PnL: $-24.81 (-180.28%) | Reason: stop_loss
+  📈 OPEN LONG | Price: 13.42000 | Size: 74.52 | SL: 13.15160 | TP: 13.95680
+
+⏰ [2010-04-19 00:00] Cycle 13
+  Price: 13.60000
+  💰 CLOSE | Price: 13.60000 | PnL: $13.31 (99.19%) | Reason: time_exit
+  📈 OPEN LONG | Price: 13.60000 | Size: 73.53 | SL: 13.32800 | TP: 14.14400
+
+⏰ [2010-04-20 00:00] Cycle 14
+  Price: 13.91000
+  💰 CLOSE | Price: 13.91000 | PnL: $22.69 (166.85%) | Reason: time_exit
+  📈 OPEN LONG | Price: 13.91000 | Size: 71.89 | SL: 13.63180 | TP: 14.46640
+
+⏰ [2010-04-21 00:00] Cycle 15
+  Price: 14.13000
+  💰 CLOSE | Price: 14.13000 | PnL: $15.71 (112.97%) | Reason: time_exit
+  📈 OPEN LONG | Price: 14.13000 | Size: 70.77 | SL: 13.84740 | TP: 14.69520
+
+⏰ [2010-04-22 00:00] Cycle 16
+  Price: 14.20000
+  💰 CLOSE | Price: 14.20000 | PnL: $4.85 (34.35%) | Reason: time_exit
+  📈 OPEN LONG | Price: 14.20000 | Size: 70.42 | SL: 13.91600 | TP: 14.76800
+
+⏰ [2010-04-23 00:00] Cycle 17
+  Price: 14.21000
+  💰 CLOSE | Price: 14.21000 | PnL: $0.60 (4.25%) | Reason: time_exit
+  📈 OPEN LONG | Price: 14.21000 | Size: 70.37 | SL: 13.92580 | TP: 14.77840
+
+⏰ [2010-04-26 00:00] Cycle 18
+  Price: 14.46000
+  💰 CLOSE | Price: 14.46000 | PnL: $17.49 (123.09%) | Reason: time_exit
+  📈 OPEN LONG | Price: 14.46000 | Size: 69.16 | SL: 14.17080 | TP: 15.03840
+
+⏰ [2010-04-27 00:00] Cycle 19
+  Price: 13.57000
+  💸 CLOSE | Price: 13.57000 | PnL: $-61.64 (-426.30%) | Reason: stop_loss
+  📈 OPEN LONG | Price: 13.57000 | Size: 73.69 | SL: 13.29860 | TP: 14.11280
+
+⏰ [2010-04-28 00:00] Cycle 20
+  Price: 13.25000
+  💸 CLOSE | Price: 13.25000 | PnL: $-23.68 (-174.50%) | Reason: stop_loss
+  📈 OPEN LONG | Price: 13.25000 | Size: 75.47 | SL: 12.98500 | TP: 13.78000
+
+⏰ [2010-04-29 00:00] Cycle 21
+  Price: 13.58000
+  💰 CLOSE | Price: 13.58000 | PnL: $24.80 (187.19%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 13.58000 | Size: 73.64 | SL: 13.85160 | TP: 13.03680
+
+⏰ [2010-04-30 00:00] Cycle 22
+  Price: 13.02000
+  💸 CLOSE | Price: 13.02000 | PnL: $-41.33 (-304.37%) | Reason: stop_loss
+  📈 OPEN SHORT | Price: 13.02000 | Size: 76.80 | SL: 13.28040 | TP: 12.49920
+
+⏰ [2010-05-03 00:00] Cycle 23
+  Price: 13.30000
+  💰 CLOSE | Price: 13.30000 | PnL: $21.40 (164.39%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 13.30000 | Size: 75.19 | SL: 13.56600 | TP: 12.76800
+
+⏰ [2010-05-04 00:00] Cycle 24
+  Price: 12.85000
+  💸 CLOSE | Price: 12.85000 | PnL: $-33.93 (-255.12%) | Reason: stop_loss
+  📈 OPEN SHORT | Price: 12.85000 | Size: 77.82 | SL: 13.10700 | TP: 12.33600
+
+⏰ [2010-05-05 00:00] Cycle 25
+  Price: 12.34000
+  💸 CLOSE | Price: 12.34000 | PnL: $-39.78 (-309.61%) | Reason: stop_loss
+  📈 OPEN SHORT | Price: 12.34000 | Size: 81.04 | SL: 12.58680 | TP: 11.84640
+
+⏰ [2010-05-06 00:00] Cycle 26
+  Price: 11.78000
+  💸 CLOSE | Price: 11.78000 | PnL: $-45.48 (-368.53%) | Reason: stop_loss
+  📈 OPEN SHORT | Price: 11.78000 | Size: 84.89 | SL: 12.01560 | TP: 11.30880
+
+⏰ [2010-05-07 00:00] Cycle 27
+  Price: 11.51000
+  💸 CLOSE | Price: 11.51000 | PnL: $-23.02 (-195.40%) | Reason: stop_loss
+  📈 OPEN SHORT | Price: 11.51000 | Size: 86.88 | SL: 11.74020 | TP: 11.04960
+
+⏰ [2010-05-10 00:00] Cycle 28
+  Price: 12.15000
+  💰 CLOSE | Price: 12.15000 | PnL: $55.50 (482.17%) | Reason: take_profit
+  📈 OPEN SHORT | Price: 12.15000 | Size: 82.30 | SL: 12.39300 | TP: 11.66400
+
+⏰ [2010-05-11 00:00] Cycle 29
+  Price: 12.31000
+  💰 CLOSE | Price: 12.31000 | PnL: $13.07 (107.55%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 12.31000 | Size: 81.23 | SL: 12.55620 | TP: 11.81760
+
+⏰ [2010-05-12 00:00] Cycle 30
+  Price: 12.68000
+  💰 CLOSE | Price: 12.68000 | PnL: $29.95 (243.33%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 12.68000 | Size: 78.86 | SL: 12.93360 | TP: 12.17280
+
+============================================================
+📊 PORTFOLIO SUMMARY
+============================================================
+Initial Capital:    $10,000.00
+Current Cash:       $10,013.73
+Total Equity:       $10,013.73
+Total PnL:          $16.73
+Total Return:       0.14%
+Active Positions:   1
+Total Trades:       29
+Win Rate:           65.5%
+Profit Factor:      1.05
+============================================================
+
+📈 ACTIVE POSITIONS:
+  POS_1: LONG | Entry: 12.68000 | Size: 78.86 | Time: 00:00
+
+📜 RECENT TRADES:
+  💸 F | LONG | PnL: $-45.48 | Reason: stop_loss
+  💸 F | LONG | PnL: $-23.02 | Reason: stop_loss
+  💰 F | LONG | PnL: $55.50 | Reason: take_profit
+  💰 F | LONG | PnL: $13.07 | Reason: time_exit
+  💰 F | LONG | PnL: $29.95 | Reason: time_exit
+
+📁 Trade history saved to: paper_trading_trades_20260315_002116.csv
+📁 Equity curve saved to: paper_trading_equity_20260315_002116.csv
+
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1773552065.818393  177061 cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+I0000 00:00:1773552065.914906  177061 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1773552067.916243  177061 cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+E0000 00:00:1773552069.773609  177061 cuda_platform.cc:52] failed call to cuInit: INTERNAL: CUDA error: Failed call to cuInit: UNKNOWN ERROR (303)
+
+  📁 Trades moved to: outputs/trades/f_trades_20260315_002104.csv
+  📁 Equity moved to: outputs/equity/f_equity_20260315_002104.csv
+
+============================================================
+📥 Extracting GE data...
+============================================================
+  ✅ Extracted data saved to: data/extracted_stocks/ge_data.csv
+
+============================================================
+🎓 Training model for GE...
+============================================================
+  ✅ Model saved to: artifacts/models/ge_model.keras
+
+============================================================
+📈 Running paper trading for GE...
+============================================================
+
+============================================================
+🚀 STARTING PAPER TRADING SESSION
+============================================================
+Symbol:           GE
+Initial Capital:  $10,000.00
+Position Size:    10.0%
+Max Positions:    5
+Stop Loss:        2.0%
+Take Profit:      4.0%
+Duration:         30 minutes
+Interval:         1 seconds
+============================================================
+
+Loading model from artifacts/models/ge_model.keras...
+Model loaded successfully.
+
+📡 Fetching market data...
+Received 1762 data points
+
+⏩ Running historical replay...
+
+
+⏰ [2010-03-31 00:00] Cycle 1
+  Price: 18.20000
+  📈 OPEN LONG | Price: 18.20000 | Size: 54.95 | SL: 17.83600 | TP: 18.92800
+
+⏰ [2010-04-01 00:00] Cycle 2
+  Price: 18.33000
+  💰 CLOSE | Price: 18.33000 | PnL: $7.04 (38.69%) | Reason: time_exit
+  📈 OPEN LONG | Price: 18.33000 | Size: 54.56 | SL: 17.96340 | TP: 19.06320
+
+⏰ [2010-04-05 00:00] Cycle 3
+  Price: 18.53000
+  💰 CLOSE | Price: 18.53000 | PnL: $10.81 (58.97%) | Reason: time_exit
+  📈 OPEN LONG | Price: 18.53000 | Size: 53.97 | SL: 18.15940 | TP: 19.27120
+
+⏰ [2010-04-06 00:00] Cycle 4
+  Price: 18.60000
+  💰 CLOSE | Price: 18.60000 | PnL: $3.68 (19.84%) | Reason: time_exit
+  📈 OPEN LONG | Price: 18.60000 | Size: 53.76 | SL: 18.22800 | TP: 19.34400
+
+⏰ [2010-04-07 00:00] Cycle 5
+  Price: 18.50000
+  💸 CLOSE | Price: 18.50000 | PnL: $-5.48 (-29.44%) | Reason: time_exit
+  📈 OPEN LONG | Price: 18.50000 | Size: 54.05 | SL: 18.13000 | TP: 19.24000
+
+⏰ [2010-04-08 00:00] Cycle 6
+  Price: 18.56000
+  💰 CLOSE | Price: 18.56000 | PnL: $3.14 (16.99%) | Reason: time_exit
+  📈 OPEN LONG | Price: 18.56000 | Size: 53.88 | SL: 18.18880 | TP: 19.30240
+
+⏰ [2010-04-09 00:00] Cycle 7
+  Price: 18.52000
+  💸 CLOSE | Price: 18.52000 | PnL: $-2.25 (-12.15%) | Reason: time_exit
+  📈 OPEN LONG | Price: 18.52000 | Size: 54.00 | SL: 18.14960 | TP: 19.26080
+
+⏰ [2010-04-12 00:00] Cycle 8
+  Price: 18.71000
+  💰 CLOSE | Price: 18.71000 | PnL: $10.16 (54.85%) | Reason: time_exit
+  📈 OPEN LONG | Price: 18.71000 | Size: 53.45 | SL: 18.33580 | TP: 19.45840
+
+⏰ [2010-04-13 00:00] Cycle 9
+  Price: 18.95000
+  💰 CLOSE | Price: 18.95000 | PnL: $12.73 (68.02%) | Reason: time_exit
+  📈 OPEN LONG | Price: 18.95000 | Size: 52.77 | SL: 18.57100 | TP: 19.70800
+
+⏰ [2010-04-14 00:00] Cycle 10
+  Price: 19.35000
+  💰 CLOSE | Price: 19.35000 | PnL: $21.01 (110.85%) | Reason: time_exit
+  📈 OPEN LONG | Price: 19.35000 | Size: 51.68 | SL: 18.96300 | TP: 20.12400
+
+⏰ [2010-04-15 00:00] Cycle 11
+  Price: 19.50000
+  💰 CLOSE | Price: 19.50000 | PnL: $7.65 (39.54%) | Reason: time_exit
+  📈 OPEN LONG | Price: 19.50000 | Size: 51.28 | SL: 19.11000 | TP: 20.28000
+
+⏰ [2010-04-16 00:00] Cycle 12
+  Price: 18.97000
+  💸 CLOSE | Price: 18.97000 | PnL: $-27.28 (-139.88%) | Reason: stop_loss
+  📈 OPEN LONG | Price: 18.97000 | Size: 52.71 | SL: 18.59060 | TP: 19.72880
+
+⏰ [2010-04-19 00:00] Cycle 13
+  Price: 18.94000
+  💸 CLOSE | Price: 18.94000 | PnL: $-1.68 (-8.86%) | Reason: time_exit
+  📈 OPEN LONG | Price: 18.94000 | Size: 52.80 | SL: 18.56120 | TP: 19.69760
+
+⏰ [2010-04-20 00:00] Cycle 14
+  Price: 19.00000
+  💰 CLOSE | Price: 19.00000 | PnL: $3.07 (16.20%) | Reason: time_exit
+  📈 OPEN LONG | Price: 19.00000 | Size: 52.63 | SL: 18.62000 | TP: 19.76000
+
+⏰ [2010-04-21 00:00] Cycle 15
+  Price: 19.03000
+  💰 CLOSE | Price: 19.03000 | PnL: $1.48 (7.78%) | Reason: time_exit
+  📈 OPEN LONG | Price: 19.03000 | Size: 52.55 | SL: 18.64940 | TP: 19.79120
+
+⏰ [2010-04-22 00:00] Cycle 16
+  Price: 18.95000
+  💸 CLOSE | Price: 18.95000 | PnL: $-4.30 (-22.61%) | Reason: time_exit
+  📈 OPEN LONG | Price: 18.95000 | Size: 52.77 | SL: 18.57100 | TP: 19.70800
+
+⏰ [2010-04-23 00:00] Cycle 17
+  Price: 19.07000
+  💰 CLOSE | Price: 19.07000 | PnL: $6.23 (32.89%) | Reason: time_exit
+  📈 OPEN LONG | Price: 19.07000 | Size: 52.44 | SL: 18.68860 | TP: 19.83280
+
+⏰ [2010-04-26 00:00] Cycle 18
+  Price: 19.30000
+  💰 CLOSE | Price: 19.30000 | PnL: $11.96 (62.71%) | Reason: time_exit
+  📈 OPEN LONG | Price: 19.30000 | Size: 51.81 | SL: 18.91400 | TP: 20.07200
+
+⏰ [2010-04-27 00:00] Cycle 19
+  Price: 18.70000
+  💸 CLOSE | Price: 18.70000 | PnL: $-31.18 (-161.58%) | Reason: stop_loss
+  📈 OPEN LONG | Price: 18.70000 | Size: 53.48 | SL: 18.32600 | TP: 19.44800
+
+⏰ [2010-04-28 00:00] Cycle 20
+  Price: 18.95000
+  💰 CLOSE | Price: 18.95000 | PnL: $13.27 (70.95%) | Reason: time_exit
+  📈 OPEN LONG | Price: 18.95000 | Size: 52.77 | SL: 18.57100 | TP: 19.70800
+
+⏰ [2010-04-29 00:00] Cycle 21
+  Price: 19.49000
+  💰 CLOSE | Price: 19.49000 | PnL: $28.39 (149.83%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 19.49000 | Size: 51.31 | SL: 19.87980 | TP: 18.71040
+
+⏰ [2010-04-30 00:00] Cycle 22
+  Price: 18.86000
+  💸 CLOSE | Price: 18.86000 | PnL: $-32.42 (-166.35%) | Reason: stop_loss
+  📈 OPEN SHORT | Price: 18.86000 | Size: 53.02 | SL: 19.23720 | TP: 18.10560
+
+⏰ [2010-05-03 00:00] Cycle 23
+  Price: 19.26000
+  💰 CLOSE | Price: 19.26000 | PnL: $21.11 (111.91%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 19.26000 | Size: 51.92 | SL: 19.64520 | TP: 18.48960
+
+⏰ [2010-05-04 00:00] Cycle 24
+  Price: 18.58000
+  💸 CLOSE | Price: 18.58000 | PnL: $-35.40 (-183.82%) | Reason: stop_loss
+  📈 OPEN SHORT | Price: 18.58000 | Size: 53.82 | SL: 18.95160 | TP: 17.83680
+
+⏰ [2010-05-05 00:00] Cycle 25
+  Price: 18.10000
+  💸 CLOSE | Price: 18.10000 | PnL: $-25.93 (-139.57%) | Reason: stop_loss
+  📈 OPEN SHORT | Price: 18.10000 | Size: 55.25 | SL: 18.46200 | TP: 17.37600
+
+⏰ [2010-05-06 00:00] Cycle 26
+  Price: 17.31000
+  💸 CLOSE | Price: 17.31000 | PnL: $-43.74 (-241.67%) | Reason: stop_loss
+  📈 OPEN SHORT | Price: 17.31000 | Size: 57.77 | SL: 17.65620 | TP: 16.61760
+
+⏰ [2010-05-07 00:00] Cycle 27
+  Price: 16.88000
+  💸 CLOSE | Price: 16.88000 | PnL: $-24.94 (-144.07%) | Reason: stop_loss
+  📈 OPEN SHORT | Price: 16.88000 | Size: 59.24 | SL: 17.21760 | TP: 16.20480
+
+⏰ [2010-05-10 00:00] Cycle 28
+  Price: 18.04000
+  💰 CLOSE | Price: 18.04000 | PnL: $68.61 (406.48%) | Reason: take_profit
+  📈 OPEN SHORT | Price: 18.04000 | Size: 55.43 | SL: 18.40080 | TP: 17.31840
+
+⏰ [2010-05-11 00:00] Cycle 29
+  Price: 18.00000
+  💸 CLOSE | Price: 18.00000 | PnL: $-2.32 (-12.84%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 18.00000 | Size: 55.56 | SL: 18.36000 | TP: 17.28000
+
+⏰ [2010-05-12 00:00] Cycle 30
+  Price: 18.44000
+  💰 CLOSE | Price: 18.44000 | PnL: $24.34 (135.23%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 18.44000 | Size: 54.23 | SL: 18.80880 | TP: 17.70240
+
+============================================================
+📊 PORTFOLIO SUMMARY
+============================================================
+Initial Capital:    $10,000.00
+Current Cash:       $10,014.74
+Total Equity:       $10,014.74
+Total PnL:          $17.74
+Total Return:       0.15%
+Active Positions:   1
+Total Trades:       29
+Win Rate:           58.6%
+Profit Factor:      1.07
+============================================================
+
+📈 ACTIVE POSITIONS:
+  POS_1: LONG | Entry: 18.44000 | Size: 54.23 | Time: 00:00
+
+📜 RECENT TRADES:
+  💸 GE | LONG | PnL: $-43.74 | Reason: stop_loss
+  💸 GE | LONG | PnL: $-24.94 | Reason: stop_loss
+  💰 GE | LONG | PnL: $68.61 | Reason: take_profit
+  💸 GE | LONG | PnL: $-2.32 | Reason: time_exit
+  💰 GE | LONG | PnL: $24.34 | Reason: time_exit
+
+📁 Trade history saved to: paper_trading_trades_20260315_002151.csv
+📁 Equity curve saved to: paper_trading_equity_20260315_002151.csv
+
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1773552100.236952  178542 cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+I0000 00:00:1773552100.332290  178542 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1773552102.414149  178542 cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+E0000 00:00:1773552104.297245  178542 cuda_platform.cc:52] failed call to cuInit: INTERNAL: CUDA error: Failed call to cuInit: UNKNOWN ERROR (303)
+
+  📁 Trades moved to: outputs/trades/ge_trades_20260315_002139.csv
+  📁 Equity moved to: outputs/equity/ge_equity_20260315_002139.csv
+
+============================================================
+📥 Extracting MSFT data...
+============================================================
+  ✅ Extracted data saved to: data/extracted_stocks/msft_data.csv
+
+============================================================
+🎓 Training model for MSFT...
+============================================================
+  ✅ Model saved to: artifacts/models/msft_model.keras
+
+============================================================
+📈 Running paper trading for MSFT...
+============================================================
+
+============================================================
+🚀 STARTING PAPER TRADING SESSION
+============================================================
+Symbol:           MSFT
+Initial Capital:  $10,000.00
+Position Size:    10.0%
+Max Positions:    5
+Stop Loss:        2.0%
+Take Profit:      4.0%
+Duration:         30 minutes
+Interval:         1 seconds
+============================================================
+
+Loading model from artifacts/models/msft_model.keras...
+Model loaded successfully.
+
+📡 Fetching market data...
+Received 1762 data points
+
+⏩ Running historical replay...
+
+
+⏰ [2010-03-31 00:00] Cycle 1
+  Price: 29.29000
+  📈 OPEN LONG | Price: 29.29000 | Size: 34.14 | SL: 28.70420 | TP: 30.46160
+
+⏰ [2010-04-01 00:00] Cycle 2
+  Price: 29.16000
+  💸 CLOSE | Price: 29.16000 | PnL: $-4.54 (-15.49%) | Reason: time_exit
+  📈 OPEN LONG | Price: 29.16000 | Size: 34.29 | SL: 28.57680 | TP: 30.32640
+
+⏰ [2010-04-05 00:00] Cycle 3
+  Price: 29.27000
+  💰 CLOSE | Price: 29.27000 | PnL: $3.67 (12.59%) | Reason: time_exit
+  📈 OPEN LONG | Price: 29.27000 | Size: 34.16 | SL: 28.68460 | TP: 30.44080
+
+⏰ [2010-04-06 00:00] Cycle 4
+  Price: 29.32000
+  💰 CLOSE | Price: 29.32000 | PnL: $1.61 (5.49%) | Reason: time_exit
+  📈 OPEN LONG | Price: 29.32000 | Size: 34.11 | SL: 28.73360 | TP: 30.49280
+
+⏰ [2010-04-07 00:00] Cycle 5
+  Price: 29.35000
+  💰 CLOSE | Price: 29.35000 | PnL: $0.92 (3.15%) | Reason: time_exit
+  📈 OPEN LONG | Price: 29.35000 | Size: 34.07 | SL: 28.76300 | TP: 30.52400
+
+⏰ [2010-04-08 00:00] Cycle 6
+  Price: 29.92000
+  💰 CLOSE | Price: 29.92000 | PnL: $19.32 (65.82%) | Reason: time_exit
+  📈 OPEN LONG | Price: 29.92000 | Size: 33.42 | SL: 29.32160 | TP: 31.11680
+
+⏰ [2010-04-09 00:00] Cycle 7
+  Price: 30.34000
+  💰 CLOSE | Price: 30.34000 | PnL: $13.94 (46.58%) | Reason: time_exit
+  📈 OPEN LONG | Price: 30.34000 | Size: 32.96 | SL: 29.73320 | TP: 31.55360
+
+⏰ [2010-04-12 00:00] Cycle 8
+  Price: 30.32000
+  💸 CLOSE | Price: 30.32000 | PnL: $-0.76 (-2.50%) | Reason: time_exit
+  📈 OPEN LONG | Price: 30.32000 | Size: 32.98 | SL: 29.71360 | TP: 31.53280
+
+⏰ [2010-04-13 00:00] Cycle 9
+  Price: 30.45000
+  💰 CLOSE | Price: 30.45000 | PnL: $4.19 (13.81%) | Reason: time_exit
+  📈 OPEN LONG | Price: 30.45000 | Size: 32.84 | SL: 29.84100 | TP: 31.66800
+
+⏰ [2010-04-14 00:00] Cycle 10
+  Price: 30.82000
+  💰 CLOSE | Price: 30.82000 | PnL: $12.05 (39.57%) | Reason: time_exit
+  📈 OPEN LONG | Price: 30.82000 | Size: 32.45 | SL: 30.20360 | TP: 32.05280
+
+⏰ [2010-04-15 00:00] Cycle 11
+  Price: 30.87000
+  💰 CLOSE | Price: 30.87000 | PnL: $1.52 (4.94%) | Reason: time_exit
+  📈 OPEN LONG | Price: 30.87000 | Size: 32.39 | SL: 30.25260 | TP: 32.10480
+
+⏰ [2010-04-16 00:00] Cycle 12
+  Price: 30.67000
+  💸 CLOSE | Price: 30.67000 | PnL: $-6.58 (-21.31%) | Reason: time_exit
+  📈 OPEN LONG | Price: 30.67000 | Size: 32.61 | SL: 30.05660 | TP: 31.89680
+
+⏰ [2010-04-19 00:00] Cycle 13
+  Price: 31.04000
+  💰 CLOSE | Price: 31.04000 | PnL: $11.96 (39.00%) | Reason: time_exit
+  📈 OPEN LONG | Price: 31.04000 | Size: 32.22 | SL: 30.41920 | TP: 32.28160
+
+⏰ [2010-04-20 00:00] Cycle 14
+  Price: 31.36000
+  💰 CLOSE | Price: 31.36000 | PnL: $10.21 (32.89%) | Reason: time_exit
+  📈 OPEN LONG | Price: 31.36000 | Size: 31.89 | SL: 30.73280 | TP: 32.61440
+
+⏰ [2010-04-21 00:00] Cycle 15
+  Price: 31.33000
+  💸 CLOSE | Price: 31.33000 | PnL: $-1.06 (-3.37%) | Reason: time_exit
+  📈 OPEN LONG | Price: 31.33000 | Size: 31.92 | SL: 30.70340 | TP: 32.58320
+
+⏰ [2010-04-22 00:00] Cycle 16
+  Price: 31.39000
+  💰 CLOSE | Price: 31.39000 | PnL: $1.81 (5.79%) | Reason: time_exit
+  📈 OPEN LONG | Price: 31.39000 | Size: 31.86 | SL: 30.76220 | TP: 32.64560
+
+⏰ [2010-04-23 00:00] Cycle 17
+  Price: 30.96000
+  💸 CLOSE | Price: 30.96000 | PnL: $-13.80 (-43.95%) | Reason: time_exit
+  📈 OPEN LONG | Price: 30.96000 | Size: 32.30 | SL: 30.34080 | TP: 32.19840
+
+⏰ [2010-04-26 00:00] Cycle 18
+  Price: 31.11000
+  💰 CLOSE | Price: 31.11000 | PnL: $4.74 (15.32%) | Reason: time_exit
+  📈 OPEN LONG | Price: 31.11000 | Size: 32.14 | SL: 30.48780 | TP: 32.35440
+
+⏰ [2010-04-27 00:00] Cycle 19
+  Price: 30.85000
+  💸 CLOSE | Price: 30.85000 | PnL: $-8.46 (-27.18%) | Reason: time_exit
+  📈 OPEN LONG | Price: 30.85000 | Size: 32.41 | SL: 30.23300 | TP: 32.08400
+
+⏰ [2010-04-28 00:00] Cycle 20
+  Price: 30.91000
+  💰 CLOSE | Price: 30.91000 | PnL: $1.84 (5.98%) | Reason: time_exit
+  📈 OPEN LONG | Price: 30.91000 | Size: 32.35 | SL: 30.29180 | TP: 32.14640
+
+⏰ [2010-04-29 00:00] Cycle 21
+  Price: 31.00000
+  💰 CLOSE | Price: 31.00000 | PnL: $2.81 (9.10%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 31.00000 | Size: 32.26 | SL: 31.62000 | TP: 29.76000
+
+⏰ [2010-04-30 00:00] Cycle 22
+  Price: 30.54000
+  💸 CLOSE | Price: 30.54000 | PnL: $-14.94 (-48.18%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 30.54000 | Size: 32.74 | SL: 31.15080 | TP: 29.31840
+
+⏰ [2010-05-03 00:00] Cycle 23
+  Price: 30.86000
+  💰 CLOSE | Price: 30.86000 | PnL: $10.38 (33.98%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 30.86000 | Size: 32.40 | SL: 31.47720 | TP: 29.62560
+
+⏰ [2010-05-04 00:00] Cycle 24
+  Price: 30.13000
+  💸 CLOSE | Price: 30.13000 | PnL: $-23.75 (-76.97%) | Reason: stop_loss
+  📈 OPEN SHORT | Price: 30.13000 | Size: 33.19 | SL: 30.73260 | TP: 28.92480
+
+⏰ [2010-05-05 00:00] Cycle 25
+  Price: 29.85000
+  💸 CLOSE | Price: 29.85000 | PnL: $-9.39 (-31.17%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 29.85000 | Size: 33.50 | SL: 30.44700 | TP: 28.65600
+
+⏰ [2010-05-06 00:00] Cycle 26
+  Price: 28.98000
+  💸 CLOSE | Price: 28.98000 | PnL: $-29.24 (-97.97%) | Reason: stop_loss
+  📈 OPEN SHORT | Price: 28.98000 | Size: 34.51 | SL: 29.55960 | TP: 27.82080
+
+⏰ [2010-05-07 00:00] Cycle 27
+  Price: 28.21000
+  💸 CLOSE | Price: 28.21000 | PnL: $-26.67 (-92.02%) | Reason: stop_loss
+  📈 OPEN SHORT | Price: 28.21000 | Size: 35.45 | SL: 28.77420 | TP: 27.08160
+
+⏰ [2010-05-10 00:00] Cycle 28
+  Price: 28.94000
+  💰 CLOSE | Price: 28.94000 | PnL: $25.77 (91.37%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 28.94000 | Size: 34.55 | SL: 29.51880 | TP: 27.78240
+
+⏰ [2010-05-11 00:00] Cycle 29
+  Price: 28.88000
+  💸 CLOSE | Price: 28.88000 | PnL: $-2.17 (-7.51%) | Reason: time_exit
+  📈 OPEN LONG | Price: 28.88000 | Size: 34.63 | SL: 28.30240 | TP: 30.03520
+
+⏰ [2010-05-12 00:00] Cycle 30
+  Price: 29.44000
+  💰 CLOSE | Price: 29.44000 | PnL: $19.29 (66.79%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 29.44000 | Size: 33.97 | SL: 30.02880 | TP: 28.26240
+
+============================================================
+📊 PORTFOLIO SUMMARY
+============================================================
+Initial Capital:    $10,000.00
+Current Cash:       $10,001.69
+Total Equity:       $10,001.69
+Total PnL:          $4.69
+Total Return:       0.02%
+Active Positions:   1
+Total Trades:       29
+Win Rate:           58.6%
+Profit Factor:      1.03
+============================================================
+
+📈 ACTIVE POSITIONS:
+  POS_1: LONG | Entry: 29.44000 | Size: 33.97 | Time: 00:00
+
+📜 RECENT TRADES:
+  💸 MSFT | LONG | PnL: $-29.24 | Reason: stop_loss
+  💸 MSFT | LONG | PnL: $-26.67 | Reason: stop_loss
+  💰 MSFT | LONG | PnL: $25.77 | Reason: time_exit
+  💸 MSFT | LONG | PnL: $-2.17 | Reason: time_exit
+  💰 MSFT | LONG | PnL: $19.29 | Reason: time_exit
+
+📁 Trade history saved to: paper_trading_trades_20260315_002226.csv
+📁 Equity curve saved to: paper_trading_equity_20260315_002226.csv
+
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1773552135.251986  180064 cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+I0000 00:00:1773552135.348460  180064 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1773552137.375686  180064 cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+E0000 00:00:1773552139.247930  180064 cuda_platform.cc:52] failed call to cuInit: INTERNAL: CUDA error: Failed call to cuInit: UNKNOWN ERROR (303)
+
+  📁 Trades moved to: outputs/trades/msft_trades_20260315_002214.csv
+  📁 Equity moved to: outputs/equity/msft_equity_20260315_002214.csv
+
+============================================================
+📥 Extracting INTC data...
+============================================================
+  ✅ Extracted data saved to: data/extracted_stocks/intc_data.csv
+
+============================================================
+🎓 Training model for INTC...
+============================================================
+  ✅ Model saved to: artifacts/models/intc_model.keras
+
+============================================================
+📈 Running paper trading for INTC...
+============================================================
+
+============================================================
+🚀 STARTING PAPER TRADING SESSION
+============================================================
+Symbol:           INTC
+Initial Capital:  $10,000.00
+Position Size:    10.0%
+Max Positions:    5
+Stop Loss:        2.0%
+Take Profit:      4.0%
+Duration:         30 minutes
+Interval:         1 seconds
+============================================================
+
+Loading model from artifacts/models/intc_model.keras...
+Model loaded successfully.
+
+📡 Fetching market data...
+Received 1762 data points
+
+⏩ Running historical replay...
+
+
+⏰ [2010-03-31 00:00] Cycle 1
+  Price: 22.29000
+  📈 OPEN LONG | Price: 22.29000 | Size: 44.86 | SL: 21.84420 | TP: 23.18160
+
+⏰ [2010-04-01 00:00] Cycle 2
+  Price: 22.39000
+  💰 CLOSE | Price: 22.39000 | PnL: $4.39 (19.68%) | Reason: time_exit
+  📈 OPEN LONG | Price: 22.39000 | Size: 44.66 | SL: 21.94220 | TP: 23.28560
+
+⏰ [2010-04-05 00:00] Cycle 3
+  Price: 22.59000
+  💰 CLOSE | Price: 22.59000 | PnL: $8.83 (39.44%) | Reason: time_exit
+  📈 OPEN LONG | Price: 22.59000 | Size: 44.27 | SL: 22.13820 | TP: 23.49360
+
+⏰ [2010-04-06 00:00] Cycle 4
+  Price: 22.40000
+  💸 CLOSE | Price: 22.40000 | PnL: $-8.51 (-37.67%) | Reason: time_exit
+  📈 OPEN LONG | Price: 22.40000 | Size: 44.64 | SL: 21.95200 | TP: 23.29600
+
+⏰ [2010-04-07 00:00] Cycle 5
+  Price: 22.45000
+  💰 CLOSE | Price: 22.45000 | PnL: $2.13 (9.52%) | Reason: time_exit
+  📈 OPEN LONG | Price: 22.45000 | Size: 44.54 | SL: 22.00100 | TP: 23.34800
+
+⏰ [2010-04-08 00:00] Cycle 6
+  Price: 22.31000
+  💸 CLOSE | Price: 22.31000 | PnL: $-6.34 (-28.22%) | Reason: time_exit
+  📈 OPEN LONG | Price: 22.31000 | Size: 44.82 | SL: 21.86380 | TP: 23.20240
+
+⏰ [2010-04-09 00:00] Cycle 7
+  Price: 22.55000
+  💰 CLOSE | Price: 22.55000 | PnL: $10.66 (47.77%) | Reason: time_exit
+  📈 OPEN LONG | Price: 22.55000 | Size: 44.35 | SL: 22.09900 | TP: 23.45200
+
+⏰ [2010-04-12 00:00] Cycle 8
+  Price: 22.54000
+  💸 CLOSE | Price: 22.54000 | PnL: $-0.54 (-2.41%) | Reason: time_exit
+  📈 OPEN LONG | Price: 22.54000 | Size: 44.37 | SL: 22.08920 | TP: 23.44160
+
+⏰ [2010-04-13 00:00] Cycle 9
+  Price: 22.77000
+  💰 CLOSE | Price: 22.77000 | PnL: $10.10 (44.82%) | Reason: time_exit
+  📈 OPEN LONG | Price: 22.77000 | Size: 43.92 | SL: 22.31460 | TP: 23.68080
+
+⏰ [2010-04-14 00:00] Cycle 10
+  Price: 23.52000
+  💰 CLOSE | Price: 23.52000 | PnL: $32.83 (144.20%) | Reason: time_exit
+  📈 OPEN LONG | Price: 23.52000 | Size: 42.52 | SL: 23.04960 | TP: 24.46080
+
+⏰ [2010-04-15 00:00] Cycle 11
+  Price: 24.22000
+  💰 CLOSE | Price: 24.22000 | PnL: $29.66 (126.10%) | Reason: time_exit
+  📈 OPEN LONG | Price: 24.22000 | Size: 41.29 | SL: 23.73560 | TP: 25.18880
+
+⏰ [2010-04-16 00:00] Cycle 12
+  Price: 23.92000
+  💸 CLOSE | Price: 23.92000 | PnL: $-12.49 (-51.55%) | Reason: time_exit
+  📈 OPEN LONG | Price: 23.92000 | Size: 41.81 | SL: 23.44160 | TP: 24.87680
+
+⏰ [2010-04-19 00:00] Cycle 13
+  Price: 24.00000
+  💰 CLOSE | Price: 24.00000 | PnL: $3.24 (13.56%) | Reason: time_exit
+  📈 OPEN LONG | Price: 24.00000 | Size: 41.67 | SL: 23.52000 | TP: 24.96000
+
+⏰ [2010-04-20 00:00] Cycle 14
+  Price: 24.12000
+  💰 CLOSE | Price: 24.12000 | PnL: $4.90 (20.41%) | Reason: time_exit
+  📈 OPEN LONG | Price: 24.12000 | Size: 41.46 | SL: 23.63760 | TP: 25.08480
+
+⏰ [2010-04-21 00:00] Cycle 15
+  Price: 23.80000
+  💸 CLOSE | Price: 23.80000 | PnL: $-13.37 (-55.41%) | Reason: time_exit
+  📈 OPEN LONG | Price: 23.80000 | Size: 42.02 | SL: 23.32400 | TP: 24.75200
+
+⏰ [2010-04-22 00:00] Cycle 16
+  Price: 23.99000
+  💰 CLOSE | Price: 23.99000 | PnL: $7.88 (33.12%) | Reason: time_exit
+  📈 OPEN LONG | Price: 23.99000 | Size: 41.68 | SL: 23.51020 | TP: 24.94960
+
+⏰ [2010-04-23 00:00] Cycle 17
+  Price: 24.04000
+  💰 CLOSE | Price: 24.04000 | PnL: $1.98 (8.27%) | Reason: time_exit
+  📈 OPEN LONG | Price: 24.04000 | Size: 41.60 | SL: 23.55920 | TP: 25.00160
+
+⏰ [2010-04-26 00:00] Cycle 18
+  Price: 23.82000
+  💸 CLOSE | Price: 23.82000 | PnL: $-9.25 (-38.48%) | Reason: time_exit
+  📈 OPEN LONG | Price: 23.82000 | Size: 41.98 | SL: 23.34360 | TP: 24.77280
+
+⏰ [2010-04-27 00:00] Cycle 19
+  Price: 23.35000
+  💸 CLOSE | Price: 23.35000 | PnL: $-19.83 (-83.25%) | Reason: time_exit
+  📈 OPEN LONG | Price: 23.35000 | Size: 42.83 | SL: 22.88300 | TP: 24.28400
+
+⏰ [2010-04-28 00:00] Cycle 20
+  Price: 23.26000
+  💸 CLOSE | Price: 23.26000 | PnL: $-3.95 (-16.93%) | Reason: time_exit
+  📈 OPEN LONG | Price: 23.26000 | Size: 42.99 | SL: 22.79480 | TP: 24.19040
+
+⏰ [2010-04-29 00:00] Cycle 21
+  Price: 23.49000
+  💰 CLOSE | Price: 23.49000 | PnL: $9.79 (42.08%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 23.49000 | Size: 42.57 | SL: 23.95980 | TP: 22.55040
+
+⏰ [2010-04-30 00:00] Cycle 22
+  Price: 22.84000
+  💸 CLOSE | Price: 22.84000 | PnL: $-27.77 (-118.21%) | Reason: stop_loss
+  📈 OPEN SHORT | Price: 22.84000 | Size: 43.78 | SL: 23.29680 | TP: 21.92640
+
+⏰ [2010-05-03 00:00] Cycle 23
+  Price: 23.26000
+  💰 CLOSE | Price: 23.26000 | PnL: $18.29 (80.07%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 23.26000 | Size: 42.99 | SL: 23.72520 | TP: 22.32960
+
+⏰ [2010-05-04 00:00] Cycle 24
+  Price: 22.56000
+  💸 CLOSE | Price: 22.56000 | PnL: $-30.19 (-129.80%) | Reason: stop_loss
+  📈 OPEN SHORT | Price: 22.56000 | Size: 44.33 | SL: 23.01120 | TP: 21.65760
+
+⏰ [2010-05-05 00:00] Cycle 25
+  Price: 22.17000
+  💸 CLOSE | Price: 22.17000 | PnL: $-17.39 (-77.06%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 22.17000 | Size: 45.11 | SL: 22.61340 | TP: 21.28320
+
+⏰ [2010-05-06 00:00] Cycle 26
+  Price: 21.51000
+  💸 CLOSE | Price: 21.51000 | PnL: $-29.87 (-134.72%) | Reason: stop_loss
+  📈 OPEN SHORT | Price: 21.51000 | Size: 46.49 | SL: 21.94020 | TP: 20.64960
+
+⏰ [2010-05-07 00:00] Cycle 27
+  Price: 21.31000
+  💸 CLOSE | Price: 21.31000 | PnL: $-9.40 (-43.69%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 21.31000 | Size: 46.93 | SL: 21.73620 | TP: 20.45760
+
+⏰ [2010-05-10 00:00] Cycle 28
+  Price: 22.55000
+  💰 CLOSE | Price: 22.55000 | PnL: $58.08 (272.56%) | Reason: take_profit
+  📈 OPEN SHORT | Price: 22.55000 | Size: 44.35 | SL: 23.00100 | TP: 21.64800
+
+⏰ [2010-05-11 00:00] Cycle 29
+  Price: 22.28000
+  💸 CLOSE | Price: 22.28000 | PnL: $-12.07 (-53.53%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 22.28000 | Size: 44.88 | SL: 22.72560 | TP: 21.38880
+
+⏰ [2010-05-12 00:00] Cycle 30
+  Price: 23.09000
+  💰 CLOSE | Price: 23.09000 | PnL: $36.25 (162.71%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 23.09000 | Size: 43.31 | SL: 23.55180 | TP: 22.16640
+
+============================================================
+📊 PORTFOLIO SUMMARY
+============================================================
+Initial Capital:    $10,000.00
+Current Cash:       $10,035.07
+Total Equity:       $10,035.07
+Total PnL:          $38.07
+Total Return:       0.35%
+Active Positions:   1
+Total Trades:       29
+Win Rate:           51.7%
+Profit Factor:      1.19
+============================================================
+
+📈 ACTIVE POSITIONS:
+  POS_1: LONG | Entry: 23.09000 | Size: 43.31 | Time: 00:00
+
+📜 RECENT TRADES:
+  💸 INTC | LONG | PnL: $-29.87 | Reason: stop_loss
+  💸 INTC | LONG | PnL: $-9.40 | Reason: time_exit
+  💰 INTC | LONG | PnL: $58.08 | Reason: take_profit
+  💸 INTC | LONG | PnL: $-12.07 | Reason: time_exit
+  💰 INTC | LONG | PnL: $36.25 | Reason: time_exit
+
+📁 Trade history saved to: paper_trading_trades_20260315_002300.csv
+📁 Equity curve saved to: paper_trading_equity_20260315_002300.csv
+
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1773552169.841820  181546 cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+I0000 00:00:1773552169.937147  181546 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1773552171.940624  181546 cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+E0000 00:00:1773552173.826322  181546 cuda_platform.cc:52] failed call to cuInit: INTERNAL: CUDA error: Failed call to cuInit: UNKNOWN ERROR (303)
+
+  📁 Trades moved to: outputs/trades/intc_trades_20260315_002249.csv
+  📁 Equity moved to: outputs/equity/intc_equity_20260315_002249.csv
+
+============================================================
+📥 Extracting CSCO data...
+============================================================
+  ✅ Extracted data saved to: data/extracted_stocks/csco_data.csv
+
+============================================================
+🎓 Training model for CSCO...
+============================================================
+  ✅ Model saved to: artifacts/models/csco_model.keras
+
+============================================================
+📈 Running paper trading for CSCO...
+============================================================
+
+============================================================
+🚀 STARTING PAPER TRADING SESSION
+============================================================
+Symbol:           CSCO
+Initial Capital:  $10,000.00
+Position Size:    10.0%
+Max Positions:    5
+Stop Loss:        2.0%
+Take Profit:      4.0%
+Duration:         30 minutes
+Interval:         1 seconds
+============================================================
+
+Loading model from artifacts/models/csco_model.keras...
+Model loaded successfully.
+
+📡 Fetching market data...
+Received 1762 data points
+
+⏩ Running historical replay...
+
+
+⏰ [2010-03-31 00:00] Cycle 1
+  Price: 26.03000
+  📈 OPEN LONG | Price: 26.03000 | Size: 38.42 | SL: 25.50940 | TP: 27.07120
+
+⏰ [2010-04-01 00:00] Cycle 2
+  Price: 25.83000
+  💸 CLOSE | Price: 25.83000 | PnL: $-7.78 (-29.90%) | Reason: time_exit
+  📈 OPEN LONG | Price: 25.83000 | Size: 38.71 | SL: 25.31340 | TP: 26.86320
+
+⏰ [2010-04-05 00:00] Cycle 3
+  Price: 26.17000
+  💰 CLOSE | Price: 26.17000 | PnL: $13.06 (50.57%) | Reason: time_exit
+  📈 OPEN LONG | Price: 26.17000 | Size: 38.21 | SL: 25.64660 | TP: 27.21680
+
+⏰ [2010-04-06 00:00] Cycle 4
+  Price: 26.22000
+  💰 CLOSE | Price: 26.22000 | PnL: $1.81 (6.92%) | Reason: time_exit
+  📈 OPEN LONG | Price: 26.22000 | Size: 38.14 | SL: 25.69560 | TP: 27.26880
+
+⏰ [2010-04-07 00:00] Cycle 5
+  Price: 26.34000
+  💰 CLOSE | Price: 26.34000 | PnL: $4.48 (17.07%) | Reason: time_exit
+  📈 OPEN LONG | Price: 26.34000 | Size: 37.97 | SL: 25.81320 | TP: 27.39360
+
+⏰ [2010-04-08 00:00] Cycle 6
+  Price: 26.28000
+  💸 CLOSE | Price: 26.28000 | PnL: $-2.38 (-9.03%) | Reason: time_exit
+  📈 OPEN LONG | Price: 26.28000 | Size: 38.05 | SL: 25.75440 | TP: 27.33120
+
+⏰ [2010-04-09 00:00] Cycle 7
+  Price: 26.60000
+  💰 CLOSE | Price: 26.60000 | PnL: $12.08 (45.95%) | Reason: time_exit
+  📈 OPEN LONG | Price: 26.60000 | Size: 37.59 | SL: 26.06800 | TP: 27.66400
+
+⏰ [2010-04-12 00:00] Cycle 8
+  Price: 26.53000
+  💸 CLOSE | Price: 26.53000 | PnL: $-2.73 (-10.27%) | Reason: time_exit
+  📈 OPEN LONG | Price: 26.53000 | Size: 37.69 | SL: 25.99940 | TP: 27.59120
+
+⏰ [2010-04-13 00:00] Cycle 9
+  Price: 26.44000
+  💸 CLOSE | Price: 26.44000 | PnL: $-3.49 (-13.16%) | Reason: time_exit
+  📈 OPEN LONG | Price: 26.44000 | Size: 37.82 | SL: 25.91120 | TP: 27.49760
+
+⏰ [2010-04-14 00:00] Cycle 10
+  Price: 26.88000
+  💰 CLOSE | Price: 26.88000 | PnL: $16.54 (62.56%) | Reason: time_exit
+  📈 OPEN LONG | Price: 26.88000 | Size: 37.20 | SL: 26.34240 | TP: 27.95520
+
+⏰ [2010-04-15 00:00] Cycle 11
+  Price: 27.21000
+  💰 CLOSE | Price: 27.21000 | PnL: $12.18 (45.30%) | Reason: time_exit
+  📈 OPEN LONG | Price: 27.21000 | Size: 36.75 | SL: 26.66580 | TP: 28.29840
+
+⏰ [2010-04-16 00:00] Cycle 12
+  Price: 26.98000
+  💸 CLOSE | Price: 26.98000 | PnL: $-8.55 (-31.43%) | Reason: time_exit
+  📈 OPEN LONG | Price: 26.98000 | Size: 37.06 | SL: 26.44040 | TP: 28.05920
+
+⏰ [2010-04-19 00:00] Cycle 13
+  Price: 27.07000
+  💰 CLOSE | Price: 27.07000 | PnL: $3.24 (11.99%) | Reason: time_exit
+  📈 OPEN LONG | Price: 27.07000 | Size: 36.94 | SL: 26.52860 | TP: 28.15280
+
+⏰ [2010-04-20 00:00] Cycle 14
+  Price: 27.18000
+  💰 CLOSE | Price: 27.18000 | PnL: $3.96 (14.64%) | Reason: time_exit
+  📈 OPEN LONG | Price: 27.18000 | Size: 36.79 | SL: 26.63640 | TP: 28.26720
+
+⏰ [2010-04-21 00:00] Cycle 15
+  Price: 27.24000
+  💰 CLOSE | Price: 27.24000 | PnL: $2.11 (7.75%) | Reason: time_exit
+  📈 OPEN LONG | Price: 27.24000 | Size: 36.71 | SL: 26.69520 | TP: 28.32960
+
+⏰ [2010-04-22 00:00] Cycle 16
+  Price: 27.32000
+  💰 CLOSE | Price: 27.32000 | PnL: $2.84 (10.41%) | Reason: time_exit
+  📈 OPEN LONG | Price: 27.32000 | Size: 36.60 | SL: 26.77360 | TP: 28.41280
+
+⏰ [2010-04-23 00:00] Cycle 17
+  Price: 27.47000
+  💰 CLOSE | Price: 27.47000 | PnL: $5.39 (19.73%) | Reason: time_exit
+  📈 OPEN LONG | Price: 27.47000 | Size: 36.40 | SL: 26.92060 | TP: 28.56880
+
+⏰ [2010-04-26 00:00] Cycle 18
+  Price: 27.57000
+  💰 CLOSE | Price: 27.57000 | PnL: $3.54 (12.89%) | Reason: time_exit
+  📈 OPEN LONG | Price: 27.57000 | Size: 36.27 | SL: 27.01860 | TP: 28.67280
+
+⏰ [2010-04-27 00:00] Cycle 19
+  Price: 27.01000
+  💸 CLOSE | Price: 27.01000 | PnL: $-20.41 (-74.03%) | Reason: stop_loss
+  📈 OPEN LONG | Price: 27.01000 | Size: 37.02 | SL: 26.46980 | TP: 28.09040
+
+⏰ [2010-04-28 00:00] Cycle 20
+  Price: 27.04000
+  💰 CLOSE | Price: 27.04000 | PnL: $1.01 (3.74%) | Reason: time_exit
+  📈 OPEN LONG | Price: 27.04000 | Size: 36.98 | SL: 26.49920 | TP: 28.12160
+
+⏰ [2010-04-29 00:00] Cycle 21
+  Price: 27.53000
+  💰 CLOSE | Price: 27.53000 | PnL: $18.02 (66.64%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 27.53000 | Size: 36.32 | SL: 28.08060 | TP: 26.42880
+
+⏰ [2010-04-30 00:00] Cycle 22
+  Price: 26.93000
+  💸 CLOSE | Price: 26.93000 | PnL: $-21.89 (-79.52%) | Reason: stop_loss
+  📈 OPEN SHORT | Price: 26.93000 | Size: 37.13 | SL: 27.46860 | TP: 25.85280
+
+⏰ [2010-05-03 00:00] Cycle 23
+  Price: 27.54000
+  💰 CLOSE | Price: 27.54000 | PnL: $22.55 (83.73%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 27.54000 | Size: 36.31 | SL: 28.09080 | TP: 26.43840
+
+⏰ [2010-05-04 00:00] Cycle 24
+  Price: 26.56000
+  💸 CLOSE | Price: 26.56000 | PnL: $-35.68 (-129.56%) | Reason: stop_loss
+  📈 OPEN SHORT | Price: 26.56000 | Size: 37.65 | SL: 27.09120 | TP: 25.49760
+
+⏰ [2010-05-05 00:00] Cycle 25
+  Price: 26.55000
+  💸 CLOSE | Price: 26.55000 | PnL: $-0.48 (-1.79%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 26.55000 | Size: 37.66 | SL: 27.08100 | TP: 25.48800
+
+⏰ [2010-05-06 00:00] Cycle 26
+  Price: 25.49000
+  💸 CLOSE | Price: 25.49000 | PnL: $-40.02 (-150.74%) | Reason: stop_loss
+  📈 OPEN SHORT | Price: 25.49000 | Size: 39.23 | SL: 25.99980 | TP: 24.47040
+
+⏰ [2010-05-07 00:00] Cycle 27
+  Price: 24.71000
+  💸 CLOSE | Price: 24.71000 | PnL: $-30.70 (-120.43%) | Reason: stop_loss
+  📈 OPEN SHORT | Price: 24.71000 | Size: 40.47 | SL: 25.20420 | TP: 23.72160
+
+⏰ [2010-05-10 00:00] Cycle 28
+  Price: 26.13000
+  💰 CLOSE | Price: 26.13000 | PnL: $57.36 (232.14%) | Reason: take_profit
+  📈 OPEN SHORT | Price: 26.13000 | Size: 38.27 | SL: 26.65260 | TP: 25.08480
+
+⏰ [2010-05-11 00:00] Cycle 29
+  Price: 25.96000
+  💸 CLOSE | Price: 25.96000 | PnL: $-6.61 (-25.28%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 25.96000 | Size: 38.52 | SL: 26.47920 | TP: 24.92160
+
+⏰ [2010-05-12 00:00] Cycle 30
+  Price: 26.74000
+  💰 CLOSE | Price: 26.74000 | PnL: $29.94 (115.34%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 26.74000 | Size: 37.40 | SL: 27.27480 | TP: 25.67040
+
+============================================================
+📊 PORTFOLIO SUMMARY
+============================================================
+Initial Capital:    $10,000.00
+Current Cash:       $10,026.38
+Total Equity:       $10,026.38
+Total PnL:          $29.38
+Total Return:       0.26%
+Active Positions:   1
+Total Trades:       29
+Win Rate:           58.6%
+Profit Factor:      1.16
+============================================================
+
+📈 ACTIVE POSITIONS:
+  POS_1: LONG | Entry: 26.74000 | Size: 37.40 | Time: 00:00
+
+📜 RECENT TRADES:
+  💸 CSCO | LONG | PnL: $-40.02 | Reason: stop_loss
+  💸 CSCO | LONG | PnL: $-30.70 | Reason: stop_loss
+  💰 CSCO | LONG | PnL: $57.36 | Reason: take_profit
+  💸 CSCO | LONG | PnL: $-6.61 | Reason: time_exit
+  💰 CSCO | LONG | PnL: $29.94 | Reason: time_exit
+
+📁 Trade history saved to: paper_trading_trades_20260315_002335.csv
+📁 Equity curve saved to: paper_trading_equity_20260315_002335.csv
+
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1773552204.891423  183083 cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+I0000 00:00:1773552204.987013  183083 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1773552206.981494  183083 cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+E0000 00:00:1773552208.840163  183083 cuda_platform.cc:52] failed call to cuInit: INTERNAL: CUDA error: Failed call to cuInit: UNKNOWN ERROR (303)
+
+  📁 Trades moved to: outputs/trades/csco_trades_20260315_002324.csv
+  📁 Equity moved to: outputs/equity/csco_equity_20260315_002324.csv
+
+============================================================
+📥 Extracting FB data...
+============================================================
+  ✅ Extracted data saved to: data/extracted_stocks/fb_data.csv
+
+============================================================
+🎓 Training model for FB...
+============================================================
+  ✅ Model saved to: artifacts/models/fb_model.keras
+
+============================================================
+📈 Running paper trading for FB...
+============================================================
+
+============================================================
+🚀 STARTING PAPER TRADING SESSION
+============================================================
+Symbol:           FB
+Initial Capital:  $10,000.00
+Position Size:    10.0%
+Max Positions:    5
+Stop Loss:        2.0%
+Take Profit:      4.0%
+Duration:         30 minutes
+Interval:         1 seconds
+============================================================
+
+Loading model from artifacts/models/fb_model.keras...
+Model loaded successfully.
+
+📡 Fetching market data...
+Received 1008 data points
+
+⏩ Running historical replay...
+
+
+⏰ [2013-04-01 00:00] Cycle 1
+  Price: 25.53000
+  📈 OPEN LONG | Price: 25.53000 | Size: 39.17 | SL: 25.01940 | TP: 26.55120
+
+⏰ [2013-04-02 00:00] Cycle 2
+  Price: 25.42000
+  💸 CLOSE | Price: 25.42000 | PnL: $-4.41 (-17.27%) | Reason: time_exit
+  📈 OPEN LONG | Price: 25.42000 | Size: 39.34 | SL: 24.91160 | TP: 26.43680
+
+⏰ [2013-04-03 00:00] Cycle 3
+  Price: 26.25000
+  💰 CLOSE | Price: 26.25000 | PnL: $32.55 (128.04%) | Reason: time_exit
+  📈 OPEN LONG | Price: 26.25000 | Size: 38.10 | SL: 25.72500 | TP: 27.30000
+
+⏰ [2013-04-04 00:00] Cycle 4
+  Price: 27.07000
+  💰 CLOSE | Price: 27.07000 | PnL: $31.13 (118.61%) | Reason: time_exit
+  📈 OPEN LONG | Price: 27.07000 | Size: 36.94 | SL: 26.52860 | TP: 28.15280
+
+⏰ [2013-04-05 00:00] Cycle 5
+  Price: 27.39000
+  💰 CLOSE | Price: 27.39000 | PnL: $11.72 (43.30%) | Reason: time_exit
+  📈 OPEN LONG | Price: 27.39000 | Size: 36.51 | SL: 26.84220 | TP: 28.48560
+
+⏰ [2013-04-08 00:00] Cycle 6
+  Price: 26.85000
+  💸 CLOSE | Price: 26.85000 | PnL: $-19.81 (-72.34%) | Reason: time_exit
+  📈 OPEN LONG | Price: 26.85000 | Size: 37.24 | SL: 26.31300 | TP: 27.92400
+
+⏰ [2013-04-09 00:00] Cycle 7
+  Price: 26.59000
+  💸 CLOSE | Price: 26.59000 | PnL: $-9.78 (-36.43%) | Reason: time_exit
+  📈 OPEN LONG | Price: 26.59000 | Size: 37.61 | SL: 26.05820 | TP: 27.65360
+
+⏰ [2013-04-10 00:00] Cycle 8
+  Price: 27.57000
+  💰 CLOSE | Price: 27.57000 | PnL: $36.75 (138.22%) | Reason: time_exit
+  📈 OPEN LONG | Price: 27.57000 | Size: 36.27 | SL: 27.01860 | TP: 28.67280
+
+⏰ [2013-04-11 00:00] Cycle 9
+  Price: 28.02000
+  💰 CLOSE | Price: 28.02000 | PnL: $16.22 (58.83%) | Reason: time_exit
+  📈 OPEN LONG | Price: 28.02000 | Size: 35.69 | SL: 27.45960 | TP: 29.14080
+
+⏰ [2013-04-12 00:00] Cycle 10
+  Price: 27.40000
+  💸 CLOSE | Price: 27.40000 | PnL: $-22.22 (-79.32%) | Reason: stop_loss
+  📈 OPEN LONG | Price: 27.40000 | Size: 36.50 | SL: 26.85200 | TP: 28.49600
+
+⏰ [2013-04-15 00:00] Cycle 11
+  Price: 26.52000
+  💸 CLOSE | Price: 26.52000 | PnL: $-32.21 (-117.57%) | Reason: stop_loss
+  📈 OPEN LONG | Price: 26.52000 | Size: 37.71 | SL: 25.98960 | TP: 27.58080
+
+⏰ [2013-04-16 00:00] Cycle 12
+  Price: 26.92000
+  💰 CLOSE | Price: 26.92000 | PnL: $14.98 (56.49%) | Reason: time_exit
+  📈 OPEN LONG | Price: 26.92000 | Size: 37.15 | SL: 26.38160 | TP: 27.99680
+
+⏰ [2013-04-17 00:00] Cycle 13
+  Price: 26.63000
+  💸 CLOSE | Price: 26.63000 | PnL: $-10.87 (-40.38%) | Reason: time_exit
+  📈 OPEN LONG | Price: 26.63000 | Size: 37.55 | SL: 26.09740 | TP: 27.69520
+
+⏰ [2013-04-18 00:00] Cycle 14
+  Price: 25.69000
+  💸 CLOSE | Price: 25.69000 | PnL: $-35.39 (-132.91%) | Reason: stop_loss
+  📈 OPEN LONG | Price: 25.69000 | Size: 38.93 | SL: 25.17620 | TP: 26.71760
+
+⏰ [2013-04-19 00:00] Cycle 15
+  Price: 25.73000
+  💰 CLOSE | Price: 25.73000 | PnL: $1.46 (5.67%) | Reason: time_exit
+  📈 OPEN LONG | Price: 25.73000 | Size: 38.87 | SL: 25.21540 | TP: 26.75920
+
+⏰ [2013-04-22 00:00] Cycle 16
+  Price: 25.97000
+  💰 CLOSE | Price: 25.97000 | PnL: $9.23 (35.86%) | Reason: time_exit
+  📈 OPEN LONG | Price: 25.97000 | Size: 38.51 | SL: 25.45060 | TP: 27.00880
+
+⏰ [2013-04-23 00:00] Cycle 17
+  Price: 25.98000
+  💰 CLOSE | Price: 25.98000 | PnL: $0.29 (1.10%) | Reason: time_exit
+  📈 OPEN LONG | Price: 25.98000 | Size: 38.49 | SL: 25.46040 | TP: 27.01920
+
+⏰ [2013-04-24 00:00] Cycle 18
+  Price: 26.11000
+  💰 CLOSE | Price: 26.11000 | PnL: $4.90 (18.87%) | Reason: time_exit
+  📈 OPEN LONG | Price: 26.11000 | Size: 38.30 | SL: 25.58780 | TP: 27.15440
+
+⏰ [2013-04-25 00:00] Cycle 19
+  Price: 26.14000
+  💰 CLOSE | Price: 26.14000 | PnL: $1.05 (4.02%) | Reason: time_exit
+  📈 OPEN LONG | Price: 26.14000 | Size: 38.26 | SL: 25.61720 | TP: 27.18560
+
+⏰ [2013-04-26 00:00] Cycle 20
+  Price: 26.85000
+  💰 CLOSE | Price: 26.85000 | PnL: $27.06 (103.51%) | Reason: time_exit
+  📈 OPEN LONG | Price: 26.85000 | Size: 37.24 | SL: 26.31300 | TP: 27.92400
+
+⏰ [2013-04-29 00:00] Cycle 21
+  Price: 26.98000
+  💰 CLOSE | Price: 26.98000 | PnL: $4.74 (17.66%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 26.98000 | Size: 37.06 | SL: 27.51960 | TP: 25.90080
+
+⏰ [2013-04-30 00:00] Cycle 22
+  Price: 27.77000
+  💰 CLOSE | Price: 27.77000 | PnL: $29.18 (108.15%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 27.77000 | Size: 36.01 | SL: 28.32540 | TP: 26.65920
+
+⏰ [2013-05-01 00:00] Cycle 23
+  Price: 27.43000
+  💸 CLOSE | Price: 27.43000 | PnL: $-12.34 (-44.44%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 27.43000 | Size: 36.46 | SL: 27.97860 | TP: 26.33280
+
+⏰ [2013-05-02 00:00] Cycle 24
+  Price: 28.97000
+  💰 CLOSE | Price: 28.97000 | PnL: $56.04 (204.29%) | Reason: take_profit
+  📈 OPEN SHORT | Price: 28.97000 | Size: 34.52 | SL: 29.54940 | TP: 27.81120
+
+⏰ [2013-05-03 00:00] Cycle 25
+  Price: 28.31000
+  💸 CLOSE | Price: 28.31000 | PnL: $-22.88 (-78.98%) | Reason: stop_loss
+  📈 OPEN SHORT | Price: 28.31000 | Size: 35.32 | SL: 28.87620 | TP: 27.17760
+
+⏰ [2013-05-06 00:00] Cycle 26
+  Price: 27.57000
+  💸 CLOSE | Price: 27.57000 | PnL: $-26.24 (-92.68%) | Reason: stop_loss
+  📈 OPEN SHORT | Price: 27.57000 | Size: 36.27 | SL: 28.12140 | TP: 26.46720
+
+⏰ [2013-05-07 00:00] Cycle 27
+  Price: 26.89000
+  💸 CLOSE | Price: 26.89000 | PnL: $-24.76 (-89.82%) | Reason: stop_loss
+  📈 OPEN SHORT | Price: 26.89000 | Size: 37.19 | SL: 27.42780 | TP: 25.81440
+
+⏰ [2013-05-08 00:00] Cycle 28
+  Price: 27.12000
+  💰 CLOSE | Price: 27.12000 | PnL: $8.45 (31.43%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 27.12000 | Size: 36.87 | SL: 27.66240 | TP: 26.03520
+
+⏰ [2013-05-09 00:00] Cycle 29
+  Price: 27.04000
+  💸 CLOSE | Price: 27.04000 | PnL: $-3.05 (-11.24%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 27.04000 | Size: 36.98 | SL: 27.58080 | TP: 25.95840
+
+⏰ [2013-05-10 00:00] Cycle 30
+  Price: 26.68000
+  💸 CLOSE | Price: 26.68000 | PnL: $-13.41 (-49.60%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 26.68000 | Size: 37.48 | SL: 27.21360 | TP: 25.61280
+
+============================================================
+📊 PORTFOLIO SUMMARY
+============================================================
+Initial Capital:    $10,000.00
+Current Cash:       $10,045.35
+Total Equity:       $10,045.35
+Total PnL:          $48.35
+Total Return:       0.45%
+Active Positions:   1
+Total Trades:       29
+Win Rate:           55.2%
+Profit Factor:      1.20
+============================================================
+
+📈 ACTIVE POSITIONS:
+  POS_1: LONG | Entry: 26.68000 | Size: 37.48 | Time: 00:00
+
+📜 RECENT TRADES:
+  💸 FB | LONG | PnL: $-26.24 | Reason: stop_loss
+  💸 FB | LONG | PnL: $-24.76 | Reason: stop_loss
+  💰 FB | LONG | PnL: $8.45 | Reason: time_exit
+  💸 FB | LONG | PnL: $-3.05 | Reason: time_exit
+  💸 FB | LONG | PnL: $-13.41 | Reason: time_exit
+
+📁 Trade history saved to: paper_trading_trades_20260315_002409.csv
+📁 Equity curve saved to: paper_trading_equity_20260315_002409.csv
+
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1773552238.908372  184699 cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+I0000 00:00:1773552239.004837  184699 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1773552241.024800  184699 cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+E0000 00:00:1773552242.902753  184699 cuda_platform.cc:52] failed call to cuInit: INTERNAL: CUDA error: Failed call to cuInit: UNKNOWN ERROR (303)
+
+  📁 Trades moved to: outputs/trades/fb_trades_20260315_002358.csv
+  📁 Equity moved to: outputs/equity/fb_equity_20260315_002358.csv
+
+============================================================
+📥 Extracting PFE data...
+============================================================
+  ✅ Extracted data saved to: data/extracted_stocks/pfe_data.csv
+
+============================================================
+🎓 Training model for PFE...
+============================================================
+  ✅ Model saved to: artifacts/models/pfe_model.keras
+
+============================================================
+📈 Running paper trading for PFE...
+============================================================
+
+============================================================
+🚀 STARTING PAPER TRADING SESSION
+============================================================
+Symbol:           PFE
+Initial Capital:  $10,000.00
+Position Size:    10.0%
+Max Positions:    5
+Stop Loss:        2.0%
+Take Profit:      4.0%
+Duration:         30 minutes
+Interval:         1 seconds
+============================================================
+
+Loading model from artifacts/models/pfe_model.keras...
+Model loaded successfully.
+
+📡 Fetching market data...
+Received 1762 data points
+
+⏩ Running historical replay...
+
+
+⏰ [2010-03-31 00:00] Cycle 1
+  Price: 17.15000
+  📈 OPEN LONG | Price: 17.15000 | Size: 58.31 | SL: 16.80700 | TP: 17.83600
+
+⏰ [2010-04-01 00:00] Cycle 2
+  Price: 17.08000
+  💸 CLOSE | Price: 17.08000 | PnL: $-4.18 (-24.38%) | Reason: time_exit
+  📈 OPEN LONG | Price: 17.08000 | Size: 58.55 | SL: 16.73840 | TP: 17.76320
+
+⏰ [2010-04-05 00:00] Cycle 3
+  Price: 16.90000
+  💸 CLOSE | Price: 16.90000 | PnL: $-10.64 (-62.28%) | Reason: time_exit
+  📈 OPEN LONG | Price: 16.90000 | Size: 59.17 | SL: 16.56200 | TP: 17.57600
+
+⏰ [2010-04-06 00:00] Cycle 4
+  Price: 16.96000
+  💰 CLOSE | Price: 16.96000 | PnL: $3.45 (20.41%) | Reason: time_exit
+  📈 OPEN LONG | Price: 16.96000 | Size: 58.96 | SL: 16.62080 | TP: 17.63840
+
+⏰ [2010-04-07 00:00] Cycle 5
+  Price: 17.07000
+  💰 CLOSE | Price: 17.07000 | PnL: $6.39 (37.65%) | Reason: time_exit
+  📈 OPEN LONG | Price: 17.07000 | Size: 58.58 | SL: 16.72860 | TP: 17.75280
+
+⏰ [2010-04-08 00:00] Cycle 6
+  Price: 17.14000
+  💰 CLOSE | Price: 17.14000 | PnL: $4.00 (23.43%) | Reason: time_exit
+  📈 OPEN LONG | Price: 17.14000 | Size: 58.34 | SL: 16.79720 | TP: 17.82560
+
+⏰ [2010-04-09 00:00] Cycle 7
+  Price: 17.25000
+  💰 CLOSE | Price: 17.25000 | PnL: $6.32 (36.86%) | Reason: time_exit
+  📈 OPEN LONG | Price: 17.25000 | Size: 57.97 | SL: 16.90500 | TP: 17.94000
+
+⏰ [2010-04-12 00:00] Cycle 8
+  Price: 17.29000
+  💰 CLOSE | Price: 17.29000 | PnL: $2.22 (12.86%) | Reason: time_exit
+  📈 OPEN LONG | Price: 17.29000 | Size: 57.84 | SL: 16.94420 | TP: 17.98160
+
+⏰ [2010-04-13 00:00] Cycle 9
+  Price: 17.18000
+  💸 CLOSE | Price: 17.18000 | PnL: $-6.46 (-37.37%) | Reason: time_exit
+  📈 OPEN LONG | Price: 17.18000 | Size: 58.21 | SL: 16.83640 | TP: 17.86720
+
+⏰ [2010-04-14 00:00] Cycle 10
+  Price: 17.07000
+  💸 CLOSE | Price: 17.07000 | PnL: $-6.50 (-37.85%) | Reason: time_exit
+  📈 OPEN LONG | Price: 17.07000 | Size: 58.58 | SL: 16.72860 | TP: 17.75280
+
+⏰ [2010-04-15 00:00] Cycle 11
+  Price: 16.99000
+  💸 CLOSE | Price: 16.99000 | PnL: $-4.79 (-28.04%) | Reason: time_exit
+  📈 OPEN LONG | Price: 16.99000 | Size: 58.86 | SL: 16.65020 | TP: 17.66960
+
+⏰ [2010-04-16 00:00] Cycle 12
+  Price: 16.80000
+  💸 CLOSE | Price: 16.80000 | PnL: $-11.28 (-66.40%) | Reason: time_exit
+  📈 OPEN LONG | Price: 16.80000 | Size: 59.52 | SL: 16.46400 | TP: 17.47200
+
+⏰ [2010-04-19 00:00] Cycle 13
+  Price: 16.79000
+  💸 CLOSE | Price: 16.79000 | PnL: $-0.70 (-4.14%) | Reason: time_exit
+  📈 OPEN LONG | Price: 16.79000 | Size: 59.56 | SL: 16.45420 | TP: 17.46160
+
+⏰ [2010-04-20 00:00] Cycle 14
+  Price: 16.76000
+  💸 CLOSE | Price: 16.76000 | PnL: $-1.89 (-11.24%) | Reason: time_exit
+  📈 OPEN LONG | Price: 16.76000 | Size: 59.67 | SL: 16.42480 | TP: 17.43040
+
+⏰ [2010-04-21 00:00] Cycle 15
+  Price: 16.60000
+  💸 CLOSE | Price: 16.60000 | PnL: $-9.65 (-57.55%) | Reason: time_exit
+  📈 OPEN LONG | Price: 16.60000 | Size: 60.24 | SL: 16.26800 | TP: 17.26400
+
+⏰ [2010-04-22 00:00] Cycle 16
+  Price: 16.48000
+  💸 CLOSE | Price: 16.48000 | PnL: $-7.33 (-44.15%) | Reason: time_exit
+  📈 OPEN LONG | Price: 16.48000 | Size: 60.68 | SL: 16.15040 | TP: 17.13920
+
+⏰ [2010-04-23 00:00] Cycle 17
+  Price: 16.91000
+  💰 CLOSE | Price: 16.91000 | PnL: $25.99 (157.70%) | Reason: time_exit
+  📈 OPEN LONG | Price: 16.91000 | Size: 59.14 | SL: 16.57180 | TP: 17.58640
+
+⏰ [2010-04-26 00:00] Cycle 18
+  Price: 16.82000
+  💸 CLOSE | Price: 16.82000 | PnL: $-5.42 (-32.06%) | Reason: time_exit
+  📈 OPEN LONG | Price: 16.82000 | Size: 59.45 | SL: 16.48360 | TP: 17.49280
+
+⏰ [2010-04-27 00:00] Cycle 19
+  Price: 16.46000
+  💸 CLOSE | Price: 16.46000 | PnL: $-21.50 (-127.83%) | Reason: stop_loss
+  📈 OPEN LONG | Price: 16.46000 | Size: 60.75 | SL: 16.13080 | TP: 17.11840
+
+⏰ [2010-04-28 00:00] Cycle 20
+  Price: 16.53000
+  💰 CLOSE | Price: 16.53000 | PnL: $4.15 (25.23%) | Reason: time_exit
+  📈 OPEN LONG | Price: 16.53000 | Size: 60.50 | SL: 16.19940 | TP: 17.19120
+
+⏰ [2010-04-29 00:00] Cycle 21
+  Price: 16.86000
+  💰 CLOSE | Price: 16.86000 | PnL: $19.86 (120.16%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 16.86000 | Size: 59.31 | SL: 17.19720 | TP: 16.18560
+
+⏰ [2010-04-30 00:00] Cycle 22
+  Price: 16.72000
+  💸 CLOSE | Price: 16.72000 | PnL: $-8.40 (-49.84%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 16.72000 | Size: 59.81 | SL: 17.05440 | TP: 16.05120
+
+⏰ [2010-05-03 00:00] Cycle 23
+  Price: 16.91000
+  💰 CLOSE | Price: 16.91000 | PnL: $11.26 (67.36%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 16.91000 | Size: 59.14 | SL: 17.24820 | TP: 16.23360
+
+⏰ [2010-05-04 00:00] Cycle 24
+  Price: 17.26000
+  💰 CLOSE | Price: 17.26000 | PnL: $20.60 (121.80%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 17.26000 | Size: 57.94 | SL: 17.60520 | TP: 16.56960
+
+⏰ [2010-05-05 00:00] Cycle 25
+  Price: 17.18000
+  💸 CLOSE | Price: 17.18000 | PnL: $-4.73 (-27.43%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 17.18000 | Size: 58.21 | SL: 17.52360 | TP: 16.49280
+
+⏰ [2010-05-06 00:00] Cycle 26
+  Price: 16.74000
+  💸 CLOSE | Price: 16.74000 | PnL: $-25.71 (-149.64%) | Reason: stop_loss
+  📈 OPEN SHORT | Price: 16.74000 | Size: 59.74 | SL: 17.07480 | TP: 16.07040
+
+⏰ [2010-05-07 00:00] Cycle 27
+  Price: 16.46000
+  💸 CLOSE | Price: 16.46000 | PnL: $-16.82 (-100.51%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 16.46000 | Size: 60.75 | SL: 16.78920 | TP: 15.80160
+
+⏰ [2010-05-10 00:00] Cycle 28
+  Price: 17.00000
+  💰 CLOSE | Price: 17.00000 | PnL: $32.70 (198.69%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 17.00000 | Size: 58.82 | SL: 17.34000 | TP: 16.32000
+
+⏰ [2010-05-11 00:00] Cycle 29
+  Price: 17.01000
+  💰 CLOSE | Price: 17.01000 | PnL: $0.49 (2.87%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 17.01000 | Size: 58.79 | SL: 17.35020 | TP: 16.32960
+
+⏰ [2010-05-12 00:00] Cycle 30
+  Price: 16.90000
+  💸 CLOSE | Price: 16.90000 | PnL: $-6.57 (-38.60%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 16.90000 | Size: 59.17 | SL: 17.23800 | TP: 16.22400
+
+============================================================
+📊 PORTFOLIO SUMMARY
+============================================================
+Initial Capital:    $10,000.00
+Current Cash:       $9,981.86
+Total Equity:       $9,981.86
+Total PnL:          $-15.14
+Total Return:       -0.18%
+Active Positions:   1
+Total Trades:       29
+Win Rate:           41.4%
+Profit Factor:      0.90
+============================================================
+
+📈 ACTIVE POSITIONS:
+  POS_1: LONG | Entry: 16.90000 | Size: 59.17 | Time: 00:00
+
+📜 RECENT TRADES:
+  💸 PFE | LONG | PnL: $-25.71 | Reason: stop_loss
+  💸 PFE | LONG | PnL: $-16.82 | Reason: time_exit
+  💰 PFE | LONG | PnL: $32.70 | Reason: time_exit
+  💰 PFE | LONG | PnL: $0.49 | Reason: time_exit
+  💸 PFE | LONG | PnL: $-6.57 | Reason: time_exit
+
+📁 Trade history saved to: paper_trading_trades_20260315_002445.csv
+📁 Equity curve saved to: paper_trading_equity_20260315_002445.csv
+
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1773552274.084111  186438 cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+I0000 00:00:1773552274.180674  186438 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1773552276.199263  186438 cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+E0000 00:00:1773552278.066958  186438 cuda_platform.cc:52] failed call to cuInit: INTERNAL: CUDA error: Failed call to cuInit: UNKNOWN ERROR (303)
+
+  📁 Trades moved to: outputs/trades/pfe_trades_20260315_002433.csv
+  📁 Equity moved to: outputs/equity/pfe_equity_20260315_002433.csv
+
+============================================================
+📥 Extracting HPQ data...
+============================================================
+  ✅ Extracted data saved to: data/extracted_stocks/hpq_data.csv
+
+============================================================
+🎓 Training model for HPQ...
+============================================================
+  ✅ Model saved to: artifacts/models/hpq_model.keras
+
+============================================================
+📈 Running paper trading for HPQ...
+============================================================
+
+============================================================
+🚀 STARTING PAPER TRADING SESSION
+============================================================
+Symbol:           HPQ
+Initial Capital:  $10,000.00
+Position Size:    10.0%
+Max Positions:    5
+Stop Loss:        2.0%
+Take Profit:      4.0%
+Duration:         30 minutes
+Interval:         1 seconds
+============================================================
+
+Loading model from artifacts/models/hpq_model.keras...
+Model loaded successfully.
+
+📡 Fetching market data...
+Received 1762 data points
+
+⏩ Running historical replay...
+
+
+⏰ [2010-03-31 00:00] Cycle 1
+  Price: 53.15000
+  📈 OPEN LONG | Price: 53.15000 | Size: 18.81 | SL: 52.08700 | TP: 55.27600
+
+⏰ [2010-04-01 00:00] Cycle 2
+  Price: 53.24000
+  💰 CLOSE | Price: 53.24000 | PnL: $1.59 (3.00%) | Reason: time_exit
+  📈 OPEN LONG | Price: 53.24000 | Size: 18.78 | SL: 52.17520 | TP: 55.36960
+
+⏰ [2010-04-05 00:00] Cycle 3
+  Price: 53.87000
+  💰 CLOSE | Price: 53.87000 | PnL: $11.73 (22.04%) | Reason: time_exit
+  📈 OPEN LONG | Price: 53.87000 | Size: 18.56 | SL: 52.79260 | TP: 56.02480
+
+⏰ [2010-04-06 00:00] Cycle 4
+  Price: 53.86000
+  💸 CLOSE | Price: 53.86000 | PnL: $-0.29 (-0.53%) | Reason: time_exit
+  📈 OPEN LONG | Price: 53.86000 | Size: 18.57 | SL: 52.78280 | TP: 56.01440
+
+⏰ [2010-04-07 00:00] Cycle 5
+  Price: 53.29000
+  💸 CLOSE | Price: 53.29000 | PnL: $-10.68 (-19.83%) | Reason: time_exit
+  📈 OPEN LONG | Price: 53.29000 | Size: 18.77 | SL: 52.22420 | TP: 55.42160
+
+⏰ [2010-04-08 00:00] Cycle 6
+  Price: 53.63000
+  💰 CLOSE | Price: 53.63000 | PnL: $6.28 (11.78%) | Reason: time_exit
+  📈 OPEN LONG | Price: 53.63000 | Size: 18.65 | SL: 52.55740 | TP: 55.77520
+
+⏰ [2010-04-09 00:00] Cycle 7
+  Price: 53.87000
+  💰 CLOSE | Price: 53.87000 | PnL: $4.37 (8.16%) | Reason: time_exit
+  📈 OPEN LONG | Price: 53.87000 | Size: 18.56 | SL: 52.79260 | TP: 56.02480
+
+⏰ [2010-04-12 00:00] Cycle 8
+  Price: 53.88000
+  💰 CLOSE | Price: 53.88000 | PnL: $0.09 (0.16%) | Reason: time_exit
+  📈 OPEN LONG | Price: 53.88000 | Size: 18.56 | SL: 52.80240 | TP: 56.03520
+
+⏰ [2010-04-13 00:00] Cycle 9
+  Price: 53.78000
+  💸 CLOSE | Price: 53.78000 | PnL: $-1.96 (-3.63%) | Reason: time_exit
+  📈 OPEN LONG | Price: 53.78000 | Size: 18.59 | SL: 52.70440 | TP: 55.93120
+
+⏰ [2010-04-14 00:00] Cycle 10
+  Price: 54.52000
+  💰 CLOSE | Price: 54.52000 | PnL: $13.66 (25.40%) | Reason: time_exit
+  📈 OPEN LONG | Price: 54.52000 | Size: 18.34 | SL: 53.42960 | TP: 56.70080
+
+⏰ [2010-04-15 00:00] Cycle 11
+  Price: 54.23000
+  💸 CLOSE | Price: 54.23000 | PnL: $-5.42 (-9.94%) | Reason: time_exit
+  📈 OPEN LONG | Price: 54.23000 | Size: 18.44 | SL: 53.14540 | TP: 56.39920
+
+⏰ [2010-04-16 00:00] Cycle 12
+  Price: 53.75000
+  💸 CLOSE | Price: 53.75000 | PnL: $-8.95 (-16.50%) | Reason: time_exit
+  📈 OPEN LONG | Price: 53.75000 | Size: 18.60 | SL: 52.67500 | TP: 55.90000
+
+⏰ [2010-04-19 00:00] Cycle 13
+  Price: 53.64000
+  💸 CLOSE | Price: 53.64000 | PnL: $-2.15 (-3.99%) | Reason: time_exit
+  📈 OPEN LONG | Price: 53.64000 | Size: 18.64 | SL: 52.56720 | TP: 55.78560
+
+⏰ [2010-04-20 00:00] Cycle 14
+  Price: 53.56000
+  💸 CLOSE | Price: 53.56000 | PnL: $-1.59 (-2.97%) | Reason: time_exit
+  📈 OPEN LONG | Price: 53.56000 | Size: 18.67 | SL: 52.48880 | TP: 55.70240
+
+⏰ [2010-04-21 00:00] Cycle 15
+  Price: 53.70000
+  💰 CLOSE | Price: 53.70000 | PnL: $2.51 (4.69%) | Reason: time_exit
+  📈 OPEN LONG | Price: 53.70000 | Size: 18.62 | SL: 52.62600 | TP: 55.84800
+
+⏰ [2010-04-22 00:00] Cycle 16
+  Price: 53.31000
+  💸 CLOSE | Price: 53.31000 | PnL: $-7.36 (-13.71%) | Reason: time_exit
+  📈 OPEN LONG | Price: 53.31000 | Size: 18.76 | SL: 52.24380 | TP: 55.44240
+
+⏰ [2010-04-23 00:00] Cycle 17
+  Price: 53.90000
+  💰 CLOSE | Price: 53.90000 | PnL: $10.97 (20.57%) | Reason: time_exit
+  📈 OPEN LONG | Price: 53.90000 | Size: 18.55 | SL: 52.82200 | TP: 56.05600
+
+⏰ [2010-04-26 00:00] Cycle 18
+  Price: 54.26000
+  💰 CLOSE | Price: 54.26000 | PnL: $6.58 (12.20%) | Reason: time_exit
+  📈 OPEN LONG | Price: 54.26000 | Size: 18.43 | SL: 53.17480 | TP: 56.43040
+
+⏰ [2010-04-27 00:00] Cycle 19
+  Price: 53.25000
+  💸 CLOSE | Price: 53.25000 | PnL: $-18.71 (-34.49%) | Reason: time_exit
+  📈 OPEN LONG | Price: 53.25000 | Size: 18.78 | SL: 52.18500 | TP: 55.38000
+
+⏰ [2010-04-28 00:00] Cycle 20
+  Price: 53.28000
+  💰 CLOSE | Price: 53.28000 | PnL: $0.46 (0.87%) | Reason: time_exit
+  📈 OPEN LONG | Price: 53.28000 | Size: 18.77 | SL: 52.21440 | TP: 55.41120
+
+⏰ [2010-04-29 00:00] Cycle 21
+  Price: 52.88000
+  💸 CLOSE | Price: 52.88000 | PnL: $-7.61 (-14.28%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 52.88000 | Size: 18.91 | SL: 53.93760 | TP: 50.76480
+
+⏰ [2010-04-30 00:00] Cycle 22
+  Price: 51.97000
+  💸 CLOSE | Price: 51.97000 | PnL: $-17.31 (-32.73%) | Reason: time_exit
+  📈 OPEN LONG | Price: 51.97000 | Size: 19.24 | SL: 50.93060 | TP: 54.04880
+
+⏰ [2010-05-03 00:00] Cycle 23
+  Price: 52.71000
+  💰 CLOSE | Price: 52.71000 | PnL: $14.14 (27.20%) | Reason: time_exit
+  📈 OPEN LONG | Price: 52.71000 | Size: 18.97 | SL: 51.65580 | TP: 54.81840
+
+⏰ [2010-05-04 00:00] Cycle 24
+  Price: 50.64000
+  💸 CLOSE | Price: 50.64000 | PnL: $-39.37 (-74.69%) | Reason: stop_loss
+  📈 OPEN LONG | Price: 50.64000 | Size: 19.75 | SL: 49.62720 | TP: 52.66560
+
+⏰ [2010-05-05 00:00] Cycle 25
+  Price: 50.93000
+  💰 CLOSE | Price: 50.93000 | PnL: $5.63 (11.11%) | Reason: time_exit
+  📈 OPEN LONG | Price: 50.93000 | Size: 19.63 | SL: 49.91140 | TP: 52.96720
+
+⏰ [2010-05-06 00:00] Cycle 26
+  Price: 48.33000
+  💸 CLOSE | Price: 48.33000 | PnL: $-51.15 (-100.42%) | Reason: stop_loss
+
+⏰ [2010-05-07 00:00] Cycle 27
+  Price: 46.73000
+  📈 OPEN SHORT | Price: 46.73000 | Size: 21.40 | SL: 47.66460 | TP: 44.86080
+
+⏰ [2010-05-10 00:00] Cycle 28
+  Price: 49.10000
+  💰 CLOSE | Price: 49.10000 | PnL: $50.61 (108.31%) | Reason: take_profit
+  📈 OPEN LONG | Price: 49.10000 | Size: 20.37 | SL: 48.11800 | TP: 51.06400
+
+⏰ [2010-05-11 00:00] Cycle 29
+  Price: 48.42000
+  💸 CLOSE | Price: 48.42000 | PnL: $-13.95 (-28.41%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 48.42000 | Size: 20.65 | SL: 49.38840 | TP: 46.48320
+
+⏰ [2010-05-12 00:00] Cycle 30
+  Price: 49.56000
+  💰 CLOSE | Price: 49.56000 | PnL: $23.44 (48.41%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 49.56000 | Size: 20.18 | SL: 50.55120 | TP: 47.57760
+
+============================================================
+📊 PORTFOLIO SUMMARY
+============================================================
+Initial Capital:    $10,000.00
+Current Cash:       $9,962.68
+Total Equity:       $9,962.68
+Total PnL:          $-34.42
+Total Return:       -0.37%
+Active Positions:   1
+Total Trades:       28
+Win Rate:           50.0%
+Profit Factor:      0.82
+============================================================
+
+📈 ACTIVE POSITIONS:
+  POS_1: LONG | Entry: 49.56000 | Size: 20.18 | Time: 00:00
+
+📜 RECENT TRADES:
+  💰 HPQ | LONG | PnL: $5.63 | Reason: time_exit
+  💸 HPQ | LONG | PnL: $-51.15 | Reason: stop_loss
+  💰 HPQ | LONG | PnL: $50.61 | Reason: take_profit
+  💸 HPQ | LONG | PnL: $-13.95 | Reason: time_exit
+  💰 HPQ | LONG | PnL: $23.44 | Reason: time_exit
+
+📁 Trade history saved to: paper_trading_trades_20260315_002519.csv
+📁 Equity curve saved to: paper_trading_equity_20260315_002519.csv
+
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1773552308.501310  187934 cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+I0000 00:00:1773552308.597734  187934 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1773552310.611216  187934 cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+E0000 00:00:1773552312.484955  187934 cuda_platform.cc:52] failed call to cuInit: INTERNAL: CUDA error: Failed call to cuInit: UNKNOWN ERROR (303)
+
+  📁 Trades moved to: outputs/trades/hpq_trades_20260315_002507.csv
+  📁 Equity moved to: outputs/equity/hpq_equity_20260315_002507.csv
+
+============================================================
+📥 Extracting C data...
+============================================================
+  ✅ Extracted data saved to: data/extracted_stocks/c_data.csv
+
+============================================================
+🎓 Training model for C...
+============================================================
+  ✅ Model saved to: artifacts/models/c_model.keras
+
+============================================================
+📈 Running paper trading for C...
+============================================================
+
+============================================================
+🚀 STARTING PAPER TRADING SESSION
+============================================================
+Symbol:           C
+Initial Capital:  $10,000.00
+Position Size:    10.0%
+Max Positions:    5
+Stop Loss:        2.0%
+Take Profit:      4.0%
+Duration:         30 minutes
+Interval:         1 seconds
+============================================================
+
+Loading model from artifacts/models/c_model.keras...
+Model loaded successfully.
+
+📡 Fetching market data...
+Received 1762 data points
+
+⏩ Running historical replay...
+
+
+⏰ [2010-03-31 00:00] Cycle 1
+  Price: 4.05000
+  📈 OPEN LONG | Price: 4.05000 | Size: 246.91 | SL: 3.96900 | TP: 4.21200
+
+⏰ [2010-04-01 00:00] Cycle 2
+  Price: 4.18000
+  💰 CLOSE | Price: 4.18000 | PnL: $32.00 (790.01%) | Reason: time_exit
+  📈 OPEN LONG | Price: 4.18000 | Size: 239.23 | SL: 4.09640 | TP: 4.34720
+
+⏰ [2010-04-05 00:00] Cycle 3
+  Price: 4.26000
+  💰 CLOSE | Price: 4.26000 | PnL: $19.04 (455.43%) | Reason: time_exit
+  📈 OPEN LONG | Price: 4.26000 | Size: 234.74 | SL: 4.17480 | TP: 4.43040
+
+⏰ [2010-04-06 00:00] Cycle 4
+  Price: 4.29000
+  💰 CLOSE | Price: 4.29000 | PnL: $6.94 (162.95%) | Reason: time_exit
+  📈 OPEN LONG | Price: 4.29000 | Size: 233.10 | SL: 4.20420 | TP: 4.46160
+
+⏰ [2010-04-07 00:00] Cycle 5
+  Price: 4.36000
+  💰 CLOSE | Price: 4.36000 | PnL: $16.22 (377.98%) | Reason: time_exit
+  📈 OPEN LONG | Price: 4.36000 | Size: 229.36 | SL: 4.27280 | TP: 4.53440
+
+⏰ [2010-04-08 00:00] Cycle 6
+  Price: 4.47000
+  💰 CLOSE | Price: 4.47000 | PnL: $25.13 (576.30%) | Reason: time_exit
+  📈 OPEN LONG | Price: 4.47000 | Size: 223.71 | SL: 4.38060 | TP: 4.64880
+
+⏰ [2010-04-09 00:00] Cycle 7
+  Price: 4.55000
+  💰 CLOSE | Price: 4.55000 | PnL: $17.80 (398.11%) | Reason: time_exit
+  📈 OPEN LONG | Price: 4.55000 | Size: 219.78 | SL: 4.45900 | TP: 4.73200
+
+⏰ [2010-04-12 00:00] Cycle 8
+  Price: 4.64000
+  💰 CLOSE | Price: 4.64000 | PnL: $19.68 (432.49%) | Reason: time_exit
+  📈 OPEN LONG | Price: 4.64000 | Size: 215.52 | SL: 4.54720 | TP: 4.82560
+
+⏰ [2010-04-13 00:00] Cycle 9
+  Price: 4.62000
+  💸 CLOSE | Price: 4.62000 | PnL: $-4.41 (-95.04%) | Reason: time_exit
+  📈 OPEN LONG | Price: 4.62000 | Size: 216.45 | SL: 4.52760 | TP: 4.80480
+
+⏰ [2010-04-14 00:00] Cycle 10
+  Price: 4.93000
+  💰 CLOSE | Price: 4.93000 | PnL: $66.99 (1450.06%) | Reason: take_profit
+  📈 OPEN LONG | Price: 4.93000 | Size: 202.84 | SL: 4.83140 | TP: 5.12720
+
+⏰ [2010-04-15 00:00] Cycle 11
+  Price: 4.81000
+  💸 CLOSE | Price: 4.81000 | PnL: $-24.44 (-495.71%) | Reason: stop_loss
+  📈 OPEN LONG | Price: 4.81000 | Size: 207.90 | SL: 4.71380 | TP: 5.00240
+
+⏰ [2010-04-16 00:00] Cycle 12
+  Price: 4.56000
+  💸 CLOSE | Price: 4.56000 | PnL: $-52.07 (-1082.53%) | Reason: stop_loss
+  📈 OPEN LONG | Price: 4.56000 | Size: 219.30 | SL: 4.46880 | TP: 4.74240
+
+⏰ [2010-04-19 00:00] Cycle 13
+  Price: 4.88000
+  💰 CLOSE | Price: 4.88000 | PnL: $70.07 (1536.59%) | Reason: take_profit
+  📈 OPEN LONG | Price: 4.88000 | Size: 204.92 | SL: 4.78240 | TP: 5.07520
+
+⏰ [2010-04-20 00:00] Cycle 14
+  Price: 4.97000
+  💰 CLOSE | Price: 4.97000 | PnL: $18.34 (375.84%) | Reason: time_exit
+  📈 OPEN LONG | Price: 4.97000 | Size: 201.21 | SL: 4.87060 | TP: 5.16880
+
+⏰ [2010-04-21 00:00] Cycle 15
+  Price: 4.93000
+  💸 CLOSE | Price: 4.93000 | PnL: $-8.15 (-163.93%) | Reason: time_exit
+  📈 OPEN LONG | Price: 4.93000 | Size: 202.84 | SL: 4.83140 | TP: 5.12720
+
+⏰ [2010-04-22 00:00] Cycle 16
+  Price: 4.87000
+  💸 CLOSE | Price: 4.87000 | PnL: $-12.27 (-248.87%) | Reason: time_exit
+  📈 OPEN LONG | Price: 4.87000 | Size: 205.34 | SL: 4.77260 | TP: 5.06480
+
+⏰ [2010-04-23 00:00] Cycle 17
+  Price: 4.86000
+  💸 CLOSE | Price: 4.86000 | PnL: $-2.15 (-44.21%) | Reason: time_exit
+  📈 OPEN LONG | Price: 4.86000 | Size: 205.76 | SL: 4.76280 | TP: 5.05440
+
+⏰ [2010-04-26 00:00] Cycle 18
+  Price: 4.61000
+  💸 CLOSE | Price: 4.61000 | PnL: $-51.54 (-1060.39%) | Reason: stop_loss
+  📈 OPEN LONG | Price: 4.61000 | Size: 216.92 | SL: 4.51780 | TP: 4.79440
+
+⏰ [2010-04-27 00:00] Cycle 19
+  Price: 4.34000
+  💸 CLOSE | Price: 4.34000 | PnL: $-58.66 (-1272.50%) | Reason: stop_loss
+  📈 OPEN LONG | Price: 4.34000 | Size: 230.41 | SL: 4.25320 | TP: 4.51360
+
+⏰ [2010-04-28 00:00] Cycle 20
+  Price: 4.45000
+  💰 CLOSE | Price: 4.45000 | PnL: $25.24 (581.64%) | Reason: time_exit
+  📈 OPEN LONG | Price: 4.45000 | Size: 224.72 | SL: 4.36100 | TP: 4.62800
+
+⏰ [2010-04-29 00:00] Cycle 21
+  Price: 4.56000
+  💰 CLOSE | Price: 4.56000 | PnL: $24.62 (553.18%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 4.56000 | Size: 219.30 | SL: 4.65120 | TP: 4.37760
+
+⏰ [2010-04-30 00:00] Cycle 22
+  Price: 4.37000
+  💸 CLOSE | Price: 4.37000 | PnL: $-41.76 (-915.84%) | Reason: stop_loss
+  📈 OPEN SHORT | Price: 4.37000 | Size: 228.83 | SL: 4.45740 | TP: 4.19520
+
+⏰ [2010-05-03 00:00] Cycle 23
+  Price: 4.41000
+  💰 CLOSE | Price: 4.41000 | PnL: $9.05 (207.15%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 4.41000 | Size: 226.76 | SL: 4.49820 | TP: 4.23360
+
+⏰ [2010-05-04 00:00] Cycle 24
+  Price: 4.26000
+  💸 CLOSE | Price: 4.26000 | PnL: $-34.11 (-773.47%) | Reason: stop_loss
+  📈 OPEN SHORT | Price: 4.26000 | Size: 234.74 | SL: 4.34520 | TP: 4.08960
+
+⏰ [2010-05-05 00:00] Cycle 25
+  Price: 4.18000
+  💸 CLOSE | Price: 4.18000 | PnL: $-18.88 (-443.13%) | Reason: time_exit
+  📈 OPEN LONG | Price: 4.18000 | Size: 239.23 | SL: 4.09640 | TP: 4.34720
+
+⏰ [2010-05-06 00:00] Cycle 26
+  Price: 4.04000
+  💸 CLOSE | Price: 4.04000 | PnL: $-33.59 (-803.58%) | Reason: stop_loss
+  📈 OPEN LONG | Price: 4.04000 | Size: 247.52 | SL: 3.95920 | TP: 4.20160
+
+⏰ [2010-05-07 00:00] Cycle 27
+  Price: 4.00000
+  💸 CLOSE | Price: 4.00000 | PnL: $-10.00 (-247.52%) | Reason: time_exit
+  📈 OPEN LONG | Price: 4.00000 | Size: 250.00 | SL: 3.92000 | TP: 4.16000
+
+⏰ [2010-05-10 00:00] Cycle 28
+  Price: 4.22000
+  💰 CLOSE | Price: 4.22000 | PnL: $54.89 (1372.36%) | Reason: take_profit
+  📈 OPEN LONG | Price: 4.22000 | Size: 236.97 | SL: 4.13560 | TP: 4.38880
+
+⏰ [2010-05-11 00:00] Cycle 29
+  Price: 4.17000
+  💸 CLOSE | Price: 4.17000 | PnL: $-11.95 (-283.11%) | Reason: time_exit
+  📈 OPEN LONG | Price: 4.17000 | Size: 239.81 | SL: 4.08660 | TP: 4.33680
+
+⏰ [2010-05-12 00:00] Cycle 30
+  Price: 4.18000
+  💰 CLOSE | Price: 4.18000 | PnL: $2.30 (55.10%) | Reason: time_exit
+
+============================================================
+📊 PORTFOLIO SUMMARY
+============================================================
+Initial Capital:    $10,000.00
+Current Cash:       $10,041.42
+Total Equity:       $10,041.42
+Total PnL:          $44.32
+Total Return:       0.41%
+Active Positions:   0
+Total Trades:       29
+Win Rate:           51.7%
+Profit Factor:      1.12
+============================================================
+
+📜 RECENT TRADES:
+  💸 C | LONG | PnL: $-33.59 | Reason: stop_loss
+  💸 C | LONG | PnL: $-10.00 | Reason: time_exit
+  💰 C | LONG | PnL: $54.89 | Reason: take_profit
+  💸 C | LONG | PnL: $-11.95 | Reason: time_exit
+  💰 C | LONG | PnL: $2.30 | Reason: time_exit
+
+📁 Trade history saved to: paper_trading_trades_20260315_002553.csv
+📁 Equity curve saved to: paper_trading_equity_20260315_002553.csv
+
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1773552342.918411  189421 cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+I0000 00:00:1773552343.014962  189421 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1773552345.035130  189421 cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+E0000 00:00:1773552346.883094  189421 cuda_platform.cc:52] failed call to cuInit: INTERNAL: CUDA error: Failed call to cuInit: UNKNOWN ERROR (303)
+
+  📁 Trades moved to: outputs/trades/c_trades_20260315_002542.csv
+  📁 Equity moved to: outputs/equity/c_equity_20260315_002542.csv
+
+============================================================
+📥 Extracting MU data...
+============================================================
+  ✅ Extracted data saved to: data/extracted_stocks/mu_data.csv
+
+============================================================
+🎓 Training model for MU...
+============================================================
+  ✅ Model saved to: artifacts/models/mu_model.keras
+
+============================================================
+📈 Running paper trading for MU...
+============================================================
+
+============================================================
+🚀 STARTING PAPER TRADING SESSION
+============================================================
+Symbol:           MU
+Initial Capital:  $10,000.00
+Position Size:    10.0%
+Max Positions:    5
+Stop Loss:        2.0%
+Take Profit:      4.0%
+Duration:         30 minutes
+Interval:         1 seconds
+============================================================
+
+Loading model from artifacts/models/mu_model.keras...
+Model loaded successfully.
+
+📡 Fetching market data...
+Received 1762 data points
+
+⏩ Running historical replay...
+
+
+⏰ [2010-03-31 00:00] Cycle 1
+  Price: 10.37000
+  📈 OPEN LONG | Price: 10.37000 | Size: 96.43 | SL: 10.16260 | TP: 10.78480
+
+⏰ [2010-04-01 00:00] Cycle 2
+  Price: 10.17000
+  💸 CLOSE | Price: 10.17000 | PnL: $-19.38 (-186.93%) | Reason: time_exit
+  📈 OPEN LONG | Price: 10.17000 | Size: 98.33 | SL: 9.96660 | TP: 10.57680
+
+⏰ [2010-04-05 00:00] Cycle 3
+  Price: 10.60000
+  💰 CLOSE | Price: 10.60000 | PnL: $42.18 (414.72%) | Reason: take_profit
+  📈 OPEN LONG | Price: 10.60000 | Size: 94.34 | SL: 10.38800 | TP: 11.02400
+
+⏰ [2010-04-06 00:00] Cycle 4
+  Price: 10.23000
+  💸 CLOSE | Price: 10.23000 | PnL: $-35.00 (-330.21%) | Reason: stop_loss
+  📈 OPEN LONG | Price: 10.23000 | Size: 97.75 | SL: 10.02540 | TP: 10.63920
+
+⏰ [2010-04-07 00:00] Cycle 5
+  Price: 10.56000
+  💰 CLOSE | Price: 10.56000 | PnL: $32.15 (314.32%) | Reason: time_exit
+  📈 OPEN LONG | Price: 10.56000 | Size: 94.70 | SL: 10.34880 | TP: 10.98240
+
+⏰ [2010-04-08 00:00] Cycle 6
+  Price: 10.58000
+  💰 CLOSE | Price: 10.58000 | PnL: $1.79 (16.99%) | Reason: time_exit
+  📈 OPEN LONG | Price: 10.58000 | Size: 94.52 | SL: 10.36840 | TP: 11.00320
+
+⏰ [2010-04-09 00:00] Cycle 7
+  Price: 10.73000
+  💰 CLOSE | Price: 10.73000 | PnL: $14.08 (133.05%) | Reason: time_exit
+  📈 OPEN LONG | Price: 10.73000 | Size: 93.20 | SL: 10.51540 | TP: 11.15920
+
+⏰ [2010-04-12 00:00] Cycle 8
+  Price: 10.82000
+  💰 CLOSE | Price: 10.82000 | PnL: $8.29 (77.23%) | Reason: time_exit
+  📈 OPEN LONG | Price: 10.82000 | Size: 92.42 | SL: 10.60360 | TP: 11.25280
+
+⏰ [2010-04-13 00:00] Cycle 9
+  Price: 10.76000
+  💸 CLOSE | Price: 10.76000 | PnL: $-5.64 (-52.17%) | Reason: time_exit
+  📈 OPEN LONG | Price: 10.76000 | Size: 92.94 | SL: 10.54480 | TP: 11.19040
+
+⏰ [2010-04-14 00:00] Cycle 10
+  Price: 11.30000
+  💰 CLOSE | Price: 11.30000 | PnL: $50.08 (465.44%) | Reason: take_profit
+  📈 OPEN LONG | Price: 11.30000 | Size: 88.50 | SL: 11.07400 | TP: 11.75200
+
+⏰ [2010-04-15 00:00] Cycle 11
+  Price: 11.18000
+  💸 CLOSE | Price: 11.18000 | PnL: $-10.72 (-94.85%) | Reason: time_exit
+  📈 OPEN LONG | Price: 11.18000 | Size: 89.45 | SL: 10.95640 | TP: 11.62720
+
+⏰ [2010-04-16 00:00] Cycle 12
+  Price: 10.92000
+  💸 CLOSE | Price: 10.92000 | PnL: $-23.35 (-208.89%) | Reason: stop_loss
+  📈 OPEN LONG | Price: 10.92000 | Size: 91.58 | SL: 10.70160 | TP: 11.35680
+
+⏰ [2010-04-19 00:00] Cycle 13
+  Price: 10.79000
+  💸 CLOSE | Price: 10.79000 | PnL: $-12.00 (-109.92%) | Reason: time_exit
+  📈 OPEN LONG | Price: 10.79000 | Size: 92.68 | SL: 10.57420 | TP: 11.22160
+
+⏰ [2010-04-20 00:00] Cycle 14
+  Price: 10.75000
+  💸 CLOSE | Price: 10.75000 | PnL: $-3.81 (-35.28%) | Reason: time_exit
+  📈 OPEN LONG | Price: 10.75000 | Size: 93.02 | SL: 10.53500 | TP: 11.18000
+
+⏰ [2010-04-21 00:00] Cycle 15
+  Price: 10.74000
+  💸 CLOSE | Price: 10.74000 | PnL: $-1.03 (-9.58%) | Reason: time_exit
+  📈 OPEN LONG | Price: 10.74000 | Size: 93.11 | SL: 10.52520 | TP: 11.16960
+
+⏰ [2010-04-22 00:00] Cycle 16
+  Price: 10.93000
+  💰 CLOSE | Price: 10.93000 | PnL: $17.59 (163.77%) | Reason: time_exit
+  📈 OPEN LONG | Price: 10.93000 | Size: 91.49 | SL: 10.71140 | TP: 11.36720
+
+⏰ [2010-04-23 00:00] Cycle 17
+  Price: 11.00000
+  💰 CLOSE | Price: 11.00000 | PnL: $6.30 (57.67%) | Reason: time_exit
+  📈 OPEN LONG | Price: 11.00000 | Size: 90.91 | SL: 10.78000 | TP: 11.44000
+
+⏰ [2010-04-26 00:00] Cycle 18
+  Price: 10.97000
+  💸 CLOSE | Price: 10.97000 | PnL: $-2.83 (-25.70%) | Reason: time_exit
+  📈 OPEN LONG | Price: 10.97000 | Size: 91.16 | SL: 10.75060 | TP: 11.40880
+
+⏰ [2010-04-27 00:00] Cycle 19
+  Price: 10.34000
+  💸 CLOSE | Price: 10.34000 | PnL: $-57.52 (-524.37%) | Reason: stop_loss
+  📈 OPEN LONG | Price: 10.34000 | Size: 96.71 | SL: 10.13320 | TP: 10.75360
+
+⏰ [2010-04-28 00:00] Cycle 20
+  Price: 10.24000
+  💸 CLOSE | Price: 10.24000 | PnL: $-9.77 (-94.49%) | Reason: time_exit
+  📈 OPEN LONG | Price: 10.24000 | Size: 97.66 | SL: 10.03520 | TP: 10.64960
+
+⏰ [2010-04-29 00:00] Cycle 21
+  Price: 10.21000
+  💸 CLOSE | Price: 10.21000 | PnL: $-3.03 (-29.58%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 10.21000 | Size: 97.94 | SL: 10.41420 | TP: 9.80160
+
+⏰ [2010-04-30 00:00] Cycle 22
+  Price: 9.35000
+  💸 CLOSE | Price: 9.35000 | PnL: $-84.32 (-825.88%) | Reason: stop_loss
+  📈 OPEN LONG | Price: 9.35000 | Size: 106.95 | SL: 9.16300 | TP: 9.72400
+
+⏰ [2010-05-03 00:00] Cycle 23
+  Price: 9.89000
+  💰 CLOSE | Price: 9.89000 | PnL: $57.65 (616.56%) | Reason: take_profit
+  📈 OPEN SHORT | Price: 9.89000 | Size: 101.11 | SL: 10.08780 | TP: 9.49440
+
+⏰ [2010-05-04 00:00] Cycle 24
+  Price: 9.52000
+  💸 CLOSE | Price: 9.52000 | PnL: $-37.51 (-379.25%) | Reason: stop_loss
+  📈 OPEN SHORT | Price: 9.52000 | Size: 105.04 | SL: 9.71040 | TP: 9.13920
+
+⏰ [2010-05-05 00:00] Cycle 25
+  Price: 9.26000
+  💸 CLOSE | Price: 9.26000 | PnL: $-27.41 (-287.90%) | Reason: stop_loss
+  📈 OPEN SHORT | Price: 9.26000 | Size: 107.99 | SL: 9.44520 | TP: 8.88960
+
+⏰ [2010-05-06 00:00] Cycle 26
+  Price: 8.75000
+  💸 CLOSE | Price: 8.75000 | PnL: $-55.17 (-595.79%) | Reason: stop_loss
+  📈 OPEN SHORT | Price: 8.75000 | Size: 114.29 | SL: 8.92500 | TP: 8.40000
+
+⏰ [2010-05-07 00:00] Cycle 27
+  Price: 8.57000
+  💸 CLOSE | Price: 8.57000 | PnL: $-20.67 (-236.22%) | Reason: stop_loss
+  📈 OPEN SHORT | Price: 8.57000 | Size: 116.69 | SL: 8.74140 | TP: 8.22720
+
+⏰ [2010-05-10 00:00] Cycle 28
+  Price: 9.09000
+  💰 CLOSE | Price: 9.09000 | PnL: $60.57 (706.78%) | Reason: take_profit
+  📈 OPEN LONG | Price: 9.09000 | Size: 110.01 | SL: 8.90820 | TP: 9.45360
+
+⏰ [2010-05-11 00:00] Cycle 29
+  Price: 8.82000
+  💸 CLOSE | Price: 8.82000 | PnL: $-29.80 (-327.83%) | Reason: stop_loss
+  📈 OPEN SHORT | Price: 8.82000 | Size: 113.38 | SL: 8.99640 | TP: 8.46720
+
+⏰ [2010-05-12 00:00] Cycle 30
+  Price: 9.33000
+  💰 CLOSE | Price: 9.33000 | PnL: $57.72 (654.39%) | Reason: take_profit
+  📈 OPEN SHORT | Price: 9.33000 | Size: 107.18 | SL: 9.51660 | TP: 8.95680
+
+============================================================
+📊 PORTFOLIO SUMMARY
+============================================================
+Initial Capital:    $10,000.00
+Current Cash:       $9,906.43
+Total Equity:       $9,906.43
+Total PnL:          $-90.57
+Total Return:       -0.94%
+Active Positions:   1
+Total Trades:       29
+Win Rate:           37.9%
+Profit Factor:      0.79
+============================================================
+
+📈 ACTIVE POSITIONS:
+  POS_1: LONG | Entry: 9.33000 | Size: 107.18 | Time: 00:00
+
+📜 RECENT TRADES:
+  💸 MU | LONG | PnL: $-55.17 | Reason: stop_loss
+  💸 MU | LONG | PnL: $-20.67 | Reason: stop_loss
+  💰 MU | LONG | PnL: $60.57 | Reason: take_profit
+  💸 MU | LONG | PnL: $-29.80 | Reason: stop_loss
+  💰 MU | LONG | PnL: $57.72 | Reason: take_profit
+
+📁 Trade history saved to: paper_trading_trades_20260315_002628.csv
+📁 Equity curve saved to: paper_trading_equity_20260315_002628.csv
+
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1773552377.296657  190893 cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+I0000 00:00:1773552377.392717  190893 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1773552379.424771  190893 cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+E0000 00:00:1773552381.300757  190893 cuda_platform.cc:52] failed call to cuInit: INTERNAL: CUDA error: Failed call to cuInit: UNKNOWN ERROR (303)
+
+  📁 Trades moved to: outputs/trades/mu_trades_20260315_002616.csv
+  📁 Equity moved to: outputs/equity/mu_equity_20260315_002616.csv
+
+============================================================
+📥 Extracting NFLX data...
+============================================================
+  ✅ Extracted data saved to: data/extracted_stocks/nflx_data.csv
+
+============================================================
+🎓 Training model for NFLX...
+============================================================
+  ✅ Model saved to: artifacts/models/nflx_model.keras
+
+============================================================
+📈 Running paper trading for NFLX...
+============================================================
+
+============================================================
+🚀 STARTING PAPER TRADING SESSION
+============================================================
+Symbol:           NFLX
+Initial Capital:  $10,000.00
+Position Size:    10.0%
+Max Positions:    5
+Stop Loss:        2.0%
+Take Profit:      4.0%
+Duration:         30 minutes
+Interval:         1 seconds
+============================================================
+
+Loading model from artifacts/models/nflx_model.keras...
+Model loaded successfully.
+
+📡 Fetching market data...
+Received 1762 data points
+
+⏩ Running historical replay...
+
+
+⏰ [2010-03-31 00:00] Cycle 1
+  Price: 73.74000
+  📈 OPEN LONG | Price: 73.74000 | Size: 13.56 | SL: 72.26520 | TP: 76.68960
+
+⏰ [2010-04-01 00:00] Cycle 2
+  Price: 75.00000
+  💰 CLOSE | Price: 75.00000 | PnL: $16.99 (23.03%) | Reason: time_exit
+  📈 OPEN LONG | Price: 75.00000 | Size: 13.33 | SL: 73.50000 | TP: 78.00000
+
+⏰ [2010-04-05 00:00] Cycle 3
+  Price: 79.99000
+  💰 CLOSE | Price: 79.99000 | PnL: $66.43 (88.57%) | Reason: take_profit
+  📈 OPEN LONG | Price: 79.99000 | Size: 12.50 | SL: 78.39020 | TP: 83.18960
+
+⏰ [2010-04-06 00:00] Cycle 4
+  Price: 83.37000
+  💰 CLOSE | Price: 83.37000 | PnL: $42.15 (52.70%) | Reason: take_profit
+  📈 OPEN LONG | Price: 83.37000 | Size: 11.99 | SL: 81.70260 | TP: 86.70480
+
+⏰ [2010-04-07 00:00] Cycle 5
+  Price: 79.73000
+  💸 CLOSE | Price: 79.73000 | PnL: $-43.76 (-52.48%) | Reason: stop_loss
+  📈 OPEN LONG | Price: 79.73000 | Size: 12.54 | SL: 78.13540 | TP: 82.91920
+
+⏰ [2010-04-08 00:00] Cycle 6
+  Price: 81.83000
+  💰 CLOSE | Price: 81.83000 | PnL: $26.24 (32.91%) | Reason: time_exit
+  📈 OPEN LONG | Price: 81.83000 | Size: 12.22 | SL: 80.19340 | TP: 85.10320
+
+⏰ [2010-04-09 00:00] Cycle 7
+  Price: 82.42000
+  💰 CLOSE | Price: 82.42000 | PnL: $7.11 (8.69%) | Reason: time_exit
+  📈 OPEN LONG | Price: 82.42000 | Size: 12.13 | SL: 80.77160 | TP: 85.71680
+
+⏰ [2010-04-12 00:00] Cycle 8
+  Price: 83.18000
+  💰 CLOSE | Price: 83.18000 | PnL: $9.12 (11.07%) | Reason: time_exit
+  📈 OPEN LONG | Price: 83.18000 | Size: 12.02 | SL: 81.51640 | TP: 86.50720
+
+⏰ [2010-04-13 00:00] Cycle 9
+  Price: 86.38000
+  💰 CLOSE | Price: 86.38000 | PnL: $38.37 (46.13%) | Reason: time_exit
+  📈 OPEN LONG | Price: 86.38000 | Size: 11.58 | SL: 84.65240 | TP: 89.83520
+
+⏰ [2010-04-14 00:00] Cycle 10
+  Price: 87.57000
+  💰 CLOSE | Price: 87.57000 | PnL: $13.67 (15.83%) | Reason: time_exit
+  📈 OPEN LONG | Price: 87.57000 | Size: 11.42 | SL: 85.81860 | TP: 91.07280
+
+⏰ [2010-04-15 00:00] Cycle 11
+  Price: 86.83000
+  💸 CLOSE | Price: 86.83000 | PnL: $-8.55 (-9.76%) | Reason: time_exit
+  📈 OPEN LONG | Price: 86.83000 | Size: 11.52 | SL: 85.09340 | TP: 90.30320
+
+⏰ [2010-04-16 00:00] Cycle 12
+  Price: 85.31000
+  💸 CLOSE | Price: 85.31000 | PnL: $-17.60 (-20.27%) | Reason: time_exit
+  📈 OPEN LONG | Price: 85.31000 | Size: 11.72 | SL: 83.60380 | TP: 88.72240
+
+⏰ [2010-04-19 00:00] Cycle 13
+  Price: 84.80000
+  💸 CLOSE | Price: 84.80000 | PnL: $-6.08 (-7.12%) | Reason: time_exit
+  📈 OPEN LONG | Price: 84.80000 | Size: 11.79 | SL: 83.10400 | TP: 88.19200
+
+⏰ [2010-04-20 00:00] Cycle 14
+  Price: 87.07000
+  💰 CLOSE | Price: 87.07000 | PnL: $26.67 (31.45%) | Reason: time_exit
+  📈 OPEN LONG | Price: 87.07000 | Size: 11.49 | SL: 85.32860 | TP: 90.55280
+
+⏰ [2010-04-21 00:00] Cycle 15
+  Price: 86.98000
+  💸 CLOSE | Price: 86.98000 | PnL: $-1.13 (-1.30%) | Reason: time_exit
+  📈 OPEN LONG | Price: 86.98000 | Size: 11.50 | SL: 85.24040 | TP: 90.45920
+
+⏰ [2010-04-22 00:00] Cycle 16
+  Price: 100.25000
+  💰 CLOSE | Price: 100.25000 | PnL: $152.45 (175.27%) | Reason: take_profit
+  📈 OPEN LONG | Price: 100.25000 | Size: 9.98 | SL: 98.24500 | TP: 104.26000
+
+⏰ [2010-04-23 00:00] Cycle 17
+  Price: 99.73000
+  💸 CLOSE | Price: 99.73000 | PnL: $-5.29 (-5.27%) | Reason: time_exit
+  📈 OPEN LONG | Price: 99.73000 | Size: 10.03 | SL: 97.73540 | TP: 103.71920
+
+⏰ [2010-04-26 00:00] Cycle 18
+  Price: 108.17000
+  💰 CLOSE | Price: 108.17000 | PnL: $84.52 (84.75%) | Reason: take_profit
+  📈 OPEN LONG | Price: 108.17000 | Size: 9.24 | SL: 106.00660 | TP: 112.49680
+
+⏰ [2010-04-27 00:00] Cycle 19
+  Price: 102.07000
+  💸 CLOSE | Price: 102.07000 | PnL: $-56.49 (-52.22%) | Reason: stop_loss
+  📈 OPEN LONG | Price: 102.07000 | Size: 9.80 | SL: 100.02860 | TP: 106.15280
+
+⏰ [2010-04-28 00:00] Cycle 20
+  Price: 99.39000
+  💸 CLOSE | Price: 99.39000 | PnL: $-26.35 (-25.82%) | Reason: stop_loss
+  📈 OPEN LONG | Price: 99.39000 | Size: 10.06 | SL: 97.40220 | TP: 103.36560
+
+⏰ [2010-04-29 00:00] Cycle 21
+  Price: 103.17000
+  💰 CLOSE | Price: 103.17000 | PnL: $37.93 (38.16%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 103.17000 | Size: 9.69 | SL: 105.23340 | TP: 99.04320
+
+⏰ [2010-04-30 00:00] Cycle 22
+  Price: 98.90000
+  💸 CLOSE | Price: 98.90000 | PnL: $-41.48 (-40.21%) | Reason: stop_loss
+  📈 OPEN SHORT | Price: 98.90000 | Size: 10.11 | SL: 100.87800 | TP: 94.94400
+
+⏰ [2010-05-03 00:00] Cycle 23
+  Price: 101.99000
+  💰 CLOSE | Price: 101.99000 | PnL: $31.14 (31.49%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 101.99000 | Size: 9.80 | SL: 104.02980 | TP: 97.91040
+
+⏰ [2010-05-04 00:00] Cycle 24
+  Price: 99.36000
+  💸 CLOSE | Price: 99.36000 | PnL: $-25.88 (-25.38%) | Reason: stop_loss
+  📈 OPEN SHORT | Price: 99.36000 | Size: 10.06 | SL: 101.34720 | TP: 95.38560
+
+⏰ [2010-05-05 00:00] Cycle 25
+  Price: 98.23000
+  💸 CLOSE | Price: 98.23000 | PnL: $-11.47 (-11.55%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 98.23000 | Size: 10.18 | SL: 100.19460 | TP: 94.30080
+
+⏰ [2010-05-06 00:00] Cycle 26
+  Price: 96.97000
+  💸 CLOSE | Price: 96.97000 | PnL: $-12.93 (-13.16%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 96.97000 | Size: 10.31 | SL: 98.90940 | TP: 93.09120
+
+⏰ [2010-05-07 00:00] Cycle 27
+  Price: 91.09000
+  💸 CLOSE | Price: 91.09000 | PnL: $-60.73 (-62.63%) | Reason: stop_loss
+  📈 OPEN SHORT | Price: 91.09000 | Size: 10.98 | SL: 92.91180 | TP: 87.44640
+
+⏰ [2010-05-10 00:00] Cycle 28
+  Price: 97.50000
+  💰 CLOSE | Price: 97.50000 | PnL: $70.26 (77.14%) | Reason: take_profit
+  📈 OPEN SHORT | Price: 97.50000 | Size: 10.26 | SL: 99.45000 | TP: 93.60000
+
+⏰ [2010-05-11 00:00] Cycle 29
+  Price: 99.82000
+  💰 CLOSE | Price: 99.82000 | PnL: $23.69 (24.30%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 99.82000 | Size: 10.02 | SL: 101.81640 | TP: 95.82720
+
+⏰ [2010-05-12 00:00] Cycle 30
+  Price: 107.83000
+  💰 CLOSE | Price: 107.83000 | PnL: $80.14 (80.28%) | Reason: take_profit
+  📈 OPEN SHORT | Price: 107.83000 | Size: 9.27 | SL: 109.98660 | TP: 103.51680
+
+============================================================
+📊 PORTFOLIO SUMMARY
+============================================================
+Initial Capital:    $10,000.00
+Current Cash:       $10,406.12
+Total Equity:       $10,406.12
+Total PnL:          $409.12
+Total Return:       4.06%
+Active Positions:   1
+Total Trades:       29
+Win Rate:           55.2%
+Profit Factor:      2.29
+============================================================
+
+📈 ACTIVE POSITIONS:
+  POS_1: LONG | Entry: 107.83000 | Size: 9.27 | Time: 00:00
+
+📜 RECENT TRADES:
+  💸 NFLX | LONG | PnL: $-12.93 | Reason: time_exit
+  💸 NFLX | LONG | PnL: $-60.73 | Reason: stop_loss
+  💰 NFLX | LONG | PnL: $70.26 | Reason: take_profit
+  💰 NFLX | LONG | PnL: $23.69 | Reason: time_exit
+  💰 NFLX | LONG | PnL: $80.14 | Reason: take_profit
+
+📁 Trade history saved to: paper_trading_trades_20260315_002703.csv
+📁 Equity curve saved to: paper_trading_equity_20260315_002703.csv
+
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1773552412.333544  192537 cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+I0000 00:00:1773552412.429509  192537 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1773552414.448879  192537 cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+E0000 00:00:1773552416.304663  192537 cuda_platform.cc:52] failed call to cuInit: INTERNAL: CUDA error: Failed call to cuInit: UNKNOWN ERROR (303)
+
+  📁 Trades moved to: outputs/trades/nflx_trades_20260315_002651.csv
+  📁 Equity moved to: outputs/equity/nflx_equity_20260315_002651.csv
+
+============================================================
+📥 Extracting T data...
+============================================================
+  ✅ Extracted data saved to: data/extracted_stocks/t_data.csv
+
+============================================================
+🎓 Training model for T...
+============================================================
+  ✅ Model saved to: artifacts/models/t_model.keras
+
+============================================================
+📈 Running paper trading for T...
+============================================================
+
+============================================================
+🚀 STARTING PAPER TRADING SESSION
+============================================================
+Symbol:           T
+Initial Capital:  $10,000.00
+Position Size:    10.0%
+Max Positions:    5
+Stop Loss:        2.0%
+Take Profit:      4.0%
+Duration:         30 minutes
+Interval:         1 seconds
+============================================================
+
+Loading model from artifacts/models/t_model.keras...
+Model loaded successfully.
+
+📡 Fetching market data...
+Received 1762 data points
+
+⏩ Running historical replay...
+
+
+⏰ [2010-03-31 00:00] Cycle 1
+  Price: 25.84000
+  📈 OPEN LONG | Price: 25.84000 | Size: 38.70 | SL: 25.32320 | TP: 26.87360
+
+⏰ [2010-04-01 00:00] Cycle 2
+  Price: 26.11000
+  💰 CLOSE | Price: 26.11000 | PnL: $10.35 (40.05%) | Reason: time_exit
+  📈 OPEN LONG | Price: 26.11000 | Size: 38.30 | SL: 25.58780 | TP: 27.15440
+
+⏰ [2010-04-05 00:00] Cycle 3
+  Price: 26.31000
+  💰 CLOSE | Price: 26.31000 | PnL: $7.56 (28.95%) | Reason: time_exit
+  📈 OPEN LONG | Price: 26.31000 | Size: 38.01 | SL: 25.78380 | TP: 27.36240
+
+⏰ [2010-04-06 00:00] Cycle 4
+  Price: 26.31000
+  💸 CLOSE | Price: 26.31000 | PnL: $-0.10 (-0.38%) | Reason: time_exit
+  📈 OPEN LONG | Price: 26.31000 | Size: 38.01 | SL: 25.78380 | TP: 27.36240
+
+⏰ [2010-04-07 00:00] Cycle 5
+  Price: 25.65000
+  💸 CLOSE | Price: 25.65000 | PnL: $-25.18 (-95.72%) | Reason: stop_loss
+  📈 OPEN LONG | Price: 25.65000 | Size: 38.99 | SL: 25.13700 | TP: 26.67600
+
+⏰ [2010-04-08 00:00] Cycle 6
+  Price: 26.02000
+  💰 CLOSE | Price: 26.02000 | PnL: $14.32 (55.84%) | Reason: time_exit
+  📈 OPEN LONG | Price: 26.02000 | Size: 38.43 | SL: 25.49960 | TP: 27.06080
+
+⏰ [2010-04-09 00:00] Cycle 7
+  Price: 26.44000
+  💰 CLOSE | Price: 26.44000 | PnL: $16.04 (61.64%) | Reason: time_exit
+  📈 OPEN LONG | Price: 26.44000 | Size: 37.82 | SL: 25.91120 | TP: 27.49760
+
+⏰ [2010-04-12 00:00] Cycle 8
+  Price: 26.38000
+  💸 CLOSE | Price: 26.38000 | PnL: $-2.37 (-8.96%) | Reason: time_exit
+  📈 OPEN LONG | Price: 26.38000 | Size: 37.91 | SL: 25.85240 | TP: 27.43520
+
+⏰ [2010-04-13 00:00] Cycle 9
+  Price: 26.20000
+  💸 CLOSE | Price: 26.20000 | PnL: $-6.92 (-26.24%) | Reason: time_exit
+  📈 OPEN LONG | Price: 26.20000 | Size: 38.17 | SL: 25.67600 | TP: 27.24800
+
+⏰ [2010-04-14 00:00] Cycle 10
+  Price: 26.24000
+  💰 CLOSE | Price: 26.24000 | PnL: $1.43 (5.44%) | Reason: time_exit
+  📈 OPEN LONG | Price: 26.24000 | Size: 38.11 | SL: 25.71520 | TP: 27.28960
+
+⏰ [2010-04-15 00:00] Cycle 11
+  Price: 26.24000
+  💸 CLOSE | Price: 26.24000 | PnL: $-0.10 (-0.38%) | Reason: time_exit
+  📈 OPEN LONG | Price: 26.24000 | Size: 38.11 | SL: 25.71520 | TP: 27.28960
+
+⏰ [2010-04-16 00:00] Cycle 12
+  Price: 25.93000
+  💸 CLOSE | Price: 25.93000 | PnL: $-11.91 (-45.40%) | Reason: time_exit
+  📈 OPEN LONG | Price: 25.93000 | Size: 38.57 | SL: 25.41140 | TP: 26.96720
+
+⏰ [2010-04-19 00:00] Cycle 13
+  Price: 26.38000
+  💰 CLOSE | Price: 26.38000 | PnL: $17.25 (66.54%) | Reason: time_exit
+  📈 OPEN LONG | Price: 26.38000 | Size: 37.91 | SL: 25.85240 | TP: 27.43520
+
+⏰ [2010-04-20 00:00] Cycle 14
+  Price: 26.66000
+  💰 CLOSE | Price: 26.66000 | PnL: $10.51 (39.85%) | Reason: time_exit
+  📈 OPEN LONG | Price: 26.66000 | Size: 37.51 | SL: 26.12680 | TP: 27.72640
+
+⏰ [2010-04-21 00:00] Cycle 15
+  Price: 26.34000
+  💸 CLOSE | Price: 26.34000 | PnL: $-12.10 (-45.39%) | Reason: time_exit
+  📈 OPEN LONG | Price: 26.34000 | Size: 37.97 | SL: 25.81320 | TP: 27.39360
+
+⏰ [2010-04-22 00:00] Cycle 16
+  Price: 26.27000
+  💸 CLOSE | Price: 26.27000 | PnL: $-2.76 (-10.47%) | Reason: time_exit
+  📈 OPEN LONG | Price: 26.27000 | Size: 38.07 | SL: 25.74460 | TP: 27.32080
+
+⏰ [2010-04-23 00:00] Cycle 17
+  Price: 26.25000
+  💸 CLOSE | Price: 26.25000 | PnL: $-0.86 (-3.28%) | Reason: time_exit
+  📈 OPEN LONG | Price: 26.25000 | Size: 38.10 | SL: 25.72500 | TP: 27.30000
+
+⏰ [2010-04-26 00:00] Cycle 18
+  Price: 26.27000
+  💰 CLOSE | Price: 26.27000 | PnL: $0.66 (2.52%) | Reason: time_exit
+  📈 OPEN LONG | Price: 26.27000 | Size: 38.07 | SL: 25.74460 | TP: 27.32080
+
+⏰ [2010-04-27 00:00] Cycle 19
+  Price: 25.95000
+  💸 CLOSE | Price: 25.95000 | PnL: $-12.28 (-46.75%) | Reason: time_exit
+  📈 OPEN LONG | Price: 25.95000 | Size: 38.54 | SL: 25.43100 | TP: 26.98800
+
+⏰ [2010-04-28 00:00] Cycle 20
+  Price: 25.91000
+  💸 CLOSE | Price: 25.91000 | PnL: $-1.64 (-6.32%) | Reason: time_exit
+  📈 OPEN LONG | Price: 25.91000 | Size: 38.60 | SL: 25.39180 | TP: 26.94640
+
+⏰ [2010-04-29 00:00] Cycle 21
+  Price: 26.14000
+  💰 CLOSE | Price: 26.14000 | PnL: $8.78 (33.87%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 26.14000 | Size: 38.26 | SL: 26.66280 | TP: 25.09440
+
+⏰ [2010-04-30 00:00] Cycle 22
+  Price: 26.06000
+  💸 CLOSE | Price: 26.06000 | PnL: $-3.16 (-12.09%) | Reason: time_exit
+  📈 OPEN LONG | Price: 26.06000 | Size: 38.37 | SL: 25.53880 | TP: 27.10240
+
+⏰ [2010-05-03 00:00] Cycle 23
+  Price: 26.28000
+  💰 CLOSE | Price: 26.28000 | PnL: $8.34 (32.01%) | Reason: time_exit
+  📈 OPEN LONG | Price: 26.28000 | Size: 38.05 | SL: 25.75440 | TP: 27.33120
+
+⏰ [2010-05-04 00:00] Cycle 24
+  Price: 25.90000
+  💸 CLOSE | Price: 25.90000 | PnL: $-14.56 (-55.40%) | Reason: time_exit
+  📈 OPEN LONG | Price: 25.90000 | Size: 38.61 | SL: 25.38200 | TP: 26.93600
+
+⏰ [2010-05-05 00:00] Cycle 25
+  Price: 25.77000
+  💸 CLOSE | Price: 25.77000 | PnL: $-5.12 (-19.76%) | Reason: time_exit
+
+⏰ [2010-05-06 00:00] Cycle 26
+  Price: 25.14000
+  📈 OPEN LONG | Price: 25.14000 | Size: 39.78 | SL: 24.63720 | TP: 26.14560
+
+⏰ [2010-05-07 00:00] Cycle 27
+  Price: 25.10000
+  💸 CLOSE | Price: 25.10000 | PnL: $-1.69 (-6.73%) | Reason: time_exit
+
+⏰ [2010-05-10 00:00] Cycle 28
+  Price: 25.67000
+  📈 OPEN LONG | Price: 25.67000 | Size: 38.96 | SL: 25.15660 | TP: 26.69680
+
+⏰ [2010-05-11 00:00] Cycle 29
+  Price: 25.64000
+  💸 CLOSE | Price: 25.64000 | PnL: $-1.27 (-4.94%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 25.64000 | Size: 39.00 | SL: 26.15280 | TP: 24.61440
+
+⏰ [2010-05-12 00:00] Cycle 30
+  Price: 25.82000
+  💰 CLOSE | Price: 25.82000 | PnL: $6.92 (26.99%) | Reason: time_exit
+
+============================================================
+📊 PORTFOLIO SUMMARY
+============================================================
+Initial Capital:    $10,000.00
+Current Cash:       $9,997.44
+Total Equity:       $9,997.44
+Total PnL:          $0.14
+Total Return:       -0.03%
+Active Positions:   0
+Total Trades:       27
+Win Rate:           40.7%
+Profit Factor:      1.00
+============================================================
+
+📜 RECENT TRADES:
+  💸 T | LONG | PnL: $-14.56 | Reason: time_exit
+  💸 T | LONG | PnL: $-5.12 | Reason: time_exit
+  💸 T | LONG | PnL: $-1.69 | Reason: time_exit
+  💸 T | LONG | PnL: $-1.27 | Reason: time_exit
+  💰 T | LONG | PnL: $6.92 | Reason: time_exit
+
+📁 Trade history saved to: paper_trading_trades_20260315_002737.csv
+📁 Equity curve saved to: paper_trading_equity_20260315_002737.csv
+
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1773552446.167503  193960 cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+I0000 00:00:1773552446.263462  193960 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1773552448.259235  193960 cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+E0000 00:00:1773552450.102737  193960 cuda_platform.cc:52] failed call to cuInit: INTERNAL: CUDA error: Failed call to cuInit: UNKNOWN ERROR (303)
+
+  📁 Trades moved to: outputs/trades/t_trades_20260315_002725.csv
+  📁 Equity moved to: outputs/equity/t_equity_20260315_002725.csv
+
+============================================================
+📥 Extracting JPM data...
+============================================================
+  ✅ Extracted data saved to: data/extracted_stocks/jpm_data.csv
+
+============================================================
+🎓 Training model for JPM...
+============================================================
+  ✅ Model saved to: artifacts/models/jpm_model.keras
+
+============================================================
+📈 Running paper trading for JPM...
+============================================================
+
+============================================================
+🚀 STARTING PAPER TRADING SESSION
+============================================================
+Symbol:           JPM
+Initial Capital:  $10,000.00
+Position Size:    10.0%
+Max Positions:    5
+Stop Loss:        2.0%
+Take Profit:      4.0%
+Duration:         30 minutes
+Interval:         1 seconds
+============================================================
+
+Loading model from artifacts/models/jpm_model.keras...
+Model loaded successfully.
+
+📡 Fetching market data...
+Received 1762 data points
+
+⏩ Running historical replay...
+
+
+⏰ [2010-03-31 00:00] Cycle 1
+  Price: 44.75000
+  📈 OPEN LONG | Price: 44.75000 | Size: 22.35 | SL: 43.85500 | TP: 46.54000
+
+⏰ [2010-04-01 00:00] Cycle 2
+  Price: 45.18000
+  💰 CLOSE | Price: 45.18000 | PnL: $9.51 (21.25%) | Reason: time_exit
+  📈 OPEN LONG | Price: 45.18000 | Size: 22.13 | SL: 44.27640 | TP: 46.98720
+
+⏰ [2010-04-05 00:00] Cycle 3
+  Price: 45.34000
+  💰 CLOSE | Price: 45.34000 | PnL: $3.44 (7.62%) | Reason: time_exit
+  📈 OPEN LONG | Price: 45.34000 | Size: 22.06 | SL: 44.43320 | TP: 47.15360
+
+⏰ [2010-04-06 00:00] Cycle 4
+  Price: 45.84000
+  💰 CLOSE | Price: 45.84000 | PnL: $10.93 (24.10%) | Reason: time_exit
+  📈 OPEN LONG | Price: 45.84000 | Size: 21.82 | SL: 44.92320 | TP: 47.67360
+
+⏰ [2010-04-07 00:00] Cycle 5
+  Price: 45.32000
+  💸 CLOSE | Price: 45.32000 | PnL: $-11.44 (-24.96%) | Reason: time_exit
+  📈 OPEN LONG | Price: 45.32000 | Size: 22.07 | SL: 44.41360 | TP: 47.13280
+
+⏰ [2010-04-08 00:00] Cycle 6
+  Price: 45.76000
+  💰 CLOSE | Price: 45.76000 | PnL: $9.61 (21.20%) | Reason: time_exit
+  📈 OPEN LONG | Price: 45.76000 | Size: 21.85 | SL: 44.84480 | TP: 47.59040
+
+⏰ [2010-04-09 00:00] Cycle 7
+  Price: 45.98000
+  💰 CLOSE | Price: 45.98000 | PnL: $4.71 (10.29%) | Reason: time_exit
+  📈 OPEN LONG | Price: 45.98000 | Size: 21.75 | SL: 45.06040 | TP: 47.81920
+
+⏰ [2010-04-12 00:00] Cycle 8
+  Price: 46.14000
+  💰 CLOSE | Price: 46.14000 | PnL: $3.38 (7.35%) | Reason: time_exit
+  📈 OPEN LONG | Price: 46.14000 | Size: 21.67 | SL: 45.21720 | TP: 47.98560
+
+⏰ [2010-04-13 00:00] Cycle 9
+  Price: 45.87000
+  💸 CLOSE | Price: 45.87000 | PnL: $-5.95 (-12.90%) | Reason: time_exit
+  📈 OPEN LONG | Price: 45.87000 | Size: 21.80 | SL: 44.95260 | TP: 47.70480
+
+⏰ [2010-04-14 00:00] Cycle 10
+  Price: 47.73000
+  💰 CLOSE | Price: 47.73000 | PnL: $40.45 (88.17%) | Reason: take_profit
+  📈 OPEN LONG | Price: 47.73000 | Size: 20.95 | SL: 46.77540 | TP: 49.63920
+
+⏰ [2010-04-15 00:00] Cycle 11
+  Price: 47.81000
+  💰 CLOSE | Price: 47.81000 | PnL: $1.58 (3.30%) | Reason: time_exit
+  📈 OPEN LONG | Price: 47.81000 | Size: 20.92 | SL: 46.85380 | TP: 49.72240
+
+⏰ [2010-04-16 00:00] Cycle 12
+  Price: 45.55000
+  💸 CLOSE | Price: 45.55000 | PnL: $-47.37 (-99.07%) | Reason: stop_loss
+  📈 OPEN LONG | Price: 45.55000 | Size: 21.95 | SL: 44.63900 | TP: 47.37200
+
+⏰ [2010-04-19 00:00] Cycle 13
+  Price: 45.39000
+  💸 CLOSE | Price: 45.39000 | PnL: $-3.61 (-7.93%) | Reason: time_exit
+  📈 OPEN LONG | Price: 45.39000 | Size: 22.03 | SL: 44.48220 | TP: 47.20560
+
+⏰ [2010-04-20 00:00] Cycle 14
+  Price: 45.88000
+  💰 CLOSE | Price: 45.88000 | PnL: $10.69 (23.56%) | Reason: time_exit
+  📈 OPEN LONG | Price: 45.88000 | Size: 21.80 | SL: 44.96240 | TP: 47.71520
+
+⏰ [2010-04-21 00:00] Cycle 15
+  Price: 45.35000
+  💸 CLOSE | Price: 45.35000 | PnL: $-11.65 (-25.39%) | Reason: time_exit
+  📈 OPEN LONG | Price: 45.35000 | Size: 22.05 | SL: 44.44300 | TP: 47.16400
+
+⏰ [2010-04-22 00:00] Cycle 16
+  Price: 44.74000
+  💸 CLOSE | Price: 44.74000 | PnL: $-13.55 (-29.88%) | Reason: time_exit
+  📈 OPEN LONG | Price: 44.74000 | Size: 22.35 | SL: 43.84520 | TP: 46.52960
+
+⏰ [2010-04-23 00:00] Cycle 17
+  Price: 44.94000
+  💰 CLOSE | Price: 44.94000 | PnL: $4.37 (9.77%) | Reason: time_exit
+  📈 OPEN LONG | Price: 44.94000 | Size: 22.25 | SL: 44.04120 | TP: 46.73760
+
+⏰ [2010-04-26 00:00] Cycle 18
+  Price: 43.89000
+  💸 CLOSE | Price: 43.89000 | PnL: $-23.46 (-52.21%) | Reason: stop_loss
+  📈 OPEN LONG | Price: 43.89000 | Size: 22.78 | SL: 43.01220 | TP: 45.64560
+
+⏰ [2010-04-27 00:00] Cycle 19
+  Price: 42.41000
+  💸 CLOSE | Price: 42.41000 | PnL: $-33.82 (-77.05%) | Reason: stop_loss
+  📈 OPEN LONG | Price: 42.41000 | Size: 23.58 | SL: 41.56180 | TP: 44.10640
+
+⏰ [2010-04-28 00:00] Cycle 20
+  Price: 43.46000
+  💰 CLOSE | Price: 43.46000 | PnL: $24.66 (58.14%) | Reason: time_exit
+  📈 OPEN LONG | Price: 43.46000 | Size: 23.01 | SL: 42.59080 | TP: 45.19840
+
+⏰ [2010-04-29 00:00] Cycle 21
+  Price: 44.00000
+  💰 CLOSE | Price: 44.00000 | PnL: $12.32 (28.36%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 44.00000 | Size: 22.73 | SL: 44.88000 | TP: 42.24000
+
+⏰ [2010-04-30 00:00] Cycle 22
+  Price: 42.58000
+  💸 CLOSE | Price: 42.58000 | PnL: $-32.37 (-73.57%) | Reason: stop_loss
+  📈 OPEN SHORT | Price: 42.58000 | Size: 23.49 | SL: 43.43160 | TP: 40.87680
+
+⏰ [2010-05-03 00:00] Cycle 23
+  Price: 43.53000
+  💰 CLOSE | Price: 43.53000 | PnL: $22.21 (52.16%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 43.53000 | Size: 22.97 | SL: 44.40060 | TP: 41.78880
+
+⏰ [2010-05-04 00:00] Cycle 24
+  Price: 42.47000
+  💸 CLOSE | Price: 42.47000 | PnL: $-24.45 (-56.16%) | Reason: stop_loss
+  📈 OPEN SHORT | Price: 42.47000 | Size: 23.55 | SL: 43.31940 | TP: 40.77120
+
+⏰ [2010-05-05 00:00] Cycle 25
+  Price: 42.63000
+  💰 CLOSE | Price: 42.63000 | PnL: $3.67 (8.63%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 42.63000 | Size: 23.46 | SL: 43.48260 | TP: 40.92480
+
+⏰ [2010-05-06 00:00] Cycle 26
+  Price: 40.81000
+  💸 CLOSE | Price: 40.81000 | PnL: $-42.79 (-100.37%) | Reason: stop_loss
+  📈 OPEN SHORT | Price: 40.81000 | Size: 24.50 | SL: 41.62620 | TP: 39.17760
+
+⏰ [2010-05-07 00:00] Cycle 27
+  Price: 40.76000
+  💸 CLOSE | Price: 40.76000 | PnL: $-1.33 (-3.25%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 40.76000 | Size: 24.53 | SL: 41.57520 | TP: 39.12960
+
+⏰ [2010-05-10 00:00] Cycle 28
+  Price: 41.95000
+  💰 CLOSE | Price: 41.95000 | PnL: $29.09 (71.37%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 41.95000 | Size: 23.84 | SL: 42.78900 | TP: 40.27200
+
+⏰ [2010-05-11 00:00] Cycle 29
+  Price: 41.55000
+  💸 CLOSE | Price: 41.55000 | PnL: $-9.63 (-22.97%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 41.55000 | Size: 24.07 | SL: 42.38100 | TP: 39.88800
+
+⏰ [2010-05-12 00:00] Cycle 30
+  Price: 41.69000
+  💰 CLOSE | Price: 41.69000 | PnL: $3.27 (7.87%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 41.69000 | Size: 23.99 | SL: 42.52380 | TP: 40.02240
+
+============================================================
+📊 PORTFOLIO SUMMARY
+============================================================
+Initial Capital:    $10,000.00
+Current Cash:       $9,929.45
+Total Equity:       $9,929.45
+Total PnL:          $-67.55
+Total Return:       -0.71%
+Active Positions:   1
+Total Trades:       29
+Win Rate:           55.2%
+Profit Factor:      0.74
+============================================================
+
+📈 ACTIVE POSITIONS:
+  POS_1: LONG | Entry: 41.69000 | Size: 23.99 | Time: 00:00
+
+📜 RECENT TRADES:
+  💸 JPM | LONG | PnL: $-42.79 | Reason: stop_loss
+  💸 JPM | LONG | PnL: $-1.33 | Reason: time_exit
+  💰 JPM | LONG | PnL: $29.09 | Reason: time_exit
+  💸 JPM | LONG | PnL: $-9.63 | Reason: time_exit
+  💰 JPM | LONG | PnL: $3.27 | Reason: time_exit
+
+📁 Trade history saved to: paper_trading_trades_20260315_002812.csv
+📁 Equity curve saved to: paper_trading_equity_20260315_002812.csv
+
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1773552480.964112  195506 cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+I0000 00:00:1773552481.060888  195506 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1773552483.090892  195506 cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+E0000 00:00:1773552484.971482  195506 cuda_platform.cc:52] failed call to cuInit: INTERNAL: CUDA error: Failed call to cuInit: UNKNOWN ERROR (303)
+
+  📁 Trades moved to: outputs/trades/jpm_trades_20260315_002800.csv
+  📁 Equity moved to: outputs/equity/jpm_equity_20260315_002800.csv
+
+============================================================
+📥 Extracting WFC data...
+============================================================
+  ✅ Extracted data saved to: data/extracted_stocks/wfc_data.csv
+
+============================================================
+🎓 Training model for WFC...
+============================================================
+  ✅ Model saved to: artifacts/models/wfc_model.keras
+
+============================================================
+📈 Running paper trading for WFC...
+============================================================
+
+============================================================
+🚀 STARTING PAPER TRADING SESSION
+============================================================
+Symbol:           WFC
+Initial Capital:  $10,000.00
+Position Size:    10.0%
+Max Positions:    5
+Stop Loss:        2.0%
+Take Profit:      4.0%
+Duration:         30 minutes
+Interval:         1 seconds
+============================================================
+
+Loading model from artifacts/models/wfc_model.keras...
+Model loaded successfully.
+
+📡 Fetching market data...
+Received 1762 data points
+
+⏩ Running historical replay...
+
+
+⏰ [2010-03-31 00:00] Cycle 1
+  Price: 31.12000
+  📈 OPEN LONG | Price: 31.12000 | Size: 32.13 | SL: 30.49760 | TP: 32.36480
+
+⏰ [2010-04-01 00:00] Cycle 2
+  Price: 31.37000
+  💰 CLOSE | Price: 31.37000 | PnL: $7.93 (25.49%) | Reason: time_exit
+  📈 OPEN LONG | Price: 31.37000 | Size: 31.88 | SL: 30.74260 | TP: 32.62480
+
+⏰ [2010-04-05 00:00] Cycle 3
+  Price: 31.51000
+  💰 CLOSE | Price: 31.51000 | PnL: $4.36 (13.91%) | Reason: time_exit
+  📈 OPEN LONG | Price: 31.51000 | Size: 31.74 | SL: 30.87980 | TP: 32.77040
+
+⏰ [2010-04-06 00:00] Cycle 4
+  Price: 32.28000
+  💰 CLOSE | Price: 32.28000 | PnL: $24.33 (77.23%) | Reason: time_exit
+  📈 OPEN LONG | Price: 32.28000 | Size: 30.98 | SL: 31.63440 | TP: 33.57120
+
+⏰ [2010-04-07 00:00] Cycle 5
+  Price: 31.99000
+  💸 CLOSE | Price: 31.99000 | PnL: $-9.08 (-28.14%) | Reason: time_exit
+  📈 OPEN LONG | Price: 31.99000 | Size: 31.26 | SL: 31.35020 | TP: 33.26960
+
+⏰ [2010-04-08 00:00] Cycle 6
+  Price: 32.23000
+  💰 CLOSE | Price: 32.23000 | PnL: $7.40 (23.14%) | Reason: time_exit
+  📈 OPEN LONG | Price: 32.23000 | Size: 31.03 | SL: 31.58540 | TP: 33.51920
+
+⏰ [2010-04-09 00:00] Cycle 7
+  Price: 32.30000
+  💰 CLOSE | Price: 32.30000 | PnL: $2.07 (6.43%) | Reason: time_exit
+  📈 OPEN LONG | Price: 32.30000 | Size: 30.96 | SL: 31.65400 | TP: 33.59200
+
+⏰ [2010-04-12 00:00] Cycle 8
+  Price: 32.42000
+  💰 CLOSE | Price: 32.42000 | PnL: $3.61 (11.19%) | Reason: time_exit
+  📈 OPEN LONG | Price: 32.42000 | Size: 30.85 | SL: 31.77160 | TP: 33.71680
+
+⏰ [2010-04-13 00:00] Cycle 9
+  Price: 32.15000
+  💸 CLOSE | Price: 32.15000 | PnL: $-8.43 (-25.99%) | Reason: time_exit
+  📈 OPEN LONG | Price: 32.15000 | Size: 31.10 | SL: 31.50700 | TP: 33.43600
+
+⏰ [2010-04-14 00:00] Cycle 10
+  Price: 33.28000
+  💰 CLOSE | Price: 33.28000 | PnL: $35.04 (109.00%) | Reason: time_exit
+  📈 OPEN LONG | Price: 33.28000 | Size: 30.05 | SL: 32.61440 | TP: 34.61120
+
+⏰ [2010-04-15 00:00] Cycle 11
+  Price: 33.51000
+  💰 CLOSE | Price: 33.51000 | PnL: $6.81 (20.46%) | Reason: time_exit
+  📈 OPEN LONG | Price: 33.51000 | Size: 29.84 | SL: 32.83980 | TP: 34.85040
+
+⏰ [2010-04-16 00:00] Cycle 12
+  Price: 32.56000
+  💸 CLOSE | Price: 32.56000 | PnL: $-28.45 (-84.89%) | Reason: stop_loss
+  📈 OPEN LONG | Price: 32.56000 | Size: 30.71 | SL: 31.90880 | TP: 33.86240
+
+⏰ [2010-04-19 00:00] Cycle 13
+  Price: 33.02000
+  💰 CLOSE | Price: 33.02000 | PnL: $14.03 (43.08%) | Reason: time_exit
+  📈 OPEN LONG | Price: 33.02000 | Size: 30.28 | SL: 32.35960 | TP: 34.34080
+
+⏰ [2010-04-20 00:00] Cycle 14
+  Price: 33.69000
+  💰 CLOSE | Price: 33.69000 | PnL: $20.19 (61.14%) | Reason: time_exit
+  📈 OPEN LONG | Price: 33.69000 | Size: 29.68 | SL: 33.01620 | TP: 35.03760
+
+⏰ [2010-04-21 00:00] Cycle 15
+  Price: 33.01000
+  💸 CLOSE | Price: 33.01000 | PnL: $-20.28 (-60.20%) | Reason: stop_loss
+  📈 OPEN LONG | Price: 33.01000 | Size: 30.29 | SL: 32.34980 | TP: 34.33040
+
+⏰ [2010-04-22 00:00] Cycle 16
+  Price: 33.58000
+  💰 CLOSE | Price: 33.58000 | PnL: $17.17 (52.00%) | Reason: time_exit
+  📈 OPEN LONG | Price: 33.58000 | Size: 29.78 | SL: 32.90840 | TP: 34.92320
+
+⏰ [2010-04-23 00:00] Cycle 17
+  Price: 33.48000
+  💸 CLOSE | Price: 33.48000 | PnL: $-3.08 (-9.17%) | Reason: time_exit
+  📈 OPEN LONG | Price: 33.48000 | Size: 29.87 | SL: 32.81040 | TP: 34.81920
+
+⏰ [2010-04-26 00:00] Cycle 18
+  Price: 32.72000
+  💸 CLOSE | Price: 32.72000 | PnL: $-22.80 (-68.09%) | Reason: stop_loss
+  📈 OPEN LONG | Price: 32.72000 | Size: 30.56 | SL: 32.06560 | TP: 34.02880
+
+⏰ [2010-04-27 00:00] Cycle 19
+  Price: 31.72000
+  💸 CLOSE | Price: 31.72000 | PnL: $-30.66 (-93.70%) | Reason: stop_loss
+  📈 OPEN LONG | Price: 31.72000 | Size: 31.53 | SL: 31.08560 | TP: 32.98880
+
+⏰ [2010-04-28 00:00] Cycle 20
+  Price: 32.45000
+  💰 CLOSE | Price: 32.45000 | PnL: $22.91 (72.23%) | Reason: time_exit
+  📈 OPEN LONG | Price: 32.45000 | Size: 30.82 | SL: 31.80100 | TP: 33.74800
+
+⏰ [2010-04-29 00:00] Cycle 21
+  Price: 33.23000
+  💰 CLOSE | Price: 33.23000 | PnL: $23.93 (73.76%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 33.23000 | Size: 30.09 | SL: 33.89460 | TP: 31.90080
+
+⏰ [2010-04-30 00:00] Cycle 22
+  Price: 33.11000
+  💸 CLOSE | Price: 33.11000 | PnL: $-3.71 (-11.17%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 33.11000 | Size: 30.20 | SL: 33.77220 | TP: 31.78560
+
+⏰ [2010-05-03 00:00] Cycle 23
+  Price: 33.88000
+  💰 CLOSE | Price: 33.88000 | PnL: $23.15 (69.93%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 33.88000 | Size: 29.52 | SL: 34.55760 | TP: 32.52480
+
+⏰ [2010-05-04 00:00] Cycle 24
+  Price: 32.94000
+  💸 CLOSE | Price: 32.94000 | PnL: $-27.84 (-82.18%) | Reason: stop_loss
+  📈 OPEN SHORT | Price: 32.94000 | Size: 30.36 | SL: 33.59880 | TP: 31.62240
+
+⏰ [2010-05-05 00:00] Cycle 25
+  Price: 32.66000
+  💸 CLOSE | Price: 32.66000 | PnL: $-8.60 (-26.11%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 32.66000 | Size: 30.62 | SL: 33.31320 | TP: 31.35360
+
+⏰ [2010-05-06 00:00] Cycle 26
+  Price: 31.18000
+  💸 CLOSE | Price: 31.18000 | PnL: $-45.41 (-139.04%) | Reason: stop_loss
+  📈 OPEN SHORT | Price: 31.18000 | Size: 32.07 | SL: 31.80360 | TP: 29.93280
+
+⏰ [2010-05-07 00:00] Cycle 27
+  Price: 30.82000
+  💸 CLOSE | Price: 30.82000 | PnL: $-11.64 (-37.35%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 30.82000 | Size: 32.45 | SL: 31.43640 | TP: 29.58720
+
+⏰ [2010-05-10 00:00] Cycle 28
+  Price: 32.97000
+  💰 CLOSE | Price: 32.97000 | PnL: $69.65 (226.00%) | Reason: take_profit
+  📈 OPEN LONG | Price: 32.97000 | Size: 30.33 | SL: 32.31060 | TP: 34.28880
+
+⏰ [2010-05-11 00:00] Cycle 29
+  Price: 32.91000
+  💸 CLOSE | Price: 32.91000 | PnL: $-1.92 (-5.82%) | Reason: time_exit
+  📈 OPEN LONG | Price: 32.91000 | Size: 30.39 | SL: 32.25180 | TP: 34.22640
+
+⏰ [2010-05-12 00:00] Cycle 30
+  Price: 33.66000
+  💰 CLOSE | Price: 33.66000 | PnL: $22.69 (68.94%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 33.66000 | Size: 29.71 | SL: 34.33320 | TP: 32.31360
+
+============================================================
+📊 PORTFOLIO SUMMARY
+============================================================
+Initial Capital:    $10,000.00
+Current Cash:       $10,080.39
+Total Equity:       $10,080.39
+Total PnL:          $83.39
+Total Return:       0.80%
+Active Positions:   1
+Total Trades:       29
+Win Rate:           55.2%
+Profit Factor:      1.38
+============================================================
+
+📈 ACTIVE POSITIONS:
+  POS_1: LONG | Entry: 33.66000 | Size: 29.71 | Time: 00:00
+
+📜 RECENT TRADES:
+  💸 WFC | LONG | PnL: $-45.41 | Reason: stop_loss
+  💸 WFC | LONG | PnL: $-11.64 | Reason: time_exit
+  💰 WFC | LONG | PnL: $69.65 | Reason: take_profit
+  💸 WFC | LONG | PnL: $-1.92 | Reason: time_exit
+  💰 WFC | LONG | PnL: $22.69 | Reason: time_exit
+
+📁 Trade history saved to: paper_trading_trades_20260315_002848.csv
+📁 Equity curve saved to: paper_trading_equity_20260315_002848.csv
+
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1773552516.889072  197036 cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+I0000 00:00:1773552516.984441  197036 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1773552519.032816  197036 cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+E0000 00:00:1773552520.939227  197036 cuda_platform.cc:52] failed call to cuInit: INTERNAL: CUDA error: Failed call to cuInit: UNKNOWN ERROR (303)
+
+  📁 Trades moved to: outputs/trades/wfc_trades_20260315_002836.csv
+  📁 Equity moved to: outputs/equity/wfc_equity_20260315_002836.csv
+
+============================================================
+📥 Extracting EBAY data...
+============================================================
+  ✅ Extracted data saved to: data/extracted_stocks/ebay_data.csv
+
+============================================================
+🎓 Training model for EBAY...
+============================================================
+  ✅ Model saved to: artifacts/models/ebay_model.keras
+
+============================================================
+📈 Running paper trading for EBAY...
+============================================================
+
+============================================================
+🚀 STARTING PAPER TRADING SESSION
+============================================================
+Symbol:           EBAY
+Initial Capital:  $10,000.00
+Position Size:    10.0%
+Max Positions:    5
+Stop Loss:        2.0%
+Take Profit:      4.0%
+Duration:         30 minutes
+Interval:         1 seconds
+============================================================
+
+Loading model from artifacts/models/ebay_model.keras...
+Model loaded successfully.
+
+📡 Fetching market data...
+Received 1762 data points
+
+⏩ Running historical replay...
+
+
+⏰ [2010-03-31 00:00] Cycle 1
+  Price: 26.97000
+  📈 OPEN LONG | Price: 26.97000 | Size: 37.08 | SL: 26.43060 | TP: 28.04880
+
+⏰ [2010-04-01 00:00] Cycle 2
+  Price: 26.57000
+  💸 CLOSE | Price: 26.57000 | PnL: $-14.93 (-55.36%) | Reason: time_exit
+  📈 OPEN LONG | Price: 26.57000 | Size: 37.64 | SL: 26.03860 | TP: 27.63280
+
+⏰ [2010-04-05 00:00] Cycle 3
+  Price: 27.37000
+  💰 CLOSE | Price: 27.37000 | PnL: $30.01 (112.93%) | Reason: time_exit
+  📈 OPEN LONG | Price: 27.37000 | Size: 36.54 | SL: 26.82260 | TP: 28.46480
+
+⏰ [2010-04-06 00:00] Cycle 4
+  Price: 27.27000
+  💸 CLOSE | Price: 27.27000 | PnL: $-3.75 (-13.71%) | Reason: time_exit
+  📈 OPEN LONG | Price: 27.27000 | Size: 36.67 | SL: 26.72460 | TP: 28.36080
+
+⏰ [2010-04-07 00:00] Cycle 5
+  Price: 26.85000
+  💸 CLOSE | Price: 26.85000 | PnL: $-15.50 (-56.84%) | Reason: time_exit
+  📈 OPEN LONG | Price: 26.85000 | Size: 37.24 | SL: 26.31300 | TP: 27.92400
+
+⏰ [2010-04-08 00:00] Cycle 6
+  Price: 26.46000
+  💸 CLOSE | Price: 26.46000 | PnL: $-14.62 (-54.46%) | Reason: time_exit
+  📈 OPEN LONG | Price: 26.46000 | Size: 37.79 | SL: 25.93080 | TP: 27.51840
+
+⏰ [2010-04-09 00:00] Cycle 7
+  Price: 26.55000
+  💰 CLOSE | Price: 26.55000 | PnL: $3.30 (12.48%) | Reason: time_exit
+  📈 OPEN LONG | Price: 26.55000 | Size: 37.66 | SL: 26.01900 | TP: 27.61200
+
+⏰ [2010-04-12 00:00] Cycle 8
+  Price: 26.63000
+  💰 CLOSE | Price: 26.63000 | PnL: $2.91 (10.97%) | Reason: time_exit
+  📈 OPEN LONG | Price: 26.63000 | Size: 37.55 | SL: 26.09740 | TP: 27.69520
+
+⏰ [2010-04-13 00:00] Cycle 9
+  Price: 26.64000
+  💰 CLOSE | Price: 26.64000 | PnL: $0.28 (1.03%) | Reason: time_exit
+  📈 OPEN LONG | Price: 26.64000 | Size: 37.54 | SL: 26.10720 | TP: 27.70560
+
+⏰ [2010-04-14 00:00] Cycle 10
+  Price: 27.04000
+  💰 CLOSE | Price: 27.04000 | PnL: $14.91 (55.98%) | Reason: time_exit
+  📈 OPEN LONG | Price: 27.04000 | Size: 36.98 | SL: 26.49920 | TP: 28.12160
+
+⏰ [2010-04-15 00:00] Cycle 11
+  Price: 26.98000
+  💸 CLOSE | Price: 26.98000 | PnL: $-2.32 (-8.58%) | Reason: time_exit
+  📈 OPEN LONG | Price: 26.98000 | Size: 37.06 | SL: 26.44040 | TP: 28.05920
+
+⏰ [2010-04-16 00:00] Cycle 12
+  Price: 26.33000
+  💸 CLOSE | Price: 26.33000 | PnL: $-24.19 (-89.66%) | Reason: stop_loss
+  📈 OPEN LONG | Price: 26.33000 | Size: 37.98 | SL: 25.80340 | TP: 27.38320
+
+⏰ [2010-04-19 00:00] Cycle 13
+  Price: 26.32000
+  💸 CLOSE | Price: 26.32000 | PnL: $-0.48 (-1.82%) | Reason: time_exit
+  📈 OPEN LONG | Price: 26.32000 | Size: 37.99 | SL: 25.79360 | TP: 27.37280
+
+⏰ [2010-04-20 00:00] Cycle 14
+  Price: 26.40000
+  💰 CLOSE | Price: 26.40000 | PnL: $2.94 (11.17%) | Reason: time_exit
+  📈 OPEN LONG | Price: 26.40000 | Size: 37.88 | SL: 25.87200 | TP: 27.45600
+
+⏰ [2010-04-21 00:00] Cycle 15
+  Price: 26.29000
+  💸 CLOSE | Price: 26.29000 | PnL: $-4.27 (-16.16%) | Reason: time_exit
+  📈 OPEN LONG | Price: 26.29000 | Size: 38.04 | SL: 25.76420 | TP: 27.34160
+
+⏰ [2010-04-22 00:00] Cycle 16
+  Price: 24.78000
+  💸 CLOSE | Price: 24.78000 | PnL: $-57.53 (-218.83%) | Reason: stop_loss
+  📈 OPEN LONG | Price: 24.78000 | Size: 40.36 | SL: 24.28440 | TP: 25.77120
+
+⏰ [2010-04-23 00:00] Cycle 17
+  Price: 24.55000
+  💸 CLOSE | Price: 24.55000 | PnL: $-9.38 (-37.86%) | Reason: time_exit
+  📈 OPEN LONG | Price: 24.55000 | Size: 40.73 | SL: 24.05900 | TP: 25.53200
+
+⏰ [2010-04-26 00:00] Cycle 18
+  Price: 24.56000
+  💰 CLOSE | Price: 24.56000 | PnL: $0.31 (1.25%) | Reason: time_exit
+  📈 OPEN LONG | Price: 24.56000 | Size: 40.72 | SL: 24.06880 | TP: 25.54240
+
+⏰ [2010-04-27 00:00] Cycle 19
+  Price: 23.77000
+  💸 CLOSE | Price: 23.77000 | PnL: $-32.26 (-131.36%) | Reason: stop_loss
+  📈 OPEN LONG | Price: 23.77000 | Size: 42.07 | SL: 23.29460 | TP: 24.72080
+
+⏰ [2010-04-28 00:00] Cycle 20
+  Price: 23.99000
+  💰 CLOSE | Price: 23.99000 | PnL: $9.15 (38.51%) | Reason: time_exit
+  📈 OPEN LONG | Price: 23.99000 | Size: 41.68 | SL: 23.51020 | TP: 24.94960
+
+⏰ [2010-04-29 00:00] Cycle 21
+  Price: 24.24000
+  💰 CLOSE | Price: 24.24000 | PnL: $10.32 (43.02%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 24.24000 | Size: 41.25 | SL: 24.72480 | TP: 23.27040
+
+⏰ [2010-04-30 00:00] Cycle 22
+  Price: 23.78000
+  💸 CLOSE | Price: 23.78000 | PnL: $-19.08 (-78.69%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 23.78000 | Size: 42.05 | SL: 24.25560 | TP: 22.82880
+
+⏰ [2010-05-03 00:00] Cycle 23
+  Price: 23.91000
+  💰 CLOSE | Price: 23.91000 | PnL: $5.37 (22.57%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 23.91000 | Size: 41.82 | SL: 24.38820 | TP: 22.95360
+
+⏰ [2010-05-04 00:00] Cycle 24
+  Price: 23.08000
+  💸 CLOSE | Price: 23.08000 | PnL: $-34.81 (-145.59%) | Reason: stop_loss
+  📈 OPEN SHORT | Price: 23.08000 | Size: 43.33 | SL: 23.54160 | TP: 22.15680
+
+⏰ [2010-05-05 00:00] Cycle 25
+  Price: 22.66000
+  💸 CLOSE | Price: 22.66000 | PnL: $-18.30 (-79.27%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 22.66000 | Size: 44.13 | SL: 23.11320 | TP: 21.75360
+
+⏰ [2010-05-06 00:00] Cycle 26
+  Price: 22.27000
+  💸 CLOSE | Price: 22.27000 | PnL: $-17.31 (-76.39%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 22.27000 | Size: 44.90 | SL: 22.71540 | TP: 21.37920
+
+⏰ [2010-05-07 00:00] Cycle 27
+  Price: 21.48000
+  💸 CLOSE | Price: 21.48000 | PnL: $-35.57 (-159.72%) | Reason: stop_loss
+  📈 OPEN SHORT | Price: 21.48000 | Size: 46.55 | SL: 21.90960 | TP: 20.62080
+
+⏰ [2010-05-10 00:00] Cycle 28
+  Price: 22.33000
+  💰 CLOSE | Price: 22.33000 | PnL: $39.47 (183.74%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 22.33000 | Size: 44.78 | SL: 22.77660 | TP: 21.43680
+
+⏰ [2010-05-11 00:00] Cycle 29
+  Price: 22.38000
+  💰 CLOSE | Price: 22.38000 | PnL: $2.14 (9.58%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 22.38000 | Size: 44.68 | SL: 22.82760 | TP: 21.48480
+
+⏰ [2010-05-12 00:00] Cycle 30
+  Price: 22.51000
+  💰 CLOSE | Price: 22.51000 | PnL: $5.71 (25.51%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 22.51000 | Size: 44.42 | SL: 22.96020 | TP: 21.60960
+
+============================================================
+📊 PORTFOLIO SUMMARY
+============================================================
+Initial Capital:    $10,000.00
+Current Cash:       $9,819.52
+Total Equity:       $9,819.52
+Total PnL:          $-177.48
+Total Return:       -1.80%
+Active Positions:   1
+Total Trades:       29
+Win Rate:           44.8%
+Profit Factor:      0.42
+============================================================
+
+📈 ACTIVE POSITIONS:
+  POS_1: LONG | Entry: 22.51000 | Size: 44.42 | Time: 00:00
+
+📜 RECENT TRADES:
+  💸 EBAY | LONG | PnL: $-17.31 | Reason: time_exit
+  💸 EBAY | LONG | PnL: $-35.57 | Reason: stop_loss
+  💰 EBAY | LONG | PnL: $39.47 | Reason: time_exit
+  💰 EBAY | LONG | PnL: $2.14 | Reason: time_exit
+  💰 EBAY | LONG | PnL: $5.71 | Reason: time_exit
+
+📁 Trade history saved to: paper_trading_trades_20260315_002922.csv
+📁 Equity curve saved to: paper_trading_equity_20260315_002922.csv
+
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1773552551.564575  198534 cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+I0000 00:00:1773552551.660289  198534 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1773552553.676260  198534 cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+E0000 00:00:1773552555.532197  198534 cuda_platform.cc:52] failed call to cuInit: INTERNAL: CUDA error: Failed call to cuInit: UNKNOWN ERROR (303)
+
+  📁 Trades moved to: outputs/trades/ebay_trades_20260315_002910.csv
+  📁 Equity moved to: outputs/equity/ebay_equity_20260315_002910.csv
+
+============================================================
+📥 Extracting FCX data...
+============================================================
+  ✅ Extracted data saved to: data/extracted_stocks/fcx_data.csv
+
+============================================================
+🎓 Training model for FCX...
+============================================================
+  ✅ Model saved to: artifacts/models/fcx_model.keras
+
+============================================================
+📈 Running paper trading for FCX...
+============================================================
+
+============================================================
+🚀 STARTING PAPER TRADING SESSION
+============================================================
+Symbol:           FCX
+Initial Capital:  $10,000.00
+Position Size:    10.0%
+Max Positions:    5
+Stop Loss:        2.0%
+Take Profit:      4.0%
+Duration:         30 minutes
+Interval:         1 seconds
+============================================================
+
+Loading model from artifacts/models/fcx_model.keras...
+Model loaded successfully.
+
+📡 Fetching market data...
+Received 1762 data points
+
+⏩ Running historical replay...
+
+
+⏰ [2010-03-31 00:00] Cycle 1
+  Price: 83.54000
+  📈 OPEN LONG | Price: 83.54000 | Size: 11.97 | SL: 81.86920 | TP: 86.88160
+
+⏰ [2010-04-01 00:00] Cycle 2
+  Price: 86.28000
+  💰 CLOSE | Price: 86.28000 | PnL: $32.70 (39.14%) | Reason: time_exit
+  📈 OPEN LONG | Price: 86.28000 | Size: 11.59 | SL: 84.55440 | TP: 89.73120
+
+⏰ [2010-04-05 00:00] Cycle 3
+  Price: 87.33000
+  💰 CLOSE | Price: 87.33000 | PnL: $12.07 (13.99%) | Reason: time_exit
+  📈 OPEN LONG | Price: 87.33000 | Size: 11.45 | SL: 85.58340 | TP: 90.82320
+
+⏰ [2010-04-06 00:00] Cycle 4
+  Price: 87.33000
+  💸 CLOSE | Price: 87.33000 | PnL: $-0.10 (-0.11%) | Reason: time_exit
+  📈 OPEN LONG | Price: 87.33000 | Size: 11.45 | SL: 85.58340 | TP: 90.82320
+
+⏰ [2010-04-07 00:00] Cycle 5
+  Price: 85.93000
+  💸 CLOSE | Price: 85.93000 | PnL: $-16.13 (-18.47%) | Reason: time_exit
+  📈 OPEN LONG | Price: 85.93000 | Size: 11.64 | SL: 84.21140 | TP: 89.36720
+
+⏰ [2010-04-08 00:00] Cycle 6
+  Price: 86.05000
+  💰 CLOSE | Price: 86.05000 | PnL: $1.30 (1.51%) | Reason: time_exit
+  📈 OPEN LONG | Price: 86.05000 | Size: 11.62 | SL: 84.32900 | TP: 89.49200
+
+⏰ [2010-04-09 00:00] Cycle 7
+  Price: 85.67000
+  💸 CLOSE | Price: 85.67000 | PnL: $-4.52 (-5.25%) | Reason: time_exit
+  📈 OPEN LONG | Price: 85.67000 | Size: 11.67 | SL: 83.95660 | TP: 89.09680
+
+⏰ [2010-04-12 00:00] Cycle 8
+  Price: 84.40000
+  💸 CLOSE | Price: 84.40000 | PnL: $-14.92 (-17.42%) | Reason: time_exit
+  📈 OPEN LONG | Price: 84.40000 | Size: 11.85 | SL: 82.71200 | TP: 87.77600
+
+⏰ [2010-04-13 00:00] Cycle 9
+  Price: 84.77000
+  💰 CLOSE | Price: 84.77000 | PnL: $4.28 (5.08%) | Reason: time_exit
+  📈 OPEN LONG | Price: 84.77000 | Size: 11.80 | SL: 83.07460 | TP: 88.16080
+
+⏰ [2010-04-14 00:00] Cycle 10
+  Price: 85.36000
+  💰 CLOSE | Price: 85.36000 | PnL: $6.86 (8.09%) | Reason: time_exit
+  📈 OPEN LONG | Price: 85.36000 | Size: 11.72 | SL: 83.65280 | TP: 88.77440
+
+⏰ [2010-04-15 00:00] Cycle 11
+  Price: 84.22000
+  💸 CLOSE | Price: 84.22000 | PnL: $-13.45 (-15.76%) | Reason: time_exit
+  📈 OPEN LONG | Price: 84.22000 | Size: 11.87 | SL: 82.53560 | TP: 87.58880
+
+⏰ [2010-04-16 00:00] Cycle 12
+  Price: 81.18000
+  💸 CLOSE | Price: 81.18000 | PnL: $-36.19 (-42.97%) | Reason: stop_loss
+  📈 OPEN LONG | Price: 81.18000 | Size: 12.32 | SL: 79.55640 | TP: 84.42720
+
+⏰ [2010-04-19 00:00] Cycle 13
+  Price: 80.80000
+  💸 CLOSE | Price: 80.80000 | PnL: $-4.78 (-5.89%) | Reason: time_exit
+  📈 OPEN LONG | Price: 80.80000 | Size: 12.38 | SL: 79.18400 | TP: 84.03200
+
+⏰ [2010-04-20 00:00] Cycle 14
+  Price: 80.80000
+  💸 CLOSE | Price: 80.80000 | PnL: $-0.10 (-0.12%) | Reason: time_exit
+  📈 OPEN LONG | Price: 80.80000 | Size: 12.38 | SL: 79.18400 | TP: 84.03200
+
+⏰ [2010-04-21 00:00] Cycle 15
+  Price: 78.41000
+  💸 CLOSE | Price: 78.41000 | PnL: $-29.68 (-36.73%) | Reason: stop_loss
+  📈 OPEN LONG | Price: 78.41000 | Size: 12.75 | SL: 76.84180 | TP: 81.54640
+
+⏰ [2010-04-22 00:00] Cycle 16
+  Price: 80.50000
+  💰 CLOSE | Price: 80.50000 | PnL: $26.55 (33.86%) | Reason: time_exit
+  📈 OPEN LONG | Price: 80.50000 | Size: 12.42 | SL: 78.89000 | TP: 83.72000
+
+⏰ [2010-04-23 00:00] Cycle 17
+  Price: 79.56000
+  💸 CLOSE | Price: 79.56000 | PnL: $-11.78 (-14.63%) | Reason: time_exit
+  📈 OPEN LONG | Price: 79.56000 | Size: 12.57 | SL: 77.96880 | TP: 82.74240
+
+⏰ [2010-04-26 00:00] Cycle 18
+  Price: 80.40000
+  💰 CLOSE | Price: 80.40000 | PnL: $10.46 (13.14%) | Reason: time_exit
+  📈 OPEN LONG | Price: 80.40000 | Size: 12.44 | SL: 78.79200 | TP: 83.61600
+
+⏰ [2010-04-27 00:00] Cycle 19
+  Price: 76.15000
+  💸 CLOSE | Price: 76.15000 | PnL: $-52.96 (-65.86%) | Reason: stop_loss
+  📈 OPEN LONG | Price: 76.15000 | Size: 13.13 | SL: 74.62700 | TP: 79.19600
+
+⏰ [2010-04-28 00:00] Cycle 20
+  Price: 76.49000
+  💰 CLOSE | Price: 76.49000 | PnL: $4.36 (5.73%) | Reason: time_exit
+  📈 OPEN LONG | Price: 76.49000 | Size: 13.07 | SL: 74.96020 | TP: 79.54960
+
+⏰ [2010-04-29 00:00] Cycle 21
+  Price: 77.72000
+  💰 CLOSE | Price: 77.72000 | PnL: $15.98 (20.89%) | Reason: time_exit
+  📈 OPEN LONG | Price: 77.72000 | Size: 12.87 | SL: 76.16560 | TP: 80.82880
+
+⏰ [2010-04-30 00:00] Cycle 22
+  Price: 75.53000
+  💸 CLOSE | Price: 75.53000 | PnL: $-28.28 (-36.38%) | Reason: stop_loss
+  📈 OPEN LONG | Price: 75.53000 | Size: 13.24 | SL: 74.01940 | TP: 78.55120
+
+⏰ [2010-05-03 00:00] Cycle 23
+  Price: 73.74000
+  💸 CLOSE | Price: 73.74000 | PnL: $-23.80 (-31.51%) | Reason: stop_loss
+  📈 OPEN LONG | Price: 73.74000 | Size: 13.56 | SL: 72.26520 | TP: 76.68960
+
+⏰ [2010-05-04 00:00] Cycle 24
+  Price: 70.49000
+  💸 CLOSE | Price: 70.49000 | PnL: $-44.17 (-59.90%) | Reason: stop_loss
+  📈 OPEN SHORT | Price: 70.49000 | Size: 14.19 | SL: 71.89980 | TP: 67.67040
+
+⏰ [2010-05-05 00:00] Cycle 25
+  Price: 70.44000
+  💸 CLOSE | Price: 70.44000 | PnL: $-0.81 (-1.15%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 70.44000 | Size: 14.20 | SL: 71.84880 | TP: 67.62240
+
+⏰ [2010-05-06 00:00] Cycle 26
+  Price: 69.03000
+  💸 CLOSE | Price: 69.03000 | PnL: $-20.12 (-28.56%) | Reason: stop_loss
+  📈 OPEN LONG | Price: 69.03000 | Size: 14.49 | SL: 67.64940 | TP: 71.79120
+
+⏰ [2010-05-07 00:00] Cycle 27
+  Price: 67.59000
+  💸 CLOSE | Price: 67.59000 | PnL: $-20.96 (-30.36%) | Reason: stop_loss
+  📈 OPEN SHORT | Price: 67.59000 | Size: 14.80 | SL: 68.94180 | TP: 64.88640
+
+⏰ [2010-05-10 00:00] Cycle 28
+  Price: 72.50000
+  💰 CLOSE | Price: 72.50000 | PnL: $72.54 (107.32%) | Reason: take_profit
+  📈 OPEN LONG | Price: 72.50000 | Size: 13.79 | SL: 71.05000 | TP: 75.40000
+
+⏰ [2010-05-11 00:00] Cycle 29
+  Price: 70.24000
+  💸 CLOSE | Price: 70.24000 | PnL: $-31.27 (-43.13%) | Reason: stop_loss
+
+⏰ [2010-05-12 00:00] Cycle 30
+  Price: 73.00000
+  📈 OPEN LONG | Price: 73.00000 | Size: 13.70 | SL: 71.54000 | TP: 75.92000
+
+============================================================
+📊 PORTFOLIO SUMMARY
+============================================================
+Initial Capital:    $10,000.00
+Current Cash:       $9,830.20
+Total Equity:       $9,830.20
+Total PnL:          $-166.90
+Total Return:       -1.70%
+Active Positions:   1
+Total Trades:       28
+Win Rate:           35.7%
+Profit Factor:      0.53
+============================================================
+
+📈 ACTIVE POSITIONS:
+  POS_1: LONG | Entry: 73.00000 | Size: 13.70 | Time: 00:00
+
+📜 RECENT TRADES:
+  💸 FCX | LONG | PnL: $-0.81 | Reason: time_exit
+  💸 FCX | LONG | PnL: $-20.12 | Reason: stop_loss
+  💸 FCX | LONG | PnL: $-20.96 | Reason: stop_loss
+  💰 FCX | LONG | PnL: $72.54 | Reason: take_profit
+  💸 FCX | LONG | PnL: $-31.27 | Reason: stop_loss
+
+📁 Trade history saved to: paper_trading_trades_20260315_002956.csv
+📁 Equity curve saved to: paper_trading_equity_20260315_002956.csv
+
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1773552585.238901  199900 cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+I0000 00:00:1773552585.334956  199900 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1773552587.340705  199900 cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+E0000 00:00:1773552589.199652  199900 cuda_platform.cc:52] failed call to cuInit: INTERNAL: CUDA error: Failed call to cuInit: UNKNOWN ERROR (303)
+
+  📁 Trades moved to: outputs/trades/fcx_trades_20260315_002944.csv
+  📁 Equity moved to: outputs/equity/fcx_equity_20260315_002944.csv
+
+============================================================
+📥 Extracting ORCL data...
+============================================================
+  ✅ Extracted data saved to: data/extracted_stocks/orcl_data.csv
+
+============================================================
+🎓 Training model for ORCL...
+============================================================
+  ✅ Model saved to: artifacts/models/orcl_model.keras
+
+============================================================
+📈 Running paper trading for ORCL...
+============================================================
+
+============================================================
+🚀 STARTING PAPER TRADING SESSION
+============================================================
+Symbol:           ORCL
+Initial Capital:  $10,000.00
+Position Size:    10.0%
+Max Positions:    5
+Stop Loss:        2.0%
+Take Profit:      4.0%
+Duration:         30 minutes
+Interval:         1 seconds
+============================================================
+
+Loading model from artifacts/models/orcl_model.keras...
+Model loaded successfully.
+
+📡 Fetching market data...
+Received 1762 data points
+
+⏩ Running historical replay...
+
+
+⏰ [2010-03-31 00:00] Cycle 1
+  Price: 25.71000
+  📈 OPEN LONG | Price: 25.71000 | Size: 38.90 | SL: 25.19580 | TP: 26.73840
+
+⏰ [2010-04-01 00:00] Cycle 2
+  Price: 25.46000
+  💸 CLOSE | Price: 25.46000 | PnL: $-9.82 (-38.21%) | Reason: time_exit
+  📈 OPEN LONG | Price: 25.46000 | Size: 39.28 | SL: 24.95080 | TP: 26.47840
+
+⏰ [2010-04-05 00:00] Cycle 3
+  Price: 25.58000
+  💰 CLOSE | Price: 25.58000 | PnL: $4.61 (18.12%) | Reason: time_exit
+  📈 OPEN LONG | Price: 25.58000 | Size: 39.09 | SL: 25.06840 | TP: 26.60320
+
+⏰ [2010-04-06 00:00] Cycle 4
+  Price: 25.83000
+  💰 CLOSE | Price: 25.83000 | PnL: $9.67 (37.81%) | Reason: time_exit
+  📈 OPEN LONG | Price: 25.83000 | Size: 38.71 | SL: 25.31340 | TP: 26.86320
+
+⏰ [2010-04-07 00:00] Cycle 5
+  Price: 25.91000
+  💰 CLOSE | Price: 25.91000 | PnL: $3.00 (11.60%) | Reason: time_exit
+  📈 OPEN LONG | Price: 25.91000 | Size: 38.60 | SL: 25.39180 | TP: 26.94640
+
+⏰ [2010-04-08 00:00] Cycle 6
+  Price: 25.83000
+  💸 CLOSE | Price: 25.83000 | PnL: $-3.19 (-12.30%) | Reason: time_exit
+  📈 OPEN LONG | Price: 25.83000 | Size: 38.71 | SL: 25.31340 | TP: 26.86320
+
+⏰ [2010-04-09 00:00] Cycle 7
+  Price: 26.13000
+  💰 CLOSE | Price: 26.13000 | PnL: $11.51 (44.57%) | Reason: time_exit
+  📈 OPEN LONG | Price: 26.13000 | Size: 38.27 | SL: 25.60740 | TP: 27.17520
+
+⏰ [2010-04-12 00:00] Cycle 8
+  Price: 26.20000
+  💰 CLOSE | Price: 26.20000 | PnL: $2.58 (9.87%) | Reason: time_exit
+  📈 OPEN LONG | Price: 26.20000 | Size: 38.17 | SL: 25.67600 | TP: 27.24800
+
+⏰ [2010-04-13 00:00] Cycle 9
+  Price: 26.35000
+  💰 CLOSE | Price: 26.35000 | PnL: $5.62 (21.47%) | Reason: time_exit
+  📈 OPEN LONG | Price: 26.35000 | Size: 37.95 | SL: 25.82300 | TP: 27.40400
+
+⏰ [2010-04-14 00:00] Cycle 10
+  Price: 26.38000
+  💰 CLOSE | Price: 26.38000 | PnL: $1.04 (3.94%) | Reason: time_exit
+  📈 OPEN LONG | Price: 26.38000 | Size: 37.91 | SL: 25.85240 | TP: 27.43520
+
+⏰ [2010-04-15 00:00] Cycle 11
+  Price: 26.20000
+  💸 CLOSE | Price: 26.20000 | PnL: $-6.92 (-26.24%) | Reason: time_exit
+  📈 OPEN LONG | Price: 26.20000 | Size: 38.17 | SL: 25.67600 | TP: 27.24800
+
+⏰ [2010-04-16 00:00] Cycle 12
+  Price: 25.95000
+  💸 CLOSE | Price: 25.95000 | PnL: $-9.64 (-36.80%) | Reason: time_exit
+  📈 OPEN LONG | Price: 25.95000 | Size: 38.54 | SL: 25.43100 | TP: 26.98800
+
+⏰ [2010-04-19 00:00] Cycle 13
+  Price: 26.19000
+  💰 CLOSE | Price: 26.19000 | PnL: $9.15 (35.25%) | Reason: time_exit
+  📈 OPEN LONG | Price: 26.19000 | Size: 38.18 | SL: 25.66620 | TP: 27.23760
+
+⏰ [2010-04-20 00:00] Cycle 14
+  Price: 26.15000
+  💸 CLOSE | Price: 26.15000 | PnL: $-1.63 (-6.21%) | Reason: time_exit
+  📈 OPEN LONG | Price: 26.15000 | Size: 38.24 | SL: 25.62700 | TP: 27.19600
+
+⏰ [2010-04-21 00:00] Cycle 15
+  Price: 26.29000
+  💰 CLOSE | Price: 26.29000 | PnL: $5.25 (20.09%) | Reason: time_exit
+  📈 OPEN LONG | Price: 26.29000 | Size: 38.04 | SL: 25.76420 | TP: 27.34160
+
+⏰ [2010-04-22 00:00] Cycle 16
+  Price: 26.24000
+  💸 CLOSE | Price: 26.24000 | PnL: $-2.00 (-7.61%) | Reason: time_exit
+  📈 OPEN LONG | Price: 26.24000 | Size: 38.11 | SL: 25.71520 | TP: 27.28960
+
+⏰ [2010-04-23 00:00] Cycle 17
+  Price: 26.48000
+  💰 CLOSE | Price: 26.48000 | PnL: $9.05 (34.47%) | Reason: time_exit
+  📈 OPEN LONG | Price: 26.48000 | Size: 37.76 | SL: 25.95040 | TP: 27.53920
+
+⏰ [2010-04-26 00:00] Cycle 18
+  Price: 26.47000
+  💸 CLOSE | Price: 26.47000 | PnL: $-0.48 (-1.80%) | Reason: time_exit
+  📈 OPEN LONG | Price: 26.47000 | Size: 37.78 | SL: 25.94060 | TP: 27.52880
+
+⏰ [2010-04-27 00:00] Cycle 19
+  Price: 25.98000
+  💸 CLOSE | Price: 25.98000 | PnL: $-18.61 (-70.30%) | Reason: time_exit
+  📈 OPEN LONG | Price: 25.98000 | Size: 38.49 | SL: 25.46040 | TP: 27.01920
+
+⏰ [2010-04-28 00:00] Cycle 20
+  Price: 25.86000
+  💸 CLOSE | Price: 25.86000 | PnL: $-4.72 (-18.16%) | Reason: time_exit
+  📈 OPEN LONG | Price: 25.86000 | Size: 38.67 | SL: 25.34280 | TP: 26.89440
+
+⏰ [2010-04-29 00:00] Cycle 21
+  Price: 25.97000
+  💰 CLOSE | Price: 25.97000 | PnL: $4.15 (16.06%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 25.97000 | Size: 38.51 | SL: 26.48940 | TP: 24.93120
+
+⏰ [2010-04-30 00:00] Cycle 22
+  Price: 25.87000
+  💸 CLOSE | Price: 25.87000 | PnL: $-3.95 (-15.21%) | Reason: time_exit
+
+⏰ [2010-05-03 00:00] Cycle 23
+  Price: 26.01000
+  📈 OPEN SHORT | Price: 26.01000 | Size: 38.45 | SL: 26.53020 | TP: 24.96960
+
+⏰ [2010-05-04 00:00] Cycle 24
+  Price: 24.97000
+  💸 CLOSE | Price: 24.97000 | PnL: $-40.08 (-154.10%) | Reason: stop_loss
+  📈 OPEN SHORT | Price: 24.97000 | Size: 40.05 | SL: 25.46940 | TP: 23.97120
+
+⏰ [2010-05-05 00:00] Cycle 25
+  Price: 24.94000
+  💸 CLOSE | Price: 24.94000 | PnL: $-1.30 (-5.21%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 24.94000 | Size: 40.10 | SL: 25.43880 | TP: 23.94240
+
+⏰ [2010-05-06 00:00] Cycle 26
+  Price: 23.91000
+  💸 CLOSE | Price: 23.91000 | PnL: $-41.40 (-165.98%) | Reason: stop_loss
+  📈 OPEN SHORT | Price: 23.91000 | Size: 41.82 | SL: 24.38820 | TP: 22.95360
+
+⏰ [2010-05-07 00:00] Cycle 27
+  Price: 23.41000
+  💸 CLOSE | Price: 23.41000 | PnL: $-21.01 (-87.87%) | Reason: stop_loss
+  📈 OPEN SHORT | Price: 23.41000 | Size: 42.72 | SL: 23.87820 | TP: 22.47360
+
+⏰ [2010-05-10 00:00] Cycle 28
+  Price: 24.39000
+  💰 CLOSE | Price: 24.39000 | PnL: $41.76 (178.38%) | Reason: take_profit
+  📈 OPEN SHORT | Price: 24.39000 | Size: 41.00 | SL: 24.87780 | TP: 23.41440
+
+⏰ [2010-05-11 00:00] Cycle 29
+  Price: 24.19000
+  💸 CLOSE | Price: 24.19000 | PnL: $-8.30 (-34.03%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 24.19000 | Size: 41.34 | SL: 24.67380 | TP: 23.22240
+
+⏰ [2010-05-12 00:00] Cycle 30
+  Price: 24.60000
+  💰 CLOSE | Price: 24.60000 | PnL: $16.85 (69.65%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 24.60000 | Size: 40.65 | SL: 25.09200 | TP: 23.61600
+
+============================================================
+📊 PORTFOLIO SUMMARY
+============================================================
+Initial Capital:    $10,000.00
+Current Cash:       $9,948.30
+Total Equity:       $9,948.30
+Total PnL:          $-48.80
+Total Return:       -0.52%
+Active Positions:   1
+Total Trades:       28
+Win Rate:           46.4%
+Profit Factor:      0.72
+============================================================
+
+📈 ACTIVE POSITIONS:
+  POS_1: LONG | Entry: 24.60000 | Size: 40.65 | Time: 00:00
+
+📜 RECENT TRADES:
+  💸 ORCL | LONG | PnL: $-41.40 | Reason: stop_loss
+  💸 ORCL | LONG | PnL: $-21.01 | Reason: stop_loss
+  💰 ORCL | LONG | PnL: $41.76 | Reason: take_profit
+  💸 ORCL | LONG | PnL: $-8.30 | Reason: time_exit
+  💰 ORCL | LONG | PnL: $16.85 | Reason: time_exit
+
+📁 Trade history saved to: paper_trading_trades_20260315_003031.csv
+📁 Equity curve saved to: paper_trading_equity_20260315_003031.csv
+
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1773552620.072659  201413 cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+I0000 00:00:1773552620.168644  201413 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1773552622.176059  201413 cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+E0000 00:00:1773552624.029144  201413 cuda_platform.cc:52] failed call to cuInit: INTERNAL: CUDA error: Failed call to cuInit: UNKNOWN ERROR (303)
+
+  📁 Trades moved to: outputs/trades/orcl_trades_20260315_003019.csv
+  📁 Equity moved to: outputs/equity/orcl_equity_20260315_003019.csv
+
+============================================================
+📥 Extracting YHOO data...
+============================================================
+  ✅ Extracted data saved to: data/extracted_stocks/yhoo_data.csv
+
+============================================================
+🎓 Training model for YHOO...
+============================================================
+  ✅ Model saved to: artifacts/models/yhoo_model.keras
+
+============================================================
+📈 Running paper trading for YHOO...
+============================================================
+
+============================================================
+🚀 STARTING PAPER TRADING SESSION
+============================================================
+Symbol:           YHOO
+Initial Capital:  $10,000.00
+Position Size:    10.0%
+Max Positions:    5
+Stop Loss:        2.0%
+Take Profit:      4.0%
+Duration:         30 minutes
+Interval:         1 seconds
+============================================================
+
+Loading model from artifacts/models/yhoo_model.keras...
+Model loaded successfully.
+
+📡 Fetching market data...
+Received 1762 data points
+
+⏩ Running historical replay...
+
+
+⏰ [2010-03-31 00:00] Cycle 1
+  Price: 16.53000
+  📈 OPEN LONG | Price: 16.53000 | Size: 60.50 | SL: 16.19940 | TP: 17.19120
+
+⏰ [2010-04-01 00:00] Cycle 2
+  Price: 16.29000
+  💸 CLOSE | Price: 16.29000 | PnL: $-14.62 (-88.43%) | Reason: time_exit
+  📈 OPEN LONG | Price: 16.29000 | Size: 61.39 | SL: 15.96420 | TP: 16.94160
+
+⏰ [2010-04-05 00:00] Cycle 3
+  Price: 16.51000
+  💰 CLOSE | Price: 16.51000 | PnL: $13.40 (82.28%) | Reason: time_exit
+  📈 OPEN LONG | Price: 16.51000 | Size: 60.57 | SL: 16.17980 | TP: 17.17040
+
+⏰ [2010-04-06 00:00] Cycle 4
+  Price: 16.92000
+  💰 CLOSE | Price: 16.92000 | PnL: $24.73 (149.79%) | Reason: time_exit
+  📈 OPEN LONG | Price: 16.92000 | Size: 59.10 | SL: 16.58160 | TP: 17.59680
+
+⏰ [2010-04-07 00:00] Cycle 5
+  Price: 16.87000
+  💸 CLOSE | Price: 16.87000 | PnL: $-3.05 (-18.05%) | Reason: time_exit
+  📈 OPEN LONG | Price: 16.87000 | Size: 59.28 | SL: 16.53260 | TP: 17.54480
+
+⏰ [2010-04-08 00:00] Cycle 6
+  Price: 17.35000
+  💰 CLOSE | Price: 17.35000 | PnL: $28.35 (168.05%) | Reason: time_exit
+  📈 OPEN LONG | Price: 17.35000 | Size: 57.64 | SL: 17.00300 | TP: 18.04400
+
+⏰ [2010-04-09 00:00] Cycle 7
+  Price: 17.52000
+  💰 CLOSE | Price: 17.52000 | PnL: $9.70 (55.89%) | Reason: time_exit
+  📈 OPEN LONG | Price: 17.52000 | Size: 57.08 | SL: 17.16960 | TP: 18.22080
+
+⏰ [2010-04-12 00:00] Cycle 8
+  Price: 17.64000
+  💰 CLOSE | Price: 17.64000 | PnL: $6.75 (38.52%) | Reason: time_exit
+  📈 OPEN LONG | Price: 17.64000 | Size: 56.69 | SL: 17.28720 | TP: 18.34560
+
+⏰ [2010-04-13 00:00] Cycle 9
+  Price: 18.18000
+  💰 CLOSE | Price: 18.18000 | PnL: $30.51 (172.95%) | Reason: time_exit
+  📈 OPEN LONG | Price: 18.18000 | Size: 55.01 | SL: 17.81640 | TP: 18.90720
+
+⏰ [2010-04-14 00:00] Cycle 10
+  Price: 18.38000
+  💰 CLOSE | Price: 18.38000 | PnL: $10.90 (59.96%) | Reason: time_exit
+  📈 OPEN LONG | Price: 18.38000 | Size: 54.41 | SL: 18.01240 | TP: 19.11520
+
+⏰ [2010-04-15 00:00] Cycle 11
+  Price: 18.97000
+  💰 CLOSE | Price: 18.97000 | PnL: $32.00 (174.09%) | Reason: time_exit
+  📈 OPEN LONG | Price: 18.97000 | Size: 52.71 | SL: 18.59060 | TP: 19.72880
+
+⏰ [2010-04-16 00:00] Cycle 12
+  Price: 18.17000
+  💸 CLOSE | Price: 18.17000 | PnL: $-42.27 (-222.81%) | Reason: stop_loss
+  📈 OPEN LONG | Price: 18.17000 | Size: 55.04 | SL: 17.80660 | TP: 18.89680
+
+⏰ [2010-04-19 00:00] Cycle 13
+  Price: 18.39000
+  💰 CLOSE | Price: 18.39000 | PnL: $12.01 (66.08%) | Reason: time_exit
+  📈 OPEN LONG | Price: 18.39000 | Size: 54.38 | SL: 18.02220 | TP: 19.12560
+
+⏰ [2010-04-20 00:00] Cycle 14
+  Price: 18.38000
+  💸 CLOSE | Price: 18.38000 | PnL: $-0.64 (-3.50%) | Reason: time_exit
+  📈 OPEN LONG | Price: 18.38000 | Size: 54.41 | SL: 18.01240 | TP: 19.11520
+
+⏰ [2010-04-21 00:00] Cycle 15
+  Price: 17.45000
+  💸 CLOSE | Price: 17.45000 | PnL: $-50.69 (-275.81%) | Reason: stop_loss
+  📈 OPEN LONG | Price: 17.45000 | Size: 57.31 | SL: 17.10100 | TP: 18.14800
+
+⏰ [2010-04-22 00:00] Cycle 16
+  Price: 17.72000
+  💰 CLOSE | Price: 17.72000 | PnL: $15.37 (88.09%) | Reason: time_exit
+  📈 OPEN LONG | Price: 17.72000 | Size: 56.43 | SL: 17.36560 | TP: 18.42880
+
+⏰ [2010-04-23 00:00] Cycle 17
+  Price: 17.64000
+  💸 CLOSE | Price: 17.64000 | PnL: $-4.61 (-26.04%) | Reason: time_exit
+  📈 OPEN LONG | Price: 17.64000 | Size: 56.69 | SL: 17.28720 | TP: 18.34560
+
+⏰ [2010-04-26 00:00] Cycle 18
+  Price: 17.39000
+  💸 CLOSE | Price: 17.39000 | PnL: $-14.27 (-80.90%) | Reason: time_exit
+  📈 OPEN LONG | Price: 17.39000 | Size: 57.50 | SL: 17.04220 | TP: 18.08560
+
+⏰ [2010-04-27 00:00] Cycle 19
+  Price: 16.92000
+  💸 CLOSE | Price: 16.92000 | PnL: $-27.12 (-155.98%) | Reason: stop_loss
+  📈 OPEN LONG | Price: 16.92000 | Size: 59.10 | SL: 16.58160 | TP: 17.59680
+
+⏰ [2010-04-28 00:00] Cycle 20
+  Price: 16.75000
+  💸 CLOSE | Price: 16.75000 | PnL: $-10.15 (-59.97%) | Reason: time_exit
+  📈 OPEN LONG | Price: 16.75000 | Size: 59.70 | SL: 16.41500 | TP: 17.42000
+
+⏰ [2010-04-29 00:00] Cycle 21
+  Price: 16.97000
+  💰 CLOSE | Price: 16.97000 | PnL: $13.03 (77.81%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 16.97000 | Size: 58.93 | SL: 17.30940 | TP: 16.29120
+
+⏰ [2010-04-30 00:00] Cycle 22
+  Price: 16.53000
+  💸 CLOSE | Price: 16.53000 | PnL: $-26.03 (-153.36%) | Reason: stop_loss
+  📈 OPEN SHORT | Price: 16.53000 | Size: 60.50 | SL: 16.86060 | TP: 15.86880
+
+⏰ [2010-05-03 00:00] Cycle 23
+  Price: 16.95000
+  💰 CLOSE | Price: 16.95000 | PnL: $25.31 (153.09%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 16.95000 | Size: 59.00 | SL: 17.28900 | TP: 16.27200
+
+⏰ [2010-05-04 00:00] Cycle 24
+  Price: 16.32000
+  💸 CLOSE | Price: 16.32000 | PnL: $-37.26 (-219.85%) | Reason: stop_loss
+  📈 OPEN SHORT | Price: 16.32000 | Size: 61.27 | SL: 16.64640 | TP: 15.66720
+
+⏰ [2010-05-05 00:00] Cycle 25
+  Price: 16.49000
+  💰 CLOSE | Price: 16.49000 | PnL: $10.32 (63.21%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 16.49000 | Size: 60.64 | SL: 16.81980 | TP: 15.83040
+
+⏰ [2010-05-06 00:00] Cycle 26
+  Price: 15.92000
+  💸 CLOSE | Price: 15.92000 | PnL: $-34.66 (-210.21%) | Reason: stop_loss
+  📈 OPEN SHORT | Price: 15.92000 | Size: 62.81 | SL: 16.23840 | TP: 15.28320
+
+⏰ [2010-05-07 00:00] Cycle 27
+  Price: 15.29000
+  💸 CLOSE | Price: 15.29000 | PnL: $-39.67 (-249.18%) | Reason: stop_loss
+  📈 OPEN SHORT | Price: 15.29000 | Size: 65.40 | SL: 15.59580 | TP: 14.67840
+
+⏰ [2010-05-10 00:00] Cycle 28
+  Price: 16.33000
+  💰 CLOSE | Price: 16.33000 | PnL: $67.91 (444.16%) | Reason: take_profit
+  📈 OPEN SHORT | Price: 16.33000 | Size: 61.24 | SL: 16.65660 | TP: 15.67680
+
+⏰ [2010-05-11 00:00] Cycle 29
+  Price: 16.41000
+  💰 CLOSE | Price: 16.41000 | PnL: $4.80 (29.38%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 16.41000 | Size: 60.94 | SL: 16.73820 | TP: 15.75360
+
+⏰ [2010-05-12 00:00] Cycle 30
+  Price: 16.47000
+  💰 CLOSE | Price: 16.47000 | PnL: $3.56 (21.67%) | Reason: time_exit
+  📈 OPEN SHORT | Price: 16.47000 | Size: 60.72 | SL: 16.79940 | TP: 15.81120
+
+============================================================
+📊 PORTFOLIO SUMMARY
+============================================================
+Initial Capital:    $10,000.00
+Current Cash:       $10,000.58
+Total Equity:       $10,000.58
+Total PnL:          $3.58
+Total Return:       0.01%
+Active Positions:   1
+Total Trades:       29
+Win Rate:           55.2%
+Profit Factor:      1.01
+============================================================
+
+📈 ACTIVE POSITIONS:
+  POS_1: LONG | Entry: 16.47000 | Size: 60.72 | Time: 00:00
+
+📜 RECENT TRADES:
+  💸 YHOO | LONG | PnL: $-34.66 | Reason: stop_loss
+  💸 YHOO | LONG | PnL: $-39.67 | Reason: stop_loss
+  💰 YHOO | LONG | PnL: $67.91 | Reason: take_profit
+  💰 YHOO | LONG | PnL: $4.80 | Reason: time_exit
+  💰 YHOO | LONG | PnL: $3.56 | Reason: time_exit
+
+📁 Trade history saved to: paper_trading_trades_20260315_003104.csv
+📁 Equity curve saved to: paper_trading_equity_20260315_003104.csv
+
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1773552653.988048  202881 cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+I0000 00:00:1773552654.084348  202881 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1773552656.085520  202881 cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+E0000 00:00:1773552657.943520  202881 cuda_platform.cc:52] failed call to cuInit: INTERNAL: CUDA error: Failed call to cuInit: UNKNOWN ERROR (303)
+
+  📁 Trades moved to: outputs/trades/yhoo_trades_20260315_003053.csv
+  📁 Equity moved to: outputs/equity/yhoo_equity_20260315_003053.csv
+
+============================================================
+📊 Generating summary report...
+============================================================
+  ✅ Summary report saved to: outputs/reports/summary_report_20260315_003105.txt
+
+============================================================
+✅ PAPER TRADING COMPLETE
+============================================================
+Stocks processed: 20
+Outputs saved to:
+   📁 Trades:   outputs/trades/
+   📁 Equity:   outputs/equity/
+   📁 Reports:  outputs/reports/
+   📁 Models:   artifacts/models/
+   📁 Data:     data/extracted_stocks/
+============================================================
+

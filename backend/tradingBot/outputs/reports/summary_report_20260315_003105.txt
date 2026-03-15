@@ -1,0 +1,126 @@
+============================================================
+PAPER TRADING SUMMARY REPORT
+============================================================
+Generated: 2026-03-15 00:31:05
+Total Stocks Traded: 20
+
+------------------------------------------------------------
+Symbol: BAC
+Status: ✅ Success
+Trades File: outputs/trades/bac_trades_20260315_001954.csv
+Equity File: outputs/equity/bac_equity_20260315_001954.csv
+
+------------------------------------------------------------
+Symbol: AAPL
+Status: ✅ Success
+Trades File: outputs/trades/aapl_trades_20260315_002029.csv
+Equity File: outputs/equity/aapl_equity_20260315_002029.csv
+
+------------------------------------------------------------
+Symbol: F
+Status: ✅ Success
+Trades File: outputs/trades/f_trades_20260315_002104.csv
+Equity File: outputs/equity/f_equity_20260315_002104.csv
+
+------------------------------------------------------------
+Symbol: GE
+Status: ✅ Success
+Trades File: outputs/trades/ge_trades_20260315_002139.csv
+Equity File: outputs/equity/ge_equity_20260315_002139.csv
+
+------------------------------------------------------------
+Symbol: MSFT
+Status: ✅ Success
+Trades File: outputs/trades/msft_trades_20260315_002214.csv
+Equity File: outputs/equity/msft_equity_20260315_002214.csv
+
+------------------------------------------------------------
+Symbol: INTC
+Status: ✅ Success
+Trades File: outputs/trades/intc_trades_20260315_002249.csv
+Equity File: outputs/equity/intc_equity_20260315_002249.csv
+
+------------------------------------------------------------
+Symbol: CSCO
+Status: ✅ Success
+Trades File: outputs/trades/csco_trades_20260315_002324.csv
+Equity File: outputs/equity/csco_equity_20260315_002324.csv
+
+------------------------------------------------------------
+Symbol: FB
+Status: ✅ Success
+Trades File: outputs/trades/fb_trades_20260315_002358.csv
+Equity File: outputs/equity/fb_equity_20260315_002358.csv
+
+------------------------------------------------------------
+Symbol: PFE
+Status: ✅ Success
+Trades File: outputs/trades/pfe_trades_20260315_002433.csv
+Equity File: outputs/equity/pfe_equity_20260315_002433.csv
+
+------------------------------------------------------------
+Symbol: HPQ
+Status: ✅ Success
+Trades File: outputs/trades/hpq_trades_20260315_002507.csv
+Equity File: outputs/equity/hpq_equity_20260315_002507.csv
+
+------------------------------------------------------------
+Symbol: C
+Status: ✅ Success
+Trades File: outputs/trades/c_trades_20260315_002542.csv
+Equity File: outputs/equity/c_equity_20260315_002542.csv
+
+------------------------------------------------------------
+Symbol: MU
+Status: ✅ Success
+Trades File: outputs/trades/mu_trades_20260315_002616.csv
+Equity File: outputs/equity/mu_equity_20260315_002616.csv
+
+------------------------------------------------------------
+Symbol: NFLX
+Status: ✅ Success
+Trades File: outputs/trades/nflx_trades_20260315_002651.csv
+Equity File: outputs/equity/nflx_equity_20260315_002651.csv
+
+------------------------------------------------------------
+Symbol: T
+Status: ✅ Success
+Trades File: outputs/trades/t_trades_20260315_002725.csv
+Equity File: outputs/equity/t_equity_20260315_002725.csv
+
+------------------------------------------------------------
+Symbol: JPM
+Status: ✅ Success
+Trades File: outputs/trades/jpm_trades_20260315_002800.csv
+Equity File: outputs/equity/jpm_equity_20260315_002800.csv
+
+------------------------------------------------------------
+Symbol: WFC
+Status: ✅ Success
+Trades File: outputs/trades/wfc_trades_20260315_002836.csv
+Equity File: outputs/equity/wfc_equity_20260315_002836.csv
+
+------------------------------------------------------------
+Symbol: EBAY
+Status: ✅ Success
+Trades File: outputs/trades/ebay_trades_20260315_002910.csv
+Equity File: outputs/equity/ebay_equity_20260315_002910.csv
+
+------------------------------------------------------------
+Symbol: FCX
+Status: ✅ Success
+Trades File: outputs/trades/fcx_trades_20260315_002944.csv
+Equity File: outputs/equity/fcx_equity_20260315_002944.csv
+
+------------------------------------------------------------
+Symbol: ORCL
+Status: ✅ Success
+Trades File: outputs/trades/orcl_trades_20260315_003019.csv
+Equity File: outputs/equity/orcl_equity_20260315_003019.csv
+
+------------------------------------------------------------
+Symbol: YHOO
+Status: ✅ Success
+Trades File: outputs/trades/yhoo_trades_20260315_003053.csv
+Equity File: outputs/equity/yhoo_equity_20260315_003053.csv
+
