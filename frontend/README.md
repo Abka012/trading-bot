@@ -1,6 +1,6 @@
-# AI Trading Frontend
+# AlphaMindStock Frontend
 
-React frontend for the AI Trading dashboard.
+React frontend for the AlphaMindStock dashboard.
 
 ## Setup
 

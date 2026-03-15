@@ -1,6 +1,6 @@
 # Trading Bot Backend
 
-FastAPI backend for the AI Trading dashboard. Provides model discovery, predictions, paper trading metrics, Alpaca live/paper trading, and engine control.
+FastAPI backend for the AlphaMindStock dashboard. Provides model discovery, predictions, paper trading metrics, Alpaca live/paper trading, and engine control.
 
 ## Setup
 

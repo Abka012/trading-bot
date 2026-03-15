@@ -1,5 +1,5 @@
 /**
- * AI Trading Dashboard - Main Application Component
+ * AlphaMindStock Dashboard - Main Application Component
  * Integrated with Alpaca Paper Trading API
  */
 
@@ -211,7 +211,7 @@ function App() {
                 <span></span>
               </div>
               <div>
-                <h1>AI Trading</h1>
+                <h1>AlphaMindStock</h1>
                 <p className="header-subtitle">Automated trading dashboard</p>
                 <p className="header-runtime">
                   Engine runtime: {engineRuntime}

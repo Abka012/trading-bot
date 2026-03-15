@@ -1,4 +1,4 @@
-# AI Trading - Full Stack Application
+# AlphaMindStock - Full Stack Application
 
 A full-stack AI trading dashboard with a React frontend and FastAPI backend. The system discovers trained models from `backend/tradingBot/artifacts/models`, serves predictions and performance data, and runs a paper-trading engine backed by Alpaca.
 
@@ -13,7 +13,7 @@ A full-stack AI trading dashboard with a React frontend and FastAPI backend. The
 - P&L history endpoints for charts
 
 ### Frontend (React)
-- AI Trading dashboard UI
+- AlphaMindStock dashboard UI
 - Live cards for all models with P&L and max drawdown
 - Analysis view with model P&L and account P&L charts
 - Manual trade flow (buy/sell) via the Trade tab

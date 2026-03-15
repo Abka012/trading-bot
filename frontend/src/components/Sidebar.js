@@ -1,6 +1,6 @@
 /**
  * Sidebar Navigation Component
- * Left sidebar with navigation icons matching the AI Trading design
+ * Left sidebar with navigation icons matching the AlphaMindStock design
  */
 
 import React, { useState } from "react";

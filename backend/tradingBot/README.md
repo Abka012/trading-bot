@@ -1,6 +1,6 @@
-# AI Trading Bot Core
+# AlphaMindStock Bot Core
 
-Deep learning trading engine for US stocks using TensorFlow, pandas, and yfinance. This module powers the FastAPI backend and the React AI Trading dashboard.
+Deep learning trading engine for US stocks using TensorFlow, pandas, and yfinance. This module powers the FastAPI backend and the React AlphaMindStock dashboard.
 
 ## 🚀 Features
 
@@ -78,7 +78,7 @@ The project requires the following main packages:
 
 ### Dashboard Integration
 
-Trained models in `backend/tradingBot/artifacts/models` are automatically discovered by the backend and shown in the AI Trading dashboard. The trading engine uses these models for paper/live trading.
+Trained models in `backend/tradingBot/artifacts/models` are automatically discovered by the backend and shown in the AlphaMindStock dashboard. The trading engine uses these models for paper/live trading.
 
 ### 🚀 ONE COMMAND TO TRADE ALL POPULAR STOCKS
 
