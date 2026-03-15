@@ -53,3 +53,14 @@ Thumbs.db
 
 # Docker
 .dockerignore
+
+# Models
+models/
+artifacts/
+data/
+outputs/
+*.keras
+*.h5
+*.pt
+*.csv
+*.parquet
