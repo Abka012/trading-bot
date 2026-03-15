@@ -34,19 +34,19 @@ from pathlib import Path
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from tradingBot.alpaca_client import AlpacaClient
-
-# Import the tradingBot API app and mount it
+from tradingBot.alpaca_client import AlpacaClient, OrderConfig
 from tradingBot.api import (
-    app as trading_app,
-)
-from tradingBot.api import (
+    OrderResponse,
+    PlaceOrderRequest,
     get_all_paper_trading_results,
     get_market_data,
     get_paper_trading_results,
     list_models,
     predict,
 )
+
+# Import the tradingBot API app and mount it
+from tradingBot.api import app as trading_app
 from tradingBot.engine_service import (
     get_engine_logs,
     get_engine_status,
@@ -419,6 +419,45 @@ async def close_live_position(symbol: str):
         }
     except Exception as e:
         return {"success": False, "error": str(e)}
+
+
+@app.post("/api/live/order", response_model=OrderResponse)
+async def place_live_order(request: PlaceOrderRequest) -> OrderResponse:
+    """Place a live trading order."""
+    try:
+        client = AlpacaClient()
+    except ValueError:
+        return OrderResponse(
+            success=False, message="Alpaca not configured. Check your .env file."
+        )
+
+    try:
+        if not client.is_market_open():
+            return OrderResponse(success=False, message="Market is currently closed")
+
+        order_config = OrderConfig(
+            symbol=request.symbol.upper(),
+            qty=request.qty,
+            side=request.side.lower(),
+            order_type=request.order_type.lower(),
+            limit_price=request.limit_price,
+            stop_loss=request.stop_loss,
+            take_profit=request.take_profit,
+        )
+        result = client.place_order(order_config)
+
+        return OrderResponse(
+            success=result.success,
+            order_id=result.order_id,
+            symbol=result.symbol,
+            side=result.side,
+            qty=result.qty,
+            price=result.price,
+            status=result.status,
+            message=result.message,
+        )
+    except Exception as e:
+        return OrderResponse(success=False, message=str(e))
 
 
 @app.get("/api/pnl/{symbol}")

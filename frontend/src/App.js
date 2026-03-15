@@ -19,6 +19,7 @@ function App() {
   const [pnlFilter, setPnlFilter] = useState("all");
   const [drawdownFilter, setDrawdownFilter] = useState("all");
   const [sortBy, setSortBy] = useState("featured");
+  const [engineRuntime, setEngineRuntime] = useState("0h 0m");
 
   // Modal and expanded view state
   const [modalOpen, setModalOpen] = useState(false);
@@ -38,6 +39,7 @@ function App() {
       const positionsData = (await positionsRes.ok)
         ? await positionsRes.json()
         : [];
+      setEngineRuntime(calculateEngineRuntime(engineData.start_time));
 
       const pnlEntries = await Promise.all(
         modelsData.map(async (model) => {
@@ -57,21 +59,21 @@ function App() {
       // Build trading cards with actual PnL from positions (Alpaca API)
       const cards = modelsData.map((model) => {
         const position = positionsData.find((p) => p?.symbol === model.symbol);
-        const pnl = position ? position.unrealized_pl : 0;
-        const pnlPercent = position ? position.unrealized_plpc * 100 : 0;
-
         const pnlHistory =
           pnlHistoryMap[model.symbol] ||
           (position ? generatePnLHistoryFromPosition(position) : []);
+        const pnlStats = computePnlStats(pnlHistory, position);
 
         return {
           ...model,
-          pnl: pnl,
-          pnlPercent: pnlPercent,
+          pnl: pnlStats.pnl,
+          pnlPercent: pnlStats.pnlPercent,
           runtime: position
             ? calculateRuntime(position.entry_time)
             : calculateModelRuntime(model.loaded_at),
-          maxDrawdown: position ? calculateMaxDrawdown(pnlPercent) : "0%",
+          maxDrawdown: formatPercent(
+            calculateMaxDrawdownFromHistory(pnlHistory),
+          ),
           status: position
             ? "trading"
             : engineData.running
@@ -133,11 +135,24 @@ function App() {
     return () => clearInterval(interval);
   }, [fetchTradingData]);
 
-  const handleAnalyze = async (symbol, data) => {
+  const handleAnalyze = async (symbol, data, tab = "analysis") => {
     setSelectedSymbol(symbol);
     setSelectedData(data);
     await fetchAnalysisData(symbol);
     setModalOpen(true);
+    if (tab === "trade") {
+      setTimeout(() => {
+        document.querySelector(".modal-tab:nth-child(2)")?.click();
+      }, 100);
+    }
+  };
+
+  const handleAnalysis = async (symbol, data) => {
+    await handleAnalyze(symbol, data, "analysis");
+  };
+
+  const handleManualTrade = async (symbol, data) => {
+    await handleAnalyze(symbol, data, "trade");
   };
 
   // Filter cards based on search and filter
@@ -148,10 +163,8 @@ function App() {
     const matchesFilter =
       activeFilter === "all" ||
       (activeFilter === "active" && card.position) ||
-      (activeFilter === "running" &&
-        card.loaded &&
-        card.status !== "stopped") ||
-      (activeFilter === "stopped" && card.loaded && card.status === "stopped");
+      (activeFilter === "running" && card.status !== "stopped") ||
+      (activeFilter === "stopped" && card.status === "stopped");
     const matchesPnl =
       pnlFilter === "all" ||
       (pnlFilter === "positive" && card.pnlPercent >= 0) ||
@@ -198,8 +211,11 @@ function App() {
                 <span></span>
               </div>
               <div>
-                <h1>Ai Trading</h1>
+                <h1>AI Trading</h1>
                 <p className="header-subtitle">Automated trading dashboard</p>
+                <p className="header-runtime">
+                  Engine runtime: {engineRuntime}
+                </p>
               </div>
             </div>
             <div className="header-right">
@@ -240,7 +256,6 @@ function App() {
                 value={activeFilter}
                 onChange={(e) => setActiveFilter(e.target.value)}
               >
-                <option value="active">Active</option>
                 <option value="running">Running</option>
                 <option value="stopped">Stopped</option>
               </select>
@@ -386,24 +401,19 @@ function App() {
                         className="card-btn deposit-btn"
                         onClick={(e) => {
                           e.stopPropagation();
-                          handleAnalyze(card.symbol, card);
+                          handleManualTrade(card.symbol, card);
                         }}
                       >
-                        Deposit
+                        Trade
                       </button>
                       <button
                         className="card-btn trade-btn"
                         onClick={(e) => {
                           e.stopPropagation();
-                          handleAnalyze(card.symbol, card);
-                          setTimeout(() => {
-                            document
-                              .querySelector(".modal-tab:nth-child(2)")
-                              ?.click();
-                          }, 100);
+                          handleAnalysis(card.symbol, card);
                         }}
                       >
-                        Trade
+                        Analysis
                       </button>
                     </div>
                   </div>
@@ -446,9 +456,14 @@ function calculateModelRuntime(loadedAt) {
   return `${hours}h ${minutes}m`;
 }
 
-function calculateMaxDrawdown(pnlPercent) {
-  const maxDD = Math.random() * 5;
-  return `${maxDD.toFixed(1)}%`;
+function calculateEngineRuntime(startTime) {
+  if (!startTime) return "0h 0m";
+  const started = new Date(startTime);
+  const now = new Date();
+  const diffMs = now - started;
+  const hours = Math.floor(diffMs / 3600000);
+  const minutes = Math.floor((diffMs % 3600000) / 60000);
+  return `${hours}h ${minutes}m`;
 }
 
 // Generate PnL history from position data (Alpaca API)
@@ -476,6 +491,46 @@ function generatePnLHistoryFromPosition(position) {
   }
 
   return data;
+}
+
+function computePnlStats(history, position) {
+  if (position) {
+    return {
+      pnl: position.unrealized_pl || 0,
+      pnlPercent: (position.unrealized_plpc || 0) * 100,
+    };
+  }
+
+  if (!history || history.length === 0) {
+    return { pnl: 0, pnlPercent: 0 };
+  }
+
+  const firstValue = Number(history[0].value || 0);
+  const lastValue = Number(history[history.length - 1].value || 0);
+  const base = Math.abs(firstValue) > 0 ? Math.abs(firstValue) : 1;
+  const pnlPercent = ((lastValue - firstValue) / base) * 100;
+  return { pnl: lastValue, pnlPercent };
+}
+
+function calculateMaxDrawdownFromHistory(history) {
+  if (!history || history.length === 0) return 0;
+
+  let peak = Number(history[0].value || 0);
+  let maxDrawdown = 0;
+
+  for (const point of history) {
+    const value = Number(point.value || 0);
+    if (value > peak) peak = value;
+    const denominator = Math.abs(peak) > 0 ? Math.abs(peak) : 1;
+    const drawdown = ((value - peak) / denominator) * 100;
+    if (drawdown < maxDrawdown) maxDrawdown = drawdown;
+  }
+
+  return Math.abs(maxDrawdown);
+}
+
+function formatPercent(value) {
+  return `${Number(value || 0).toFixed(1)}%`;
 }
 
 function generateTechnicalAnalysis(prediction, market) {

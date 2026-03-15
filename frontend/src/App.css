@@ -78,6 +78,12 @@ body {
     margin-top: 4px;
 }
 
+.header-runtime {
+    font-size: 12px;
+    color: var(--muted);
+    margin-top: 4px;
+}
+
 .header-right {
     display: flex;
     align-items: center;

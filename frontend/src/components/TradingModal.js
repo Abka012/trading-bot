@@ -6,6 +6,8 @@
 import React, { useState } from "react";
 import PnLChart from "./PnLChart";
 
+const API_BASE_URL = process.env.REACT_APP_API_URL || "http://localhost:8000";
+
 const TradingModal = ({ isOpen, onClose, symbol, data, analysis }) => {
   const [activeTab, setActiveTab] = useState("analysis"); // 'analysis' or 'trade'
   const [tradeType, setTradeType] = useState("buy");
@@ -15,16 +17,50 @@ const TradingModal = ({ isOpen, onClose, symbol, data, analysis }) => {
   if (!isOpen || !symbol) return null;
 
   const tech = analysis?.technicals || {};
+  const techConfidence = Number(tech.confidence || 50);
+  const techRsi = Number(tech.rsi || 50);
   const prediction = analysis?.prediction || {};
   const market = analysis?.market || {};
   const pnlHistory = analysis?.pnlHistory?.data || [];
   const accountPnlHistory = analysis?.accountPnlHistory?.data || [];
+  const pnlPeriodStats = getPnlPeriodStats(pnlHistory);
+  const botSummary = buildBotSummary({
+    symbol,
+    prediction,
+    market,
+    accountPnlHistory,
+    position: data?.position,
+  });
 
-  const handleTrade = () => {
-    alert(
-      `Order ${tradeType.toUpperCase()} ${quantity} shares of ${symbol}\nType: ${orderType}`,
-    );
-    onClose();
+  const handleTrade = async () => {
+    if (orderType !== "market") {
+      window.alert("Only market orders are supported right now.");
+      return;
+    }
+
+    try {
+      const res = await fetch(`${API_BASE_URL}/api/live/order`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          symbol,
+          qty: quantity,
+          side: tradeType,
+          order_type: orderType,
+        }),
+      });
+      const result = await res.json();
+      if (result.success) {
+        window.alert(
+          `Order placed: ${tradeType.toUpperCase()} ${quantity} ${symbol}`,
+        );
+        onClose();
+      } else {
+        window.alert(result.message || "Order failed.");
+      }
+    } catch (err) {
+      window.alert("Order failed. Check backend connection.");
+    }
   };
 
   return (
@@ -88,7 +124,7 @@ const TradingModal = ({ isOpen, onClose, symbol, data, analysis }) => {
                   <p className="rec-description">
                     {getRecommendationDescription(
                       tech.recommendation,
-                      tech.confidence,
+                      techConfidence.toFixed(0),
                     )}
                   </p>
                   <div className="confidence-bar">
@@ -96,11 +132,11 @@ const TradingModal = ({ isOpen, onClose, symbol, data, analysis }) => {
                     <div className="confidence-track">
                       <div
                         className="confidence-fill"
-                        style={{ width: `${tech.confidence || 50}%` }}
+                        style={{ width: `${techConfidence}%` }}
                       ></div>
                     </div>
                     <div className="confidence-value">
-                      {tech.confidence?.toFixed(0) || 50}%
+                      {techConfidence.toFixed(0)}%
                     </div>
                   </div>
                 </div>
@@ -176,9 +212,9 @@ const TradingModal = ({ isOpen, onClose, symbol, data, analysis }) => {
                   <div className="tech-card">
                     <span className="tech-name">RSI (14)</span>
                     <span
-                      className={`tech-value ${tech.rsi > 70 ? "negative" : tech.rsi < 30 ? "positive" : ""}`}
+                      className={`tech-value ${techRsi > 70 ? "negative" : techRsi < 30 ? "positive" : ""}`}
                     >
-                      {tech.rsi || "50.0"}
+                      {techRsi.toFixed(1)}
                     </span>
                   </div>
                   <div className="tech-card">
@@ -211,7 +247,7 @@ const TradingModal = ({ isOpen, onClose, symbol, data, analysis }) => {
               {/* Model P&L Performance */}
               {pnlHistory.length > 0 && (
                 <div className="analysis-section">
-                  <h3>Model P&L Performance</h3>
+                  <h3>Trading Performance (Period)</h3>
                   <div className="pnl-chart-box">
                     <PnLChart
                       symbol={symbol}
@@ -220,6 +256,36 @@ const TradingModal = ({ isOpen, onClose, symbol, data, analysis }) => {
                       showYAxis={true}
                       showLabels={true}
                     />
+                  </div>
+                  <div className="market-data-grid">
+                    <div className="market-item">
+                      <span className="market-label">Period P&L</span>
+                      <span
+                        className={`market-value ${pnlPeriodStats.pnl >= 0 ? "positive" : "negative"}`}
+                      >
+                        {pnlPeriodStats.pnl >= 0 ? "+" : ""}
+                        {pnlPeriodStats.pnl.toFixed(2)}
+                      </span>
+                    </div>
+                    <div className="market-item">
+                      <span className="market-label">Max Drawdown</span>
+                      <span className="market-value">
+                        {pnlPeriodStats.maxDrawdown.toFixed(2)}%
+                      </span>
+                    </div>
+                    <div className="market-item">
+                      <span className="market-label">Period Change</span>
+                      <span
+                        className={`market-value ${pnlPeriodStats.pnlPercent >= 0 ? "positive" : "negative"}`}
+                      >
+                        {pnlPeriodStats.pnlPercent >= 0 ? "+" : ""}
+                        {pnlPeriodStats.pnlPercent.toFixed(2)}%
+                      </span>
+                    </div>
+                    <div className="market-item">
+                      <span className="market-label">Data Points</span>
+                      <span className="market-value">{pnlHistory.length}</span>
+                    </div>
                   </div>
                 </div>
               )}
@@ -279,10 +345,7 @@ const TradingModal = ({ isOpen, onClose, symbol, data, analysis }) => {
                       {tech.trend?.toLowerCase() || "neutral"}
                     </strong>{" "}
                     outlook for {symbol} with{" "}
-                    <strong>
-                      {tech.confidence?.toFixed(0) || 50}% confidence
-                    </strong>
-                    .
+                    <strong>{techConfidence.toFixed(0)}% confidence</strong>.
                     {tech.trend === "BULLISH" &&
                       " Technical indicators suggest upward momentum."}
                     {tech.trend === "BEARISH" &&
@@ -290,6 +353,13 @@ const TradingModal = ({ isOpen, onClose, symbol, data, analysis }) => {
                     {tech.trend === "NEUTRAL" &&
                       " No clear directional bias at this time."}
                   </p>
+                </div>
+              </div>
+
+              <div className="analysis-section">
+                <h3>Bot Summary</h3>
+                <div className="summary-card">
+                  <p>{botSummary}</p>
                 </div>
               </div>
             </div>
@@ -470,6 +540,59 @@ function getRecommendationDescription(recommendation, confidence) {
     "STRONG SELL": `Strong sell signal with ${confidence}% confidence. Model indicates significant downward pressure.`,
   };
   return descriptions[recommendation] || descriptions["HOLD"];
+}
+
+function buildBotSummary({
+  symbol,
+  prediction,
+  market,
+  accountPnlHistory,
+  position,
+}) {
+  const lastPnl = accountPnlHistory.length
+    ? Number(accountPnlHistory[accountPnlHistory.length - 1].value || 0)
+    : 0;
+  const firstPnl = accountPnlHistory.length
+    ? Number(accountPnlHistory[0].value || 0)
+    : 0;
+  const pnlDelta = lastPnl - firstPnl;
+  const pnlDirection = pnlDelta >= 0 ? "up" : "down";
+
+  const direction = prediction?.direction || "NEUTRAL";
+  const confidence = prediction?.confidence
+    ? `${prediction.confidence.toFixed(0)}%`
+    : "N/A";
+  const price = market?.price ? `$${market.price.toFixed(2)}` : "N/A";
+  const positionLabel = position
+    ? `${position.side} ${position.qty} @ $${position.entry_price?.toFixed(2) || "N/A"}`
+    : "no open position";
+
+  return `Bot performance is ${pnlDirection} (${pnlDelta.toFixed(
+    2,
+  )}) on account P&L. ${symbol} signal is ${direction} with ${confidence} confidence. Current price is ${price}, and the bot has ${positionLabel}.`;
+}
+
+function getPnlPeriodStats(history) {
+  if (!history || history.length === 0) {
+    return { pnl: 0, pnlPercent: 0, maxDrawdown: 0 };
+  }
+
+  const firstValue = Number(history[0].value || 0);
+  const lastValue = Number(history[history.length - 1].value || 0);
+  const base = Math.abs(firstValue) > 0 ? Math.abs(firstValue) : 1;
+  const pnlPercent = ((lastValue - firstValue) / base) * 100;
+
+  let peak = firstValue;
+  let maxDrawdown = 0;
+  for (const point of history) {
+    const value = Number(point.value || 0);
+    if (value > peak) peak = value;
+    const denominator = Math.abs(peak) > 0 ? Math.abs(peak) : 1;
+    const drawdown = ((value - peak) / denominator) * 100;
+    if (drawdown < maxDrawdown) maxDrawdown = drawdown;
+  }
+
+  return { pnl: lastValue, pnlPercent, maxDrawdown: Math.abs(maxDrawdown) };
 }
 
 export default TradingModal;
