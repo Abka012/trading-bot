@@ -1,6 +1,6 @@
-# Trading Bot Frontend
+# AI Trading Frontend
 
-React frontend for the trading bot application.
+React frontend for the AI Trading dashboard.
 
 ## Setup
 
@@ -9,20 +9,23 @@ npm install
 npm start
 ```
 
-## Available Scripts
+## Environment
 
-- `npm start` - Run development server
-- `npm test` - Run tests
-- `npm run build` - Build for production
-- `npm run eject` - Eject from Create React App
+If the backend is not on `http://localhost:8000`, add:
 
-## API Integration
+```env
+REACT_APP_API_URL=http://localhost:8000
+```
 
-The frontend connects to the FastAPI backend at `http://localhost:8000`.
+## Features
 
-Make sure the backend is running before starting the frontend.
+- Model cards with P&L, drawdown, and sparklines
+- Analysis view with model P&L and account P&L charts
+- Manual trade (buy/sell) via the Trade tab
 
-## Learn More
+## Scripts
 
-- [React Documentation](https://react.dev/)
-- [Create React App Documentation](https://create-react-app.dev/)
+- `npm start`
+- `npm test`
+- `npm run build`
+- `npm run eject`

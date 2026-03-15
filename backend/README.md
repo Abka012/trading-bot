@@ -1,44 +1,41 @@
 # Trading Bot Backend
 
-FastAPI backend for the trading bot application.
+FastAPI backend for the AI Trading dashboard. Provides model discovery, predictions, paper trading metrics, Alpaca live/paper trading, and engine control.
 
 ## Setup
 
 ```bash
-# Create virtual environment
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-
-# Install dependencies
+python -m venv .venv
+source .venv/bin/activate  # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
-
-# Run the server
 uvicorn main:app --reload
 ```
 
-## API Documentation
+## Environment
 
-Once the server is running, visit:
-- Swagger UI: `http://localhost:8000/docs`
-- ReDoc: `http://localhost:8000/redoc`
+Create `backend/.env` for Alpaca credentials:
 
-## Docker
-
-```bash
-# Build the image
-docker build -t trading-bot-backend .
-
-# Run the container
-docker run -p 8000:8000 trading-bot-backend
+```env
+ALPACA_API_KEY=PKXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+ALPACA_SECRET_KEY=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+ALPACA_TRADING_MODE=paper
 ```
 
-## Development
+## Key Endpoints
 
-- FastAPI with automatic API documentation
-- CORS enabled for React frontend (`http://localhost:3000`)
-- Uvicorn as ASGI server
+- `GET /api/models`
+- `POST /api/predict`
+- `GET /api/pnl/{symbol}`
+- `GET /api/live/pnl-history`
+- `GET /api/live/positions`
+- `POST /api/live/order`
+- `GET /api/engine/status`
+- `POST /api/engine/start`
+- `POST /api/engine/stop`
 
-## Requirements
+## Notes
 
-- Python 3.9+
-- See `requirements.txt` for dependencies
+- Models are discovered from `backend/tradingBot/artifacts/models`.
+- The engine auto-starts on app startup using those models.
+
+See `backend/API.md` for detailed API documentation.

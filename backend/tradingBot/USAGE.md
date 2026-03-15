@@ -3,6 +3,7 @@
 ## Quick Start
 
 This trading bot is now configured to work with **US stock market data** from `us_stock_market.csv`.
+Models saved under `backend/tradingBot/artifacts/models` are used by the backend trading engine and shown in the AI Trading dashboard.
 
 ## 1. Training a Model
 

@@ -6,7 +6,7 @@
 ./trade_all_popular_stocks.sh
 ```
 
-That's it! Sit back and watch the magic happen. ✨
+That's it. This will run end-to-end paper trading for the popular stock set.
 
 ## What This Does
 
@@ -48,7 +48,7 @@ outputs/
 ├── equity/           # Equity curve data
 └── reports/          # Summary report
 
-artifacts/models/     # Trained models for each stock
+artifacts/models/      # Trained models for each stock
 data/extracted_stocks/ # Individual stock data files
 ```
 

@@ -1,6 +1,6 @@
-# US Stock Market Trading Bot
+# AI Trading Bot Core
 
-A deep learning-based trading system for US stock market trading using TensorFlow, pandas, and yfinance. This project implements a sophisticated neural network architecture for predicting stock price movements and includes a complete paper trading system for live simulation.
+Deep learning trading engine for US stocks using TensorFlow, pandas, and yfinance. This module powers the FastAPI backend and the React AI Trading dashboard.
 
 ## 🚀 Features
 
@@ -38,9 +38,9 @@ A deep learning-based trading system for US stock market trading using TensorFlo
 
 ### Setup
 
-1. **Clone or navigate to the project directory**:
+1. **Navigate to the module directory**:
    ```bash
-   cd trading-bot-demo-2
+   cd backend/tradingBot
    ```
 
 2. **Create a virtual environment**:
@@ -75,6 +75,10 @@ The project requires the following main packages:
 ---
 
 ## ⚡ Quick Start
+
+### Dashboard Integration
+
+Trained models in `backend/tradingBot/artifacts/models` are automatically discovered by the backend and shown in the AI Trading dashboard. The trading engine uses these models for paper/live trading.
 
 ### 🚀 ONE COMMAND TO TRADE ALL POPULAR STOCKS
 

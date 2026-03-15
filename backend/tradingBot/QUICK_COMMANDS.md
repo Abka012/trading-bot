@@ -66,7 +66,7 @@ python run_paper_trading.py --symbols AAPL --duration 30 --skip-training --exist
 All outputs are automatically organized into folders:
 
 ```
-trading-bot-demo-2/
+backend/tradingBot/
 ├── data/
 │   └── extracted_stocks/
 │       ├── aapl_data.csv
